@@ -1,0 +1,1134 @@
+.contact_form_button{
+  .button{
+    //ton style
+    pointer-events:none;
+    display: inline-block;
+    //ton style
+    &:after{
+      //ton syle
+    }
+  }
+
+  &:hover{
+    .button{
+      &:after{
+        
+      }
+    }
+  }
+
+  input[type="submit"],button{
+    @include absolute-fill;
+    -webkit-appearance: none;
+    border:none;
+    background-color:transparent;
+    outline: none;
+    font-size: 0;
+  }
+}
+
+//F(x) = ( $wrapper-width - (n-1)$gutter-width ) / n
+
+.content_wrapper{
+  width: $wrapper-width;
+  text-align: center;
+}
+
+.columns-1{
+  width: $wrapper-width;
+}
+
+.columns-2{
+  width: ($wrapper-width - $gutter-width)/2; 
+}
+
+.columns-3{
+  width: ($wrapper-width - $gutter-width*2)/3; 
+}
+
+.columns-4{
+  width: ($wrapper-width - $gutter-width*3)/4; 
+}
+
+.columns-6{
+  width: ($wrapper-width - $gutter-width*5)/6;  
+}
+
+.columns-8{
+  width: ($wrapper-width - $gutter-width*7)/8;  
+}
+
+.columns-12{
+  width: $column-width;
+}
+
+// F(x) =  n * $column-width + (n-1) * $gutter-width
+
+.col-1{
+  width: $column-width;
+}
+
+.col-2{
+  width: $column-width * 2 + $gutter-width;
+}
+
+.col-3{
+  width: $column-width * 3 + 2 * $gutter-width;
+}
+
+.col-4{
+  width: $column-width * 4 + 3 * $gutter-width;
+}
+
+.col-6{
+  width: $column-width * 6 + 5 * $gutter-width;
+}
+
+.col-8{
+  width: $column-width * 8 + 7 * $gutter-width;
+}
+
+.col-9{
+  width: $column-width * 9 + 8 * $gutter-width;
+}
+
+.col-10{
+  width: $column-width * 10 + 9 * $gutter-width; 
+}
+
+.col-12{
+  width: $column-width * 12 + 11 * $gutter-width;
+}
+
+
+.col{
+  &:first-child{
+    margin-right: $gutter-width;
+  }
+  &:last-child{
+    margin-right: $gutter-width;
+  }
+  &:not(:first-child):not(:last-child){
+    margin-right: $gutter-width/2;
+    margin-left: $gutter-width/2;
+  }
+}
+// $wrapper-width: 1280px;
+// $gutter-width: 20px;
+// $column-width: 88px;
+
+html {
+  font-size: $body;
+  line-height: 21px;
+}
+
+body{
+
+  font-size: $body;
+  line-height: 21px;
+  margin: auto;
+
+  section{
+    transition: all 0.4s ease-in-out; 
+  }
+
+	h1,h2,h3,h4,h5,h6,p,span,a{
+		margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+	}
+  h1,h2,h3,h4,h5,h6{
+    font-family: $heading_font;
+    font-weight: $heading_weight;
+  }
+	h1, h1 span{
+		font-size: $h1;
+		// font-weight: $heading_weight;
+    line-height: 84px;
+    // margin-top: 21px;
+    // margin-bottom: 42px;
+	}
+	h2, h2 span{
+		font-size: $h2;
+		// font-weight: $heading_weight;
+    line-height: 42px;
+    // margin-top: 21px;
+    // margin-bottom: 21px;
+	}
+  h3, h3 span{
+    font-size: $h3;
+    // font-weight: $heading_weight;
+    line-height: 42px;
+    // margin-top: 21px;
+    // margin-bottom: 0px;
+  }
+  h4, h4 span{
+    font-size: $h4;
+    // font-weight: $heading_weight;
+    line-height: 21px;
+    // margin-top: 21px;
+    // margin-bottom: 0px;
+  }
+  h5, h5 span{
+    font-size: $h5;
+    // font-weight: $heading_weight;
+    line-height: 21px;
+    // margin-top: 21px;
+    // margin-bottom: 0px;
+  }
+	p,span{
+		font-weight: $body_weight;
+		font-size: $body;
+    line-height: 21px;
+	}
+	a,button,input[type="button"]{
+		position: relative;
+		cursor: pointer;
+		&.button{
+			// background-color: $accent_color;
+      background-color:transparent;
+			border-radius: 100px;
+			padding: 10px 35px;
+			color: #ffffff;
+			text-align: center;
+			font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      text-transform: uppercase;
+			border: 2px solid #ffffff;
+			// transition: all 0.4s ease-in-out;
+			// &:hover{
+			// 	// border-top:0px;
+			// 	// border-left:0px;
+			// 	// border-right:0px;
+			// 	// border-top-color:#ffffff;
+			// 	// border-left-color:#ffffff;
+			// 	// border-right-color:#ffffff;
+			// 	border-bottom: 2px solid #fe9426;
+			// }
+			// &:after{
+			// 	border-top: 0;
+			//   border-right: 0;
+			//   -webkit-transform-origin: 50% 50%;
+			//   width: 100%;
+			//   height:100%;
+			//   z-index: 3;
+			//   content:'';
+			//   position: absolute;
+			//   top:0;
+			//   left:0;
+			//   box-sizing: border-box;
+			//   -webkit-transform: scale(0);
+			//   border-bottom: 2px solid #fe9426;
+			// }
+			&:hover{
+        cursor: pointer;
+				// background-color:$darker_accent_color;
+				// background-color:#ffffff;
+				// color: #fe9426;
+				// &:after{
+				// 	-webkit-transform: scale(1);
+				// }
+			}
+
+		}
+		&.button_2{
+			padding: 10px 35px 10px 20px;
+			// border:1px solid $blue_grey;
+      border:1px solid $white;
+			border-radius: 3px;
+			transition: 0.4s all ease-in-out;
+			position: relative;
+      cursor: pointer;
+			span{
+				font-weight: 500;
+			}
+			svg{
+				margin-left: 15px;
+				transition: 0.4s all ease-in-out;
+				@include absolute_center_vertically();
+			}
+			&:hover{
+        cursor: pointer;
+				padding-left:15px;
+				padding-right:40px;
+				svg{
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+}
+
+// p, ul, ol, pre, table, blockquote {
+//   margin-top: 0px;
+//   margin-bottom: 21px;
+// }
+// ul ul, ol ol, ul ol, ol ul {
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+// }
+
+// hr, .hr {
+//   border: 1px solid;
+//   margin: -1px 0;
+// }
+// a, b, i, strong, em, small, code {
+//   line-height: 0;
+// }
+// sub, sup {
+//   line-height: 0;
+//   position: relative;
+//   vertical-align: baseline;
+// }
+// sup {
+//   top: -0.5em;
+// }
+// sub {
+//   bottom: -0.25em;
+// }
+
+
+/* Loader */
+
+.loader{
+	position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  background-size: 100px;
+  &.parent:before{
+    display: none;
+  }
+  .content_wrapper{
+  	text-align:center;
+	  img{
+	  	width: 200px;
+	  	margin-bottom: 20px;
+	  }
+	  color: $base_color;
+	  font-size: $body;
+	  [class*="loader-"] {
+			display: block;
+			width: 1em;
+			height: 1em;
+			color: inherit;
+			vertical-align: middle;
+			pointer-events: none;
+			margin: 0px auto 0;
+		}
+	  .loader-05 {
+			border: .20em solid transparent;
+			border-top-color: currentcolor;
+			border-radius: 50%;
+			animation: 1s loader-05 linear infinite;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				width: inherit;
+				height: inherit;
+				position: absolute;
+				top: -.20em;
+				;
+				left: -.20em;
+				;
+				border: .20em solid currentcolor;
+				border-radius: 50%;
+				opacity: .5;
+			}
+		}
+
+		@keyframes loader-05 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+  }
+  
+}
+
+.utopia_wrapper{
+
+  // Thanks https://codepen.io/cipherbeta/pen/YLdVjw?page=1&
+
+  background: linear-gradient(271deg, #f98f48, #dba987, #bdc1a1, #94ceb8, #08d0c1);
+  background-size: 1000% 1000%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-animation: AnimationName 10s linear infinite;
+  -moz-animation: AnimationName 10s linear infinite;
+  animation: AnimationName 10s linear infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+
+  // .glitch {
+  //   position: relative;
+  // }
+  // .glitch::before,
+  // .glitch::after {
+  //   content: attr(data-text);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+
+  // Here's the meat and potatoes.
+
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+@mixin glitchCopy { 
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  letter-spacing: .5em;
+  /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+  
+  // Creates a copy before our text. 
+  &::before{
+    // Duplicates our text with the mixin.
+    @include glitchCopy;
+    // Scoots text slightly to the left for the color offset.
+    left: 2px;
+    // Creates the color 'shadow' that happens on the glitch.
+    text-shadow: -2px 0 #ff00c1;
+    /* Creates an initial clip for our glitch. This works in
+    a typical top,right,bottom,left fashion and creates a mask
+    to only show a certain part of the glitch at a time. */
+    clip: rect(44px, 450px, 56px, 0);
+    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+    with an alternating animation to keep things fresh. */
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+  
+  // Creates a copy after our text. Note comments from ::before.
+  &::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+  }
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+// Same deal, just duplicated for ultra randomness.
+@keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+// Does the same deal as before, but now only skews. Used for main text.
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+} 
+
+}
+
+/* Contact 7 Forms
+--------------------------------------------- */
+
+select{
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border: solid 1px $accent_color;
+	font-size: 15px;
+	font-family: $body_font;
+	font-weight: 600;
+	padding: 10px 20px;
+	height: 50px;
+	background: url('img/select_icon.svg') no-repeat;
+	background-size: 50px 50px;
+	background-position: right;
+	appearance: none;
+}
+
+div.wpcf7 .ajax-loader{
+	position:absolute;
+}
+
+form.wpcf7-form, .mauticform_wrapper .mauticform-page-wrapper{
+
+  font-size: 0;
+  display: inline-block;
+  min-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  // flex-direction: column;
+
+  // @include divi{
+  //     width: 550px;
+  // }
+
+  select{
+  	height: 44px;
+  }
+
+  input{
+    &::-webkit-input-placeholder {
+       color: rgba(3,19,45,0.1);
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       color: rgba(3,19,45,0.1);  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(3,19,45,0.1);  
+    }
+
+    &:-ms-input-placeholder {  
+       color: rgba(3,19,45,0.1);  
+    }
+	}
+
+  @include phone{
+      width: 260px;
+  }
+
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+      margin:3em 0em 1em;
+      font-size:15px !important;
+  }
+
+
+
+  .form_group, .mauticform-row{
+      // margin-top:20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position:relative;
+    text-align:left;
+   	flex-wrap: wrap; 
+
+   	.wpcf7-form-control-wrap{
+   		position:relative;
+   	}
+
+    &.half{
+    	width: 48%;
+
+    }
+
+    &.last{
+    	// flex-grow: 1;
+    	width: 100%;
+    }
+
+    // &.submit{
+    // 	text-align: right;
+    // 	a{
+    // 		// font-size: 20px;
+    // 	}
+    // }
+
+    label{
+      font-size: 14px;
+    }
+    // p{
+    //     display: none;
+    // }
+
+    &.m4_required{
+    	// .wpcf7-form-control-wrap{
+    		&:after{
+	        content: '*';
+	        position:absolute;
+	        // top: 5px;
+	        // right: 5px;
+	        // @include absolute_center_vertically();
+	        top: 15px;
+	        right: 10px;
+	        color: #ff8484;
+	        font-size: 12px;
+	      }
+    	// }
+    }
+
+    input.wpcf7-form-control.wpcf7-submit{
+      display: none;
+    }
+
+    /* Base */
+
+    // .wpcf7-form-control.wpcf7-text,.wpcf7-form-control.wpcf7-textarea,.wpcf7-form-control.wpcf7-date,.wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-number{
+    //     background-color: #FFF;
+    //     border: none;
+    //     width: 100%;
+    //     -moz-border-radius: 0 ;
+    //     -webkit-border-radius: 0 ;
+    //     border-radius: 0;
+    //     font-size: 14px;
+    //     padding: 16px;
+    //     -moz-box-sizing: border-box;
+    //     -webkit-box-sizing: border-box;
+    //     box-sizing: border-box;
+    //     -webkit-appearance: none;
+    //     -webkit-rtl-ordering: logical;
+    //     -webkit-user-select: text;
+    //     cursor: auto;
+    //     margin: 0em;
+    //     font: -webkit-small-control;
+    //     color: initial;
+    //     letter-spacing: normal;
+    //     word-spacing: normal;
+    //     text-transform: none;
+    //     text-indent: 0px;
+    //     text-shadow: none;
+    //     display: inline-block;
+    //     text-align: start;
+    //     // text-align: center;
+    //     background-color: #E7E7E1;
+    //     color: #000 ;
+    //     border-radius: 5px;
+    //     font-size: $body;
+    // }
+
+    .wpcf7-form-control.wpcf7-text,.wpcf7-form-control.wpcf7-textarea,.wpcf7-form-control.wpcf7-date,.wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-number, .mauticform-input{
+      background-color: transparent;
+      border: none;
+      // border: 1px solid rgba(3,19,45,0.1);
+      border-radius: 0px;
+      width: 100%;
+      font-size: 12px;
+      //padding: 16px;
+      padding: 11px 24px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -webkit-rtl-ordering: logical;
+      -webkit-user-select: text;
+      cursor: auto;
+      margin: 0em;
+      font: -webkit-small-control;
+      color: initial;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: start;
+      // text-align: center;
+      // box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
+      color: $base_color;
+      // border-bottom: 1px solid $black;
+      font-size: $body;
+      &.wpcf7-not-valid {
+        // background-color: rgba(255, 0, 0, 0.1);
+        // border-left: none;
+        // border-right: none;
+        // border-top: none;
+        // border-bottom:3px solid $error;
+        border-color:$error;
+        border-left-width:5px;
+      }
+    }
+
+    .wpcf7-form-control.wpcf7-textarea{
+      height: 167px;
+      resize: none;
+    }
+
+    .wpcf7-form-control.wpcf7-textarea, .mauticform-textarea{
+      resize: none;
+    }
+
+    //begin custom input styles
+    input[type='radio'],
+    input[type='checkbox']{
+      display:none; //hide by default
+      cursor:pointer; //make the cursor a pointer when over the items
+      &:focus,
+      &:active{
+        outline:none;  //remove the annoying outline
+      }
+     & + span{
+       cursor:pointer; 
+       display:inline-block;
+       position: relative;
+       padding-left:25px;
+       margin-right:10px;
+       color: darken(#444444, 20%);
+       &:before,
+       &:after{
+        content:'';
+        font-family: helvetica;
+        display:inline-block;
+        width:18px;
+        height:18px;      
+        left:0;
+        // bottom:0;
+        top:50%;
+        transform: translateY(-50%);
+        text-align:center;
+        position: absolute;
+        }
+       &:before{
+        background-color:transparent;
+        border: 1px solid $black;
+        border-radius: 3px;
+        transition :all .3s ease-in-out;
+       }
+       &:after{
+        color:#fff;
+        }
+      }
+      &:checked + span:before{
+        box-shadow :inset 0 0 0 10px $black;    
+      }
+    }
+
+    /*Radio Specific styles*/
+    input[type='radio']{
+      & + span:hover:after,
+      &:checked + span:after{
+         // @include elegant_font_icon();
+         content:'\f00c';
+          position:absolute;
+          // top: 0;
+          // top:50%;
+          transform: translate(5%,-40%);
+          // top: 6px;
+          font-size:15px;
+          // line-height:15px;
+      }
+       & + span:hover:after{
+        color:darken(#dddddd, 20%);  
+      }
+       &:checked + span:after,
+       &:checked + span:hover:after{
+        color:#fff;
+      }
+    }
+
+    /*Checkbox Specific styles*/
+    input[type='checkbox']{
+       & + span:before{
+        border-radius:3px; 
+      }
+      
+      & + span:hover:after,
+      &:checked + span:after{
+        content:"\f00c";
+        line-height:18px;
+        font-size:14px;
+      }
+      & + span:hover:after{
+        color:darken(#dddddd, 20%);  
+      }
+      &:checked + span:after,
+      &:checked + span:hover:after{
+        color:#fff;
+      }
+    }
+
+    /*Toggle Specific styles*/
+    input[type='checkbox']{
+     	&.toggle{
+	      display:inline-block;
+	      -webkit-appearance:none;
+	      -moz-appearance:none;
+	      appearance:none;
+	      width:55px;
+	      height:28px;
+	      background-color:#dddddd;
+	      position: relative;
+	      border-radius:30px;
+	      box-shadow:none;
+	      transition:all .2s ease-in-out;
+	      &:hover:after{
+	       background-color: darken(#dddddd, 20%);
+	      }
+	      &:after{      
+	        content:'';
+	        display:inline-block;
+	        position:absolute;
+	        width:24px;
+	        height:24px;
+	        background-color:darken(#dddddd, 30%);
+	        top:2px;
+	        left:2px;
+	        border-radius:50%;
+	        transition:all .2s ease-in-out;
+	      }
+	    }
+		  &:checked.toggle{
+		    box-shadow: inset 0 0 0 15px $black ;
+		    &:after{
+		      left:29px;
+		      background-color:#fff;
+		    }
+		  }
+  	}
+  }
+
+  div.wpcf7-response-output {
+    margin: 3em 0em 1em;
+    padding: 0.2em 1em;
+    font-size:14px !important;
+  }
+
+  //womer table
+  br{
+    display: none;
+  }
+  span.your-message{
+    display: block;
+  }
+
+	.wpcf7-response-output.wpcf7-validation-errors {
+	  color: $error;
+	  background-color: #FFBABA;
+	  border: 0;
+	  padding: 10px;
+	  font-size: 14px;
+	}
+	.wpcf7-response-output.wpcf7-mail-sent-ok {
+	  color: #4F8A10;
+	  background-color: #DFF2BF;
+	  border: 0;
+	  padding: 10px;
+	}
+	div.wpcf7-mail-sent-ok:before,div.wpcf7-validation-errors:before {
+	  font-size: 16px;
+	  font-line: 30px;
+	  font-family: 'FontAwesome';
+	  margin-right: 16px;
+	  vertical-align: baseline;
+	}
+	div.wpcf7-mail-sent-ok:before {
+	  content: '\f00c';
+	  font-weight: bold;
+	}
+	div.wpcf7-validation-errors:before {
+	  content: '\f00d';
+	  font-weight: bold;
+	}
+
+	.wpcf7 input{
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+	  text-align: left;
+	}
+
+	span.wpcf7-not-valid-tip, .mauticform-errormsg{
+	  font-size: 12px;
+	  margin-top: 5px;
+	  margin-bottom: 15px;
+	  color: $error;
+	  text-align: left;
+	}
+
+  .mauticform-has-error input.mauticform-input{
+      border-color:$error;
+    }
+
+}
+
+// .one_line_form{
+//   form.wpcf7-form{
+//     margin:auto;
+//     justify-content: center;
+//     @include tablet{
+//       flex-direction: column;
+//       align-items:center;
+//     }
+//     .form_group{
+//       display: inline-block;
+//       @include tablet{
+//         display: block;
+//       }
+//       input{
+//         &::-webkit-input-placeholder {
+//            color: #ffffff;
+//         }
+
+//         &:-moz-placeholder { /* Firefox 18- */
+//            color: #ffffff;  
+//         }
+
+//         &::-moz-placeholder {  /* Firefox 19+ */
+//            color: #ffffff;  
+//         }
+
+//         &:-ms-input-placeholder {  
+//            color: #ffffff;  
+//         }
+//       }
+//       .wpcf7-form-control.wpcf7-text{
+//         border-left: none;
+//         border-top: none;
+//         border-right: none;
+//         border-bottom: 1px solid #ffffff;
+//         max-width: 245px;
+//         text-align: center;
+//         color: #ffffff;
+//       }
+//       &.submit{
+//         @include min-tablet{
+//           margin-left: 30px;
+//         }
+//         .button{
+//           background-color: #ffffff;
+//           color: $accent_color;
+//           &:hover{
+//             background-color: #EDFAFD;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+.one_line_form{
+  form.wpcf7-form, .mauticform-page-wrapper{
+    // display: flex;
+    margin:auto;
+    justify-content: center;
+    @include tablet{
+      flex-direction: column;
+      align-items:center;
+    }
+    .form_group, .mauticform-row{
+      display: inline-block;
+      @include tablet{
+        display: block;
+      }
+      input{
+        &::-webkit-input-placeholder {
+           color: #ffffff;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+           color: #ffffff;  
+        }
+
+        &::-moz-placeholder {  /* Firefox 19+ */
+           color: #ffffff;  
+        }
+
+        &:-ms-input-placeholder {  
+           color: #ffffff;  
+        }
+      }
+      .wpcf7-form-control.wpcf7-text,.mauticform-input{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        max-width: 245px;
+        text-align: center;
+        color: #ffffff;
+      }
+      &.submit{
+        @include min-tablet{
+          margin-left: 30px;
+        }
+        .button{
+          background-color: #ffffff;
+          color: $accent_color;
+          &:hover{
+            background-color: #EDFAFD;
+          }
+        }
+      }
+       .mauticform-button{
+        @include min-tablet{
+          margin-left: 30px;
+        }
+        background-color: #ffffff;
+        color: $accent_color;
+        border:none;
+        border-radius:0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.67;
+        padding: 15px 25px;
+        &:hover{
+          background-color: #EDFAFD;
+        }
+      }
+    }
+  }
+  .mauticform-errormsg{
+    position:absolute;
+  }
+}
+
+.contact_form{
+  form.wpcf7-form, .mauticform-page-wrapper{
+    margin:auto;
+    // justify-content: center;
+    // @include tablet{
+    //   flex-direction: column;
+    //   align-items:center;
+    // }
+
+    display: block;
+    @include phone{
+      display: flex;
+      justify-content: center;
+        align-items: center;
+    }
+
+    .form_group, .mauticform-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      label{
+        margin-top: 10px;
+        align-self:flex-start;
+      }
+
+      span{
+        align-self:flex-end;
+      }
+
+      // @include tablet{
+      //   display: block;
+      // }      
+
+      @include phone{
+        flex-direction: column;
+        margin-bottom: 0;
+
+        span{
+          align-self:flex-start;
+        }
+      }
+
+      .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea, .mauticform-input, .mauticform-textarea{
+        border:none;
+        width: 180px !important;
+        // color: #ffffff;
+        -webkit-backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1.5px);
+        background-color: rgba(234, 234, 234, 0.57);
+        color: #000000;
+      }
+      .wpcf7-form-control.wpcf7-textarea, .mauticform-textarea{
+        height: 85px; 
+      }
+      &.submit{
+        .button{
+          width: 100%;
+          @include phone{
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .mauticform-button{
+        background-color: $accent_color;
+        color: #ffffff;
+        border:none;
+        border-radius:0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.67;
+        padding: 15px 25px;
+        width: 100%;
+        text-transform: uppercase;
+        &:hover{
+          background-color: #EDFAFD;
+        }
+      }
+    }
+  }
+}
+
+// .mauticform_wrapper{
+  .mauticform-input{
+    &::-webkit-input-placeholder {
+       color: rgba(255,255,255,0.5) !important;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */ 
+       color: rgba(255,255,255,0.5) !important;  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(255,255,255,0.5) !important;  
+    }
+
+    &:-ms-input-placeholder {  
+       color: rgba(255,255,255,0.5) !important;  
+    }
+  }
+// }
+  
+/* Like */
+
+.likebtn-wrapper.lb-style-custom{
+  .lb-like, .lb-dislike{
+    background-color: transparent;
+    border: none;
+  }
+}

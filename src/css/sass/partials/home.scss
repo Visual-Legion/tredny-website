@@ -1,0 +1,66 @@
+.home{
+	height: 100vh;
+	.section {
+    /* the important one*/
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    // width: 100vw;
+    height: 100vh;
+    padding-top:100px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    .content_wrapper{
+    	display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+    }
+
+    .title{
+    	margin-bottom: 42px;
+    }
+    .details{
+    	margin-bottom: 42px;
+    }
+    h1{
+    	white-space: nowrap;
+    }
+	}	
+
+	.view_top{
+		background-image: $view_top_background; 
+	}
+	.view_design{
+		// background-image: linear-gradient(143deg, #2ffef7, #2cfd30); 
+		background-image: $view_design_background;
+	}
+	.view_development{
+		// background-image: linear-gradient(123deg, #00ff75, #fcf40f);
+		// background-image: linear-gradient(123deg, #29FD2F, #29FD2F 50%, #fcf40f);
+		background-image: $view_development_background;
+	}
+	.view_seo{
+		// background-image: linear-gradient(139deg, #ffe954, #fc1d48);
+		background-image: $view_seo_background;
+	}
+	.view_extras{
+		background-image:$view_extras_background;
+	}
+	.view_startup{
+		// background-image: linear-gradient(134deg, #faaca8, #ddd6f3);
+		background-image:$view_startup_background;
+	}
+	.view_contact{
+		background-image:$view_contact_background;
+		h1,h2,h3,h4,h5,h6,p, .button{
+			color: #000000;
+		}
+		.button{
+			border-color: #000000;
+		}
+	}
+}
