@@ -177,9 +177,9 @@ function html5blank_header_scripts()
             wp_enqueue_script('tredny_scripts');
 
 
-            // wp_enqueue_script( 'contactform-script', get_template_directory_uri() . '/js/code/bundle.js', array('conditionizr','system','modernizr','jquery','jquery-ui','form-validator','pagepiling'),
+            // wp_enqueue_script( 'contact_form-script', get_template_directory_uri() . '/js/code/bundle.js', array('conditionizr','system','modernizr','jquery','jquery-ui','form-validator','pagepiling'),
             //     '1.0.6'); );    
-            // wp_localize_script( 'contactform-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+            // wp_localize_script( 'contact_form-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
         // If production
         } else {
@@ -632,14 +632,14 @@ remove_action('welcome_panel', 'wp_welcome_panel');
 
 /* Ajax contact form */
 
-function contactform_add_script() {
-// // wp_enqueue_script( 'contactform-script', get_template_directory_uri() . '/js/code/bundle.js', array('jquery') );    
-// wp_localize_script( 'contactform-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+function contact_form_add_script() {
+// // wp_enqueue_script( 'contact_form-script', get_template_directory_uri() . '/js/code/bundle.js', array('jquery') );    
+// wp_localize_script( 'contact_form-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 wp_localize_script( 'tredny_scripts', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
-add_action('wp_enqueue_scripts', 'contactform_add_script');
+add_action('wp_enqueue_scripts', 'contact_form_add_script');
 
-function ajax_contactform_action_callback() {
+function ajax_contact_form_action_callback() {
     $error = '';
     $status = 'error';
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
@@ -674,5 +674,5 @@ function ajax_contactform_action_callback() {
     echo json_encode($resp);
     die();
 }
-add_action( 'wp_ajax_contactform_action', 'ajax_contactform_action_callback' );
-add_action( 'wp_ajax_nopriv_contactform_action', 'ajax_contactform_action_callback' );
+add_action( 'wp_ajax_contact_form_action', 'ajax_contact_form_action_callback' );
+add_action( 'wp_ajax_nopriv_contact_form_action', 'ajax_contact_form_action_callback' );

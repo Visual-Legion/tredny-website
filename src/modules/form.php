@@ -1,31 +1,37 @@
 <?php ?>
 
 <div class="contact_form_wrapper">
-  <form id="contactform" action="<?php the_permalink(); ?>" method="post">
-	   <div>
+  <form class="contact_form" action="<?php the_permalink(); ?>" method="post">
+	   <div class="input_group">
+			<input type="text" name="name" size="30" tabindex="1" required="required"/>
+			<span class="highlight"></span>
+    	<span class="bar"></span>
 			<label for="name">Name</label>
-			<input type="text" name="name" id="name" size="30" tabindex="1" required="required"/>
 			<span class="error"></span>
 		</div>
-		<div>
+		<div class="input_group">
+			<input type="email" name="email" size="30" tabindex="2"  required="required"/>
+			<span class="highlight"></span>
+    	<span class="bar"></span>
 			<label for="email">Email address</label>
-			<input type="email" name="email" id="email" size="30" tabindex="2"  required="required"/>
 			<span class="error"></span>
 		</div>
-		<div>
+		<div class="input_group">
+			<textarea  name="message" tabindex="3" required="required"></textarea>
+			<span class="highlight"></span>
+    	<span class="bar textarea_bar"></span>
 			<label for="message">Message</label>
-			<textarea  name="message" id="message" tabindex="3" required="required"></textarea>
 			<span class="error"></span>
 		</div>
-		<!-- <div>
+		<!-- <div class="input_group">
 			<input data-validation="recaptcha" data-validation-recaptcha-sitekey="6LcC9mIUAAAAAJyyiuQ-DhBnlnpwAZR5mJT-cnUX">
 		</div> -->
-		<div>
-	    <input type="hidden" name="action" value="contactform_action" />
-			<?php echo wp_nonce_field('contactform_action', '_acf_nonce', true, false) ?>
-			<input type="button" class="button" value="Submit" id="contactbutton" tabindex="4" />
+		<div class="input_group">
+	    <input type="hidden" name="action" value="contact_form_action" />
+			<?php echo wp_nonce_field('contact_form_action', '_acf_nonce', true, false) ?>
+			<input type="button" class="button tdny_submit_contact_form" value="Send Message" tabindex="4" />
 		</div>
-	  <div id="contact-msg"></div>
+	  <div class="contact-msg"></div>
   </form>
 </div>
 

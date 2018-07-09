@@ -1,18 +1,81 @@
+$input_width : 300px;
+
 .contact_form_wrapper{
-	form#contactform{
+	display:flex;
+	justify-content:center;
+	form.contact_form{
 		color: $black;
-		input[type="text"],input[type="email"], textarea{
-			border-top:none;
-			border-left:none;
-			border-right:none;
-			border-bottom: 1px solid $black;
-			background: transparent;
-		}
-		input[type="button"]{
-			border: none;
-			color:#fff;
-  		background-image: linear-gradient(76deg, $black, #545454);
-  		width:100%;
+		width: $input_width;
+		.input_group{
+			position:relative;
+			margin-bottom:30px;
+			label{ 
+			  font-size:$body;
+			  position:absolute;
+			  pointer-events:none;
+			  left:5px;
+			  top:10px;
+			  transition:0.2s ease all; 
+			}
+			.bar  { 
+				position:relative; 
+				display:block; 
+				width:$input_width; 
+				&:before, &:after{
+				  content:'';
+				  height:2px; 
+				  width:0;
+				  bottom:1px; 
+				  position:absolute;
+				  background:#000; 
+				  transition:0.2s ease all; 
+				}
+				&.textarea_bar:before, &.textarea_bar:after{
+					bottom:3px; 
+				}
+				&:before {
+				  left:50%;
+				}
+				&:after {
+				  right:50%; 
+				}
+			}
+			input[type="text"],input[type="email"], textarea{
+				border-top:none;
+				border-left:none;
+				border-right:none;
+				border-bottom: 1px solid $black;
+				background: transparent;
+				width: $input_width;
+				&:focus ~ label, &.not_empty ~ label{
+				  top:-20px;
+				  font-size:$small;
+				  color:rgba(0,0,0,0.6);
+				}
+				&:focus ~ .bar:before, &:focus ~ .bar:after {
+				  width:50%;
+				}
+			}
+			input[type="text"],input[type="email"]{
+				height:40px;
+			}
+			textarea{
+				resize: none;
+				height: 4em;
+			  height: calc(1.6em*2 + 20px);
+			  line-height: 1.6em;
+			  padding-left: 5px;
+			  overflow: auto;
+			}
+			input[type="button"]{
+				border: none;
+				color:#fff;
+	  		background-image: linear-gradient(76deg, $black, #545454);
+	  		width:100%;
+			}
+			span.error{
+				font-size:$small;
+			}
 		}
 	}
 }

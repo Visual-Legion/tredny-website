@@ -128,6 +128,10 @@ body{
   line-height: 21px;
   margin: auto;
 
+  .error{
+    color:$error;
+  }
+
   section{
     transition: all 0.4s ease-in-out; 
   }
@@ -195,7 +199,7 @@ body{
 			font-size: 18px;
       font-weight: bold;
       display: inline-block;
-      text-transform: uppercase;
+      // text-transform: uppercase;
 			border: 2px solid #ffffff;
 			// transition: all 0.4s ease-in-out;
 			// &:hover{

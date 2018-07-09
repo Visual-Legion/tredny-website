@@ -12,13 +12,31 @@ $(() => {
     var form_error_msg = "Some fields have issues, please check the fields above.";
 
     var tdny_required_msg = "This field is required!";
+    var tdny_valid_email_msg = "This email is invalid!";
 
 
     //  ADD MAILCHIMP ? MAYBE NOT A FIRST AS WE DONT WANT TO ADD CHECKBOX SAYING WE'RE COLLECTING INFO
 
-    function validateEmail(email) {
+    function testEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
+    }
+
+    //could be better if we check for first time touched?
+    function validateEmail(element) {
+        if (!testEmail(element.val())) {
+            element.parent().find('.error').text(tdny_valid_email_msg);
+            return false;
+        } else {
+            element.parent().find('.error').text('');
+            return true;
+        }
+    }
+
+    //should adapt for particular form
+    function isEmailFieldCorrect() {
+        // console.log(validateEmail($('input[type=email]')));
+        return validateEmail($('input[type=email]'));
     }
 
     function isEmptyString(string) {
@@ -27,15 +45,19 @@ $(() => {
 
     function validateRequiredField(element) {
         if (isEmptyString(element.val())) {
-            console.log('this field is required!');
-            element.next().text(tdny_required_msg);
+            element.parent().find('.error').text(tdny_required_msg);
+            if (element.hasClass('not_empty')) {
+                element.removeClass('not_empty')
+            }
             return false;
         } else {
+            element.parent().find('.error').text('');
+            element.addClass('not_empty');
             return true;
         }
     }
 
-    function areRequiredFieldsEmpty() {
+    function areRequiredFieldsValid() {
         var required_fields = $('input[required=required],textarea[required=required]');
         var valid = true;
         Array.prototype.forEach.call(required_fields, element => {
@@ -43,12 +65,19 @@ $(() => {
                 valid = false;
             }
         });
+
+        // console.log('valid', valid);
+
         return valid;
     }
 
     //we're assuming there is only one form... we could adapt to find elements in given form
     function isFormValid() {
-        return areRequiredFieldsEmpty();
+
+        // console.log('areRequiredFieldsValid()', areRequiredFieldsValid());
+        // console.log('isEmailFieldCorrect();', isEmailFieldCorrect()); 
+
+        return areRequiredFieldsValid() && isEmailFieldCorrect();
     }
 
 
@@ -63,17 +92,22 @@ $(() => {
         }
 
         if (current_element.attr('type') == 'email') {
+            validateEmail(current_element)
         }
     });
 
-    $('#contactbutton').click(function() {
+    $('.tdny_submit_contact_form').click(function() {
         //  ADD BACK WHEN TESTING DONE
 
         if (!isFormValid()) {
-            $('#contact-msg').html(form_error_msg);
+            $('.contact-msg').html(form_error_msg);
+            $('.contact-msg').addClass('error')
             return false;
         } else {
-            $('#contact-msg').html('<img src="http://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
+            if ($('.contact-msg').hasClass('error')) {
+                $('.contact-msg').removeClass('error')
+            }
+            $('.contact-msg').html('<img src="http://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
             // $.ajax({
             //     type: "GET",
             //     url: 'http://apilayer.net/api/check',
@@ -88,33 +122,33 @@ $(() => {
             //     success: function(data, status_text) {
             //         if (data['format_valid' && !data['disposable']) {
             //             if (data['did_you_mean']) {
-            //                 $('#contact-msg').html('Error, did you mean <em>' + data['did_you_mean'] + '</em>?');
+            //                 $('.contact-msg').html('Error, did you mean <em>' + data['did_you_mean'] + '</em>?');
             //                 return false;
             //             } else if (!data['mx_found']) {
-            //                 $('#contact-msg').html('The entered mail address is invalid.');
+            //                 $('.contact-msg').html('The entered mail address is invalid.');
             //                 return false;
             //             } else {
             $.ajax({
                 type: 'POST',
                 url: ajax_object.ajax_url,
-                data: $('#contactform').serialize(),
+                data: $('.contact_form').serialize(),
                 dataType: 'json',
                 success: function(response) {
                     if (response.status == 'success') {
-                        $('#contactform')[0].reset();
+                        $('.contact_form')[0].reset();
                     }
-                    $('#contact-msg').html(response.errmessage);
+                    $('.contact-msg').html(response.errmessage);
                 }
             });
             // }
 
         //         } else {
-        //             $('#contact-msg').html('The entered mail address is invalid.');
+        //             $('.contact-msg').html('The entered mail address is invalid.');
         //             return false;
         //         }
         //     },
         //     error: function(request, status_text, error) {
-        //         $('#contact-msg').html('Error occurred, unable to validate your email address.');
+        //         $('.contact-msg').html('Error occurred, unable to validate your email address.');
         //         return false;
         //     }
         // });
