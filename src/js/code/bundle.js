@@ -249,19 +249,23 @@ $(() => {
 			menu: 'nav ul',
 			anchors: ['view_top', 'view_design', 'view_development', 'view_seo', 'view_extras', 'view_startup', 'view_contact'],
 			navigation: {
-				'textColor': '#000',
-				'bulletsColor': '#000',
-				'position': 'right',
-				'tooltips': ['Top', 'Design', 'Development', 'SEO', 'Extras', 'Startup', 'Contact']
+				'textColor': '#fff',
+				'bulletsColor': '#fff',
+				'position': 'left',
+			// 'tooltips': ['Top', 'Design', 'Development', 'SEO', 'Extras', 'Startup', 'Contact']
 			},
 			onLeave: function(index, nextIndex, direction) {
 				//fading out the text of the leaving section
-				$('.section').eq(index - 1).find('h1, p, .button').fadeOut(700, 'easeInQuart');
+				$('.section').eq(index - 1).find('h1, p, .button, input, textarea, label, span').fadeOut(700, 'easeInQuart');
 
 				//fading in the text of the destination (in case it was fadedOut)
-				$('.section').eq(nextIndex - 1).find('h1, p, .button').fadeIn(700, 'easeInQuart');
+				$('.section').eq(nextIndex - 1).find('h1, p, .button, input, textarea, label, span').fadeIn(700, 'easeInQuart');
 			}
 
+		});
+
+		$('.scroll_down').click(() => {
+			$.fn.pagepiling.moveSectionDown();
 		});
 
 		//pbly better way

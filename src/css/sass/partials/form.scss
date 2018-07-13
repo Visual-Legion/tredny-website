@@ -67,11 +67,46 @@ $input_width : 300px;
 			  padding-left: 5px;
 			  overflow: auto;
 			}
-			input[type="button"]{
-				border: none;
-				color:#fff;
-	  		background-image: linear-gradient(76deg, $black, #545454);
-	  		width:100%;
+
+
+			//maybe improve later, with multiple mixins for hover or not status
+			.contact_form_button_wrapper{
+				transition: background-position 0.4s;
+  			transition-timing-function: cubic-bezier(.19,1.72,.71,.47);
+  			// border: 2px solid;
+				// border-radius: 100px;
+				// background-image: linear-gradient(90deg, $black, #545454);
+				// padding: 2px;
+				.contact_form_button{
+		  		// background-image: linear-gradient(76deg, $black, #545454);
+		  		width:100%;
+					@include button_pill($border-color:'none', $text-color:$white, $text-color-hover:$white, $background-image:linear-gradient(90deg, $black, #545454 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)), $hover-effect:'load');
+					padding:12px 25px; //+2 to compensate border
+					border: 2px solid #545454;
+					// border-radius: 100px;
+					// border-image-source: linear-gradient(90deg, $black, #545454);
+					// border-image-slice: 1;
+					// padding:10px 25px;
+					pointer-events:none;
+    			display: inline-block;
+				}
+				&:hover,&:active{
+					.contact_form_button{
+						// padding:10px 25px;
+						// border: 2px solid $black;
+				    color: $black;
+				    background-position: 100%; 
+					}
+				}
+			}
+			
+			input[type="button"],input[type="submit"],button{
+	  		@include absolute-fill;
+		    -webkit-appearance: none;
+		    border:none;
+		    background-color:transparent;
+		    outline: none;
+		    font-size: 0;
 			}
 			span.error{
 				font-size:$small;
@@ -79,3 +114,32 @@ $input_width : 300px;
 		}
 	}
 }
+
+// .contact_form_button{
+//   .button{
+//     //ton style
+//     pointer-events:none;
+//     display: inline-block;
+//     //ton style
+//     &:after{
+//       //ton syle
+//     }
+//   }
+
+//   &:hover{
+//     .button{
+//       &:after{
+        
+//       }
+//     }
+//   }
+
+//   input[type="submit"],button{
+//     @include absolute-fill;
+//     -webkit-appearance: none;
+//     border:none;
+//     background-color:transparent;
+//     outline: none;
+//     font-size: 0;
+//   }
+// }

@@ -29,7 +29,11 @@
 		<div class="input_group">
 	    <input type="hidden" name="action" value="contact_form_action" />
 			<?php echo wp_nonce_field('contact_form_action', '_acf_nonce', true, false) ?>
-			<input type="button" class="button tdny_submit_contact_form" value="Send Message" tabindex="4" />
+			<div class="contact_form_button_wrapper">
+				<!-- <div class="btn_background"></div> -->
+				<div class="contact_form_button">Send Message</div>
+				<input type="button" class="button_form tdny_submit_contact_form" value="Send Message" tabindex="4" />
+			</div>
 		</div>
 	  <div class="contact-msg"></div>
   </form>

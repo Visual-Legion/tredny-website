@@ -3,6 +3,52 @@
  * ---
  */
 
+
+/* Button */
+@mixin button_pill($border-color:$white, $text-color:$black, $text-color-hover:$white, $background-image:$white, $background-image-hover:$black, $hover-effect:'load'){
+// background-color:transparent;$background-image
+background-image:$background-image;
+background-size: 200%;
+background-position: 200%;
+border-radius: 100px;
+padding: 10px 35px;
+color: $text-color;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+display: inline-block;
+
+@if $border-color == 'none'{
+    border:none;
+} @else {
+    border: 2px solid $border-color;
+}
+
+
+
+@if $hover-effect == 'load' {
+  
+  transition: background-position 0.6s;
+  transition-timing-function: cubic-bezier(.19,1.72,.71,.47);
+
+  &:hover,
+  &:active {
+    color: $text-color-hover;
+    background-position: 100%;
+  }
+// } @else if $other == double {
+
+} @else {
+  transition: all 0.4s ease-in-out;
+  &:hover,
+  &:active {
+    color: $text-color-hover;
+    background-image:$background-image-hover;
+  }
+}
+
+}
+
  /* Bottom arrow clip path */
 
 @mixin bottom-arrow-clip-semi-divi(){
