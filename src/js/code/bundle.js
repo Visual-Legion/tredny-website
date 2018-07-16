@@ -121,11 +121,14 @@ $(() => {
             //     dataType: "json",
             //     crossDomain: true,
             //     success: function(data, status_text) {
+            // maybe add txt for disposable
             //         if (data['format_valid' && !data['disposable']) {
             //             if (data['did_you_mean']) {
+            //$('.contact-msg').addClass('error')
             //                 $('.contact-msg').html('Error, did you mean <em>' + data['did_you_mean'] + '</em>?');
             //                 return false;
             //             } else if (!data['mx_found']) {
+            //$('.contact-msg').addClass('error')
             //                 $('.contact-msg').html('The entered mail address is invalid.');
             //                 return false;
             //             } else {
@@ -303,20 +306,37 @@ $(() => {
 		// console.log($('.navs_wrapper li a[href="/' + current_active_from_url[3] + '"]'));
 		}
 
-
-
 	}
 
+	// var top_imac_svg = $('.md-imac .md-screen svg');
+	var top_imac_svg_size = $('.md-imac .md-screen svg').height();
+	var top_imac_size = $('.md-imac .md-screen').height();
+	var top_imac_toScroll = top_imac_svg_size - top_imac_size;
 
+	// (function topImacScrollUpDownloop() {
 
+	// 	console.log('dqdqsdsqdqdqs');
 
-	/* Form button replacement */
-	if ($("form.wpcf7-form .button").length > 0) {
-		$("form.wpcf7-form .button").click(() => {
-			console.log("submitting");
-			$(this).closest("form").submit();
-		});
-	}
+	// 	$('.md-imac .md-screen svg').animate({
+
+	// 		step: (now, fx) => {
+	// 			console.log('$(this)', $(this));
+	// 			$(this).css('transform', 'translateY(-' + top_imac_size + ')');
+	// 		}
+	// 	}, { //.animate takes 2 args: direction, distance in px
+	// 		duration: 3000, //duration is ms 
+	// 		complete: function() {
+	// 			$('.md-imac .md-screen svg').animate({
+	// 				step: (now, fx) => {
+	// 					$(this).css('transform', 'translateY(0)');
+	// 				}
+	// 			}, {
+	// 				duration: 3000,
+	// 				complete: topImacScrollUpDownloop
+	// 			});
+	// 		}
+	// 	});
+	// })();
 
 	/*Show more events*/
 

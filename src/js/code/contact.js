@@ -120,11 +120,14 @@ $(() => {
             //     dataType: "json",
             //     crossDomain: true,
             //     success: function(data, status_text) {
+            // maybe add txt for disposable
             //         if (data['format_valid' && !data['disposable']) {
             //             if (data['did_you_mean']) {
+            //$('.contact-msg').addClass('error')
             //                 $('.contact-msg').html('Error, did you mean <em>' + data['did_you_mean'] + '</em>?');
             //                 return false;
             //             } else if (!data['mx_found']) {
+            //$('.contact-msg').addClass('error')
             //                 $('.contact-msg').html('The entered mail address is invalid.');
             //                 return false;
             //             } else {
