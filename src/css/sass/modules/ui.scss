@@ -90,11 +90,13 @@
   }
 }
 
-// .col-6,.col-8{
-//   @include divi{
-//     width: 100%;
-//   }
-// }
+.col-4,.col-8{
+  @include divi{
+    width: 100%;
+  }
+}
+
+
 // $wrapper-width: 1280px;
 // $gutter-width: 20px;
 // $column-width: 88px;
@@ -1143,6 +1145,11 @@ form.wpcf7-form, .mauticform_wrapper .mauticform-page-wrapper{
   .slide-up{
     transform:translate(0);
     opacity:1;
+    &.s-absolute{
+      @include divi{
+        transform:translateX(-50%);
+      }
+    }
   }
 }
 

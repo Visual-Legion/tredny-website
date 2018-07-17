@@ -133,11 +133,14 @@
 																								//     dataType: "json",
 																								//     crossDomain: true,
 																								//     success: function(data, status_text) {
+																								// maybe add txt for disposable
 																								//         if (data['format_valid' && !data['disposable']) {
 																								//             if (data['did_you_mean']) {
+																								//$('.contact-msg').addClass('error')
 																								//                 $('.contact-msg').html('Error, did you mean <em>' + data['did_you_mean'] + '</em>?');
 																								//                 return false;
 																								//             } else if (!data['mx_found']) {
+																								//$('.contact-msg').addClass('error')
 																								//                 $('.contact-msg').html('The entered mail address is invalid.');
 																								//                 return false;
 																								//             } else {
@@ -271,10 +274,16 @@
 																								onLeave: function onLeave(index, nextIndex, direction) {
 																												//fading out the text of the leaving section
 																												$('.section').eq(index - 1).find('h1, p, .button, input, textarea, label, span').fadeOut(700, 'easeInQuart');
+																												// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').removeClass('slid');
 
 																												//fading in the text of the destination (in case it was fadedOut)
 																												$('.section').eq(nextIndex - 1).find('h1, p, .button, input, textarea, label, span').fadeIn(700, 'easeInQuart');
+																												// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
 																								}
+
+																								// afterLoad: function(index, nextIndex, direction) {
+																								// 	$('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
+																								// }
 
 																				});
 
@@ -306,6 +315,8 @@
 																												$(element).attr('data-menuanchor', anchor);
 																								}
 																				});
+
+																				//if home slide in elements
 
 																				// console.log('list', list);
 																				// var url = window.location.href;

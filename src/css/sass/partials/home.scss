@@ -52,6 +52,11 @@
 	  width: 30px;
 	  height: auto;
 	  cursor:pointer;
+
+	  @include divi{
+	  	display: none;
+	  }
+
 	  .scroll {
 		  animation-name: scroll;
 		  animation-duration: 1.5s;
@@ -301,7 +306,8 @@ $mac_case_shadow : #F5F5F5;
 	    width: 512px;
     }
     @include divi{
-    	left: 140px;
+    	// left: 140px;
+    	left: 50%;
     }
 	}
 	.tredny-top-macbook-mockup{
@@ -317,7 +323,9 @@ $mac_case_shadow : #F5F5F5;
 	    width: 480px;
     }
     @include divi{
-    	left: 260px;
+    	// left: 260px;
+    	left: 75%;
+    	bottom: 0;
     }
 	}
 	.tredny-top-phone-mockup{
@@ -332,7 +340,9 @@ $mac_case_shadow : #F5F5F5;
 	    width: 90px;
     }
     @include divi{
-    	left: 240px;
+    	// left: 240px;
+    	left: 33%;
+    	bottom: 0;
     }
 	}
 	.tredny-top-tablet-mockup{
@@ -351,7 +361,10 @@ $mac_case_shadow : #F5F5F5;
 	    width: 200px;
     }
     @include divi{
-    	left: 120px;
+    	// left: 120px;
+    	left: 20%;
+	    top: initial;
+	    bottom: 10px;
     }
 	}
 	.tredny-web-design-imac{
@@ -365,22 +378,24 @@ $mac_case_shadow : #F5F5F5;
 	    width: 512px;
     }
     @include divi{
-    	left: 145px;
+    	// left: 145px;
+    	left: 50%;
     }
 	}
 	.tredny-web-development-macbook-code{
 		right: 0;
 		// right:-30px;
     bottom: 55px;
-    width: 440px;
+    width: 420px;
     z-index:2;
     @include macbook{
     	left: 200px;
 	    bottom: 55px;
-	    width: 440px;
     }
     @include divi{
-    	left: 300px;
+    	// left: 300px;
+    	left: 75%;
+    	bottom: 0;
     }
 	}
 	.tredny-web-design-tablet-mockup{
@@ -393,7 +408,9 @@ $mac_case_shadow : #F5F5F5;
 	    bottom: 45px;
     }
     @include divi{
-    	left: 150px;
+    	// left: 150px;
+    	left: 25%;
+    	bottom: 20px;
     }
 	}
 	.tredny-digital-marketing{
