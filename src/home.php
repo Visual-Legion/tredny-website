@@ -14,7 +14,7 @@
 		?>
 			<section  class="section view_top section-1">
 				<div class="content_wrapper">
-					<div class="left_content col-4">
+					<div class="left_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -28,24 +28,13 @@
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
-					<div class="right_content col-8" >
-
-						<div class="md-imac md-glare">
-					    <div class="md-body">
-					        <div class="md-top">
-					            <div class="md-camera"></div>
-					            <div class="md-screen">
-					            </div>
-					        </div>
-					    </div>
-
-					    <div class="md-base">
-					        <div class="md-stand"></div>
-					        <div class="md-foot"></div>
-					    </div>
+					<div class="right_content col-8 col-6" >
+						<div class="static-images-wrapper">
+							<img class="tredny-top-imac-mockup slide-down" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-imac-mockup.svg">
+							<img class="tredny-top-macbook-mockup slide-left" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-macbook-mockup.svg">
+							<img class="tredny-top-phone-mockup slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-phone-mockup.svg">
+							<img class="tredny-top-tablet-mockup slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-tablet-mockup.svg">
 						</div>
-
-
 					</div>
 				</div>
 				<svg class="mouse scroll_down" xmlns="..." viewBox="0 0 76 130">
@@ -64,7 +53,7 @@
 		?>
 			<section  class="section view_design section-2">
 				<div class="content_wrapper">
-					<div class="right_content col-4">
+					<div class="left_content col-8 col-6" >
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -78,6 +67,7 @@
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
+					<div class="right_content col-4 col-6"></div>
 				</div>
 			</section>
 		<?php endif; ?>
@@ -89,7 +79,7 @@
 		?>
 			<section  class="section view_development section-3">
 				<div class="content_wrapper">
-					<div class="left_content col-4">
+					<div class="left_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -103,7 +93,13 @@
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
-					<div class="right_content col-8" ></div>
+					<div class="right_content col-8 col-6" >
+						<div class="static-images-wrapper">
+							<img class="tredny-web-design-imac slide-down" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-design-imac.svg">
+							<img class="tredny-web-development-macbook-code slide-left" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-development-macbook-code.svg">
+							<img class="tredny-web-design-tablet-mockup slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-design-tablet-mockup.svg">
+						</div>
+					</div>
 				</div>
 			</section>
 		<?php endif; ?>
@@ -115,8 +111,12 @@
 		?>
 			<section  class="section view_seo section-4">
 				<div class="content_wrapper">
-					<div class="left_content col-8" ></div>
-					<div class="right_content col-4">
+					<div class="left_content col-8 col-6" >
+						<div class="static-images-wrapper">
+							<img class="tredny-digital-marketing slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-digital-marketing-white.svg">
+						</div>
+					</div>
+					<div class="right_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -141,7 +141,7 @@
 		?>
 			<section  class="section view_extras section-5">
 				<div class="content_wrapper">
-					<div class="left_content col-4">
+					<div class="left_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -155,7 +155,7 @@
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
-					<div class="right_content col-8" ></div>
+					<div class="right_content col-8 col-6" ></div>
 				</div>
 			</section>
 		<?php endif; ?>
@@ -167,8 +167,8 @@
 		?>
 			<section  class="section view_startup section-6">
 				<div class="content_wrapper">
-					<div class="left_content col-8" ></div>
-					<div class="right_content col-4">
+					<div class="left_content col-8 col-6" ></div>
+					<div class="right_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -193,7 +193,7 @@
 		?>
 			<section  class="section view_contact section-7">
 				<div class="content_wrapper">
-					<div class="left_content col-4">
+					<div class="left_content col-4 col-6">
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
 						</div>
@@ -207,7 +207,7 @@
 						<a class="button_black" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
-					<div class="right_content col-8" >
+					<div class="right_content col-8 col-6" >
 						<?php require_once "modules/form.php"; ?>
 					</div>
 				</div>

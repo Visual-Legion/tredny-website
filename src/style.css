@@ -2448,9 +2448,14 @@ span.avoidwrap {
 .no_margin_bottom {
   margin-bottom: 0 !important; }
 
-.content_wrapper {
-  width: 1200px;
-  text-align: center; }
+@media screen and (min-width: 1280px) {
+  .content_wrapper {
+    width: 1200px;
+    text-align: center; } }
+
+@media screen and (max-width: 1279px) {
+  .content_wrapper {
+    width: 100%; } }
 
 .columns-1 {
   width: 1200px; }
@@ -2527,6 +2532,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left; }
+    @media screen and (max-width: 980px) {
+      body h1, body h2, body h3, body h4, body h5, body h6, body p, body span, body a {
+        text-align: center; } }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Roboto Slab", serif;
     font-weight: 700; }
@@ -2727,157 +2735,157 @@ skew to change the 'thickness' of the glitch.*/ }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(96px, 9999px, 53px, 0);
-    transform: skew(0.81deg); }
+    clip: rect(70px, 9999px, 49px, 0);
+    transform: skew(0.84deg); }
   5% {
-    clip: rect(10px, 9999px, 91px, 0);
-    transform: skew(0.79deg); }
+    clip: rect(49px, 9999px, 54px, 0);
+    transform: skew(0.03deg); }
   10% {
-    clip: rect(76px, 9999px, 11px, 0);
-    transform: skew(0.11deg); }
-  15% {
-    clip: rect(21px, 9999px, 75px, 0);
-    transform: skew(0.64deg); }
-  20% {
-    clip: rect(92px, 9999px, 51px, 0);
-    transform: skew(0.87deg); }
-  25% {
-    clip: rect(94px, 9999px, 52px, 0);
-    transform: skew(0.88deg); }
-  30% {
-    clip: rect(37px, 9999px, 55px, 0);
+    clip: rect(24px, 9999px, 91px, 0);
     transform: skew(0.7deg); }
+  15% {
+    clip: rect(84px, 9999px, 78px, 0);
+    transform: skew(0.82deg); }
+  20% {
+    clip: rect(58px, 9999px, 67px, 0);
+    transform: skew(0.91deg); }
+  25% {
+    clip: rect(64px, 9999px, 59px, 0);
+    transform: skew(0.73deg); }
+  30% {
+    clip: rect(36px, 9999px, 75px, 0);
+    transform: skew(0.12deg); }
   35% {
-    clip: rect(46px, 9999px, 45px, 0);
-    transform: skew(0.77deg); }
+    clip: rect(83px, 9999px, 3px, 0);
+    transform: skew(0.15deg); }
   40% {
-    clip: rect(21px, 9999px, 18px, 0);
-    transform: skew(0.14deg); }
+    clip: rect(23px, 9999px, 49px, 0);
+    transform: skew(0.13deg); }
   45% {
-    clip: rect(55px, 9999px, 75px, 0);
-    transform: skew(0.81deg); }
+    clip: rect(95px, 9999px, 6px, 0);
+    transform: skew(0.04deg); }
   50% {
-    clip: rect(45px, 9999px, 42px, 0);
-    transform: skew(0.06deg); }
+    clip: rect(50px, 9999px, 52px, 0);
+    transform: skew(0.09deg); }
   55% {
-    clip: rect(37px, 9999px, 78px, 0);
-    transform: skew(0.68deg); }
+    clip: rect(22px, 9999px, 62px, 0);
+    transform: skew(0.75deg); }
   60% {
-    clip: rect(11px, 9999px, 87px, 0);
-    transform: skew(0.9deg); }
+    clip: rect(7px, 9999px, 84px, 0);
+    transform: skew(0.23deg); }
   65% {
-    clip: rect(76px, 9999px, 17px, 0);
-    transform: skew(0.71deg); }
+    clip: rect(81px, 9999px, 81px, 0);
+    transform: skew(0.78deg); }
   70% {
-    clip: rect(27px, 9999px, 21px, 0);
-    transform: skew(0.87deg); }
+    clip: rect(88px, 9999px, 24px, 0);
+    transform: skew(0.95deg); }
   75% {
-    clip: rect(62px, 9999px, 86px, 0);
-    transform: skew(1deg); }
+    clip: rect(90px, 9999px, 16px, 0);
+    transform: skew(0.13deg); }
   80% {
-    clip: rect(6px, 9999px, 50px, 0);
-    transform: skew(0.32deg); }
+    clip: rect(25px, 9999px, 66px, 0);
+    transform: skew(0.82deg); }
   85% {
-    clip: rect(76px, 9999px, 93px, 0);
-    transform: skew(0.74deg); }
+    clip: rect(97px, 9999px, 69px, 0);
+    transform: skew(0.99deg); }
   90% {
-    clip: rect(61px, 9999px, 74px, 0);
-    transform: skew(0.92deg); }
+    clip: rect(44px, 9999px, 49px, 0);
+    transform: skew(0.25deg); }
   95% {
-    clip: rect(50px, 9999px, 73px, 0);
-    transform: skew(0.79deg); }
+    clip: rect(26px, 9999px, 27px, 0);
+    transform: skew(0.98deg); }
   100% {
-    clip: rect(27px, 9999px, 56px, 0);
-    transform: skew(0.6deg); } }
+    clip: rect(16px, 9999px, 72px, 0);
+    transform: skew(0.92deg); } }
 
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(85px, 9999px, 56px, 0);
-    transform: skew(0.04deg); }
+    clip: rect(62px, 9999px, 39px, 0);
+    transform: skew(0.33deg); }
   5% {
-    clip: rect(58px, 9999px, 63px, 0);
-    transform: skew(0.58deg); }
+    clip: rect(73px, 9999px, 15px, 0);
+    transform: skew(0.1deg); }
   10% {
-    clip: rect(62px, 9999px, 11px, 0);
-    transform: skew(0.89deg); }
-  15% {
-    clip: rect(5px, 9999px, 43px, 0);
-    transform: skew(0.42deg); }
-  20% {
-    clip: rect(74px, 9999px, 42px, 0);
-    transform: skew(0.47deg); }
-  25% {
-    clip: rect(48px, 9999px, 59px, 0);
-    transform: skew(0.07deg); }
-  30% {
-    clip: rect(98px, 9999px, 44px, 0);
-    transform: skew(0.14deg); }
-  35% {
-    clip: rect(47px, 9999px, 74px, 0);
-    transform: skew(0.13deg); }
-  40% {
-    clip: rect(40px, 9999px, 78px, 0);
-    transform: skew(0.18deg); }
-  45% {
-    clip: rect(2px, 9999px, 83px, 0);
+    clip: rect(82px, 9999px, 44px, 0);
     transform: skew(0.21deg); }
+  15% {
+    clip: rect(35px, 9999px, 63px, 0);
+    transform: skew(0.96deg); }
+  20% {
+    clip: rect(81px, 9999px, 10px, 0);
+    transform: skew(0.71deg); }
+  25% {
+    clip: rect(32px, 9999px, 3px, 0);
+    transform: skew(0.84deg); }
+  30% {
+    clip: rect(95px, 9999px, 50px, 0);
+    transform: skew(0.81deg); }
+  35% {
+    clip: rect(73px, 9999px, 78px, 0);
+    transform: skew(0.74deg); }
+  40% {
+    clip: rect(92px, 9999px, 68px, 0);
+    transform: skew(0.42deg); }
+  45% {
+    clip: rect(79px, 9999px, 10px, 0);
+    transform: skew(0.93deg); }
   50% {
-    clip: rect(55px, 9999px, 59px, 0);
-    transform: skew(0.36deg); }
+    clip: rect(42px, 9999px, 35px, 0);
+    transform: skew(0.33deg); }
   55% {
-    clip: rect(86px, 9999px, 88px, 0);
-    transform: skew(0.07deg); }
+    clip: rect(65px, 9999px, 9px, 0);
+    transform: skew(0.87deg); }
   60% {
-    clip: rect(31px, 9999px, 16px, 0);
-    transform: skew(0.01deg); }
+    clip: rect(38px, 9999px, 79px, 0);
+    transform: skew(0.23deg); }
   65% {
-    clip: rect(26px, 9999px, 99px, 0);
-    transform: skew(0.13deg); }
+    clip: rect(80px, 9999px, 67px, 0);
+    transform: skew(0.69deg); }
   70% {
-    clip: rect(49px, 9999px, 62px, 0);
-    transform: skew(0.72deg); }
+    clip: rect(47px, 9999px, 13px, 0);
+    transform: skew(0.56deg); }
   75% {
-    clip: rect(38px, 9999px, 78px, 0);
-    transform: skew(0.24deg); }
+    clip: rect(33px, 9999px, 57px, 0);
+    transform: skew(0.89deg); }
   80% {
-    clip: rect(2px, 9999px, 80px, 0);
-    transform: skew(0.9deg); }
+    clip: rect(66px, 9999px, 27px, 0);
+    transform: skew(0.44deg); }
   85% {
-    clip: rect(75px, 9999px, 88px, 0);
-    transform: skew(0.57deg); }
+    clip: rect(29px, 9999px, 72px, 0);
+    transform: skew(0.64deg); }
   90% {
-    clip: rect(42px, 9999px, 73px, 0);
-    transform: skew(0.47deg); }
+    clip: rect(27px, 9999px, 14px, 0);
+    transform: skew(0.86deg); }
   95% {
-    clip: rect(96px, 9999px, 27px, 0);
-    transform: skew(0.19deg); }
+    clip: rect(66px, 9999px, 93px, 0);
+    transform: skew(0.39deg); }
   100% {
-    clip: rect(34px, 9999px, 84px, 0);
-    transform: skew(0.57deg); } }
+    clip: rect(64px, 9999px, 97px, 0);
+    transform: skew(0.87deg); } }
 
 @keyframes glitch-skew {
   0% {
-    transform: skew(0deg); }
-  10% {
-    transform: skew(-4deg); }
-  20% {
-    transform: skew(5deg); }
-  30% {
-    transform: skew(2deg); }
-  40% {
-    transform: skew(0deg); }
-  50% {
     transform: skew(-2deg); }
-  60% {
+  10% {
+    transform: skew(5deg); }
+  20% {
+    transform: skew(-3deg); }
+  30% {
     transform: skew(0deg); }
-  70% {
-    transform: skew(-1deg); }
-  80% {
-    transform: skew(0deg); }
-  90% {
+  40% {
+    transform: skew(-3deg); }
+  50% {
     transform: skew(3deg); }
+  60% {
+    transform: skew(-1deg); }
+  70% {
+    transform: skew(-4deg); }
+  80% {
+    transform: skew(-3deg); }
+  90% {
+    transform: skew(5deg); }
   100% {
-    transform: skew(-1deg); } }
+    transform: skew(-4deg); } }
 
 /* Contact 7 Forms
 --------------------------------------------- */
@@ -3306,6 +3314,36 @@ form.wpcf7-form, .mauticform_wrapper .mauticform-page-wrapper {
 .likebtn-wrapper.lb-style-custom .lb-like, .likebtn-wrapper.lb-style-custom .lb-dislike {
   background-color: transparent;
   border: none; }
+
+.slide-down,
+.slide-left,
+.slide-right,
+.slide-up {
+  transition: all 1s ease-in-out;
+  transition-delay: 0.5s; }
+
+.active .slide-down,
+.active .slide-left,
+.active .slide-right,
+.active .slide-up {
+  transform: translate(0);
+  opacity: 1; }
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-1000%); }
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(1000%); }
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-1000%); }
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(1000%); }
 
 /**
  * partials/reset
@@ -3996,6 +4034,11 @@ section, .footer_wrapper {
           justify-content: space-between;
       -ms-flex-align: center;
           align-items: center; }
+      @media screen and (max-width: 980px) {
+        .home .section .content_wrapper {
+          -ms-flex-direction: column;
+              flex-direction: column;
+          text-align: center; } }
     .home .section .title {
       margin-bottom: 42px; }
     .home .section .details {
@@ -4073,21 +4116,7 @@ section, .footer_wrapper {
   overflow: hidden;
   background: url(http://tredny.local/wp-content/uploads/2018/07/tredny-imac-mockup.svg);
   background-size: 100%;
-  background-position: 100% 0%;
-  animation-name: scroll-top-imac;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 20.5px;
-  will-change: transform; }
-
-@keyframes scroll-top-imac {
-  0% {
-    background-position: 100% 0%; }
-  50% {
-    background-position: 100% 100%; }
-  100% {
-    background-position: 100% 0%; } }
+  background-position: 100% 0%; }
 
 .md-imac .md-screen img {
   width: 100%; }
@@ -4144,6 +4173,120 @@ section, .footer_wrapper {
   right: 0;
   border-radius: 0 1.25em 0 0;
   background: linear-gradient(48deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08)); }
+
+/* Static assets*/
+.static-images-wrapper {
+  position: relative;
+  text-align: center;
+  min-height: 500px; }
+  .static-images-wrapper .tredny-top-imac-mockup,
+  .static-images-wrapper .tredny-top-macbook-mockup,
+  .static-images-wrapper .tredny-top-phone-mockup,
+  .static-images-wrapper .tredny-top-tablet-mockup,
+  .static-images-wrapper .tredny-web-design-imac,
+  .static-images-wrapper .tredny-web-development-macbook-code,
+  .static-images-wrapper .tredny-web-design-tablet-mockup {
+    position: absolute; }
+  @media screen and (max-width: 1279px) {
+    .static-images-wrapper .tredny-top-imac-mockup,
+    .static-images-wrapper .tredny-top-macbook-mockup,
+    .static-images-wrapper .tredny-top-phone-mockup,
+    .static-images-wrapper .tredny-top-tablet-mockup,
+    .static-images-wrapper .tredny-web-design-imac,
+    .static-images-wrapper .tredny-web-development-macbook-code,
+    .static-images-wrapper .tredny-web-design-tablet-mockup {
+      transform: scale(0.6); } }
+  .static-images-wrapper .tredny-top-imac-mockup {
+    top: 0;
+    left: 120px;
+    width: 512px; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-top-imac-mockup {
+        top: 50px;
+        left: 60px;
+        width: 512px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-top-imac-mockup {
+        left: 140px; } }
+  .static-images-wrapper .tredny-top-macbook-mockup {
+    left: 300px;
+    bottom: 55px;
+    width: 480px;
+    z-index: 2; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-top-macbook-mockup {
+        left: 200px;
+        bottom: 50px;
+        width: 480px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-top-macbook-mockup {
+        left: 260px; } }
+  .static-images-wrapper .tredny-top-phone-mockup {
+    left: 180px;
+    bottom: 46px;
+    width: 90px;
+    z-index: 4; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-top-phone-mockup {
+        left: 180px;
+        bottom: 55px;
+        width: 90px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-top-phone-mockup {
+        left: 240px; } }
+  .static-images-wrapper .tredny-top-tablet-mockup {
+    left: 40px;
+    top: 180px;
+    width: 180px;
+    z-index: 3; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-top-tablet-mockup {
+        left: 60px;
+        top: 155px;
+        width: 200px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-top-tablet-mockup {
+        left: 120px; } }
+  .static-images-wrapper .tredny-web-design-imac {
+    top: 0;
+    left: 120px;
+    width: 512px;
+    z-index: 1; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-web-design-imac {
+        top: 50px;
+        left: 30px;
+        width: 512px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-web-design-imac {
+        left: 145px; } }
+  .static-images-wrapper .tredny-web-development-macbook-code {
+    right: 0;
+    bottom: 55px;
+    width: 440px;
+    z-index: 2; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-web-development-macbook-code {
+        left: 200px;
+        bottom: 55px;
+        width: 440px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-web-development-macbook-code {
+        left: 300px; } }
+  .static-images-wrapper .tredny-web-design-tablet-mockup {
+    width: 280px;
+    z-index: 3;
+    left: 80px;
+    bottom: 80px; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-web-design-tablet-mockup {
+        left: 50px;
+        bottom: 45px; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-web-design-tablet-mockup {
+        left: 150px; } }
+  .static-images-wrapper .tredny-digital-marketing {
+    width: 500px; }
 
 .contact_section {
   display: -ms-flexbox;

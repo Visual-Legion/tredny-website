@@ -27,6 +27,10 @@
     	display: flex;
 	    justify-content: space-between;
 	    align-items: center;
+	    @include divi{
+	    	flex-direction:column;
+	    	text-align:center;
+	    }
     }
 
     .title{
@@ -141,25 +145,25 @@ $mac_case_shadow : #F5F5F5;
   background-size: 100%;
   background-position: 100% 0%;
 
-  animation-name: scroll-top-imac;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 20.5px;
-  will-change: transform;
+  // animation-name: scroll-top-imac;
+  // animation-duration: 5s;
+  // animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+  // transform-origin: 50% 20.5px;
+  // will-change: transform;
 }
 
-@keyframes scroll-top-imac {
-	  0% {
-	      background-position: 100% 0%;
-	  }
-	  50% {
-	      background-position: 100% 100%;
-	  }
-	  100% {
-	      background-position: 100% 0%;
-	  }
-	}
+// @keyframes scroll-top-imac {
+// 	  0% {
+// 	      background-position: 100% 0%;
+// 	  }
+// 	  50% {
+// 	      background-position: 100% 100%;
+// 	  }
+// 	  100% {
+// 	      background-position: 100% 0%;
+// 	  }
+// 	}
 
 .md-imac .md-screen img {
   width: 100%;
@@ -256,4 +260,143 @@ $mac_case_shadow : #F5F5F5;
   background: -moz-linear-gradient(42deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
   background: -o-linear-gradient(42deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
   background: linear-gradient(48deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+}
+
+
+/* Static assets*/
+.static-images-wrapper{
+	position:relative;
+	text-align:center;
+	// @include min-divi{
+	// 	min-height:500px;
+	// }
+	min-height:500px;
+	.tredny-top-imac-mockup,
+	.tredny-top-macbook-mockup,
+	.tredny-top-phone-mockup,
+	.tredny-top-tablet-mockup,
+	.tredny-web-design-imac,
+	.tredny-web-development-macbook-code,
+	.tredny-web-design-tablet-mockup{
+		position:absolute;
+	}
+	.tredny-top-imac-mockup,
+	.tredny-top-macbook-mockup,
+	.tredny-top-phone-mockup,
+	.tredny-top-tablet-mockup,
+	.tredny-web-design-imac,
+	.tredny-web-development-macbook-code,
+	.tredny-web-design-tablet-mockup{
+		@include macbook{
+			transform: scale(0.6);
+		}
+	}
+	.tredny-top-imac-mockup{ 
+		top: 0;
+    left: 120px;
+    width: 512px;
+    @include macbook{
+    	top: 50px;
+	    left: 60px;
+	    width: 512px;
+    }
+    @include divi{
+    	left: 140px;
+    }
+	}
+	.tredny-top-macbook-mockup{
+		// right: 0;
+		// right:-30px;
+		left:300px;
+    bottom: 55px;
+    width: 480px;
+    z-index:2;
+    @include macbook{
+    	left: 200px;
+	    bottom: 50px;
+	    width: 480px;
+    }
+    @include divi{
+    	left: 260px;
+    }
+	}
+	.tredny-top-phone-mockup{
+		// left: 162px;
+		left:180px;
+    bottom: 46px;
+    width: 90px;
+    z-index:4;
+    @include macbook{
+    	left: 180px;
+	    bottom: 55px;
+	    width: 90px;
+    }
+    @include divi{
+    	left: 240px;
+    }
+	}
+	.tredny-top-tablet-mockup{
+		// left: 0;
+		// left:40px;
+  //   top: 120px;
+  //   width: 220px;
+  //   z-index:3;
+  	left: 40px;
+    top: 180px;
+    width: 180px;
+    z-index: 3;
+    @include macbook{
+    	left: 60px;
+	    top: 155px;
+	    width: 200px;
+    }
+    @include divi{
+    	left: 120px;
+    }
+	}
+	.tredny-web-design-imac{
+		top: 0;
+    left: 120px;
+    width: 512px;
+    z-index: 1;
+    @include macbook{
+    	top: 50px;
+	    left: 30px;
+	    width: 512px;
+    }
+    @include divi{
+    	left: 145px;
+    }
+	}
+	.tredny-web-development-macbook-code{
+		right: 0;
+		// right:-30px;
+    bottom: 55px;
+    width: 440px;
+    z-index:2;
+    @include macbook{
+    	left: 200px;
+	    bottom: 55px;
+	    width: 440px;
+    }
+    @include divi{
+    	left: 300px;
+    }
+	}
+	.tredny-web-design-tablet-mockup{
+		width: 280px;
+    z-index: 3;
+    left: 80px;
+    bottom: 80px;
+    @include macbook{
+	    left: 50px;
+	    bottom: 45px;
+    }
+    @include divi{
+    	left: 150px;
+    }
+	}
+	.tredny-digital-marketing{
+		width: 500px;
+	}
 }
