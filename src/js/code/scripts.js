@@ -20,14 +20,15 @@ $(() => {
 
 	/* Hamburger menu */
 	var hamburger = $("#hamburger-icon");
-	hamburger.click(() => {
+	hamburger.click((e) => {
+		e.preventDefault();
 		hamburger.toggleClass("active");
 		$(".navs_wrapper nav").toggleClass("tablet_menu_active");
 	// return false;
 	});
 
 	/* Pagepiling */
-	if ($('#pagepiling')) {
+	if ($('#pagepiling') && matchMedia('only screen and (min-width: 768px)').matches) {
 		$('#pagepiling').pagepiling({
 			verticalCentered: false,
 			css3: false,

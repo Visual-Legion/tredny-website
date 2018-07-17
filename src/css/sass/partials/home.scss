@@ -1,32 +1,115 @@
+@include ipad{
+	html,body{
+		overflow:scroll;
+	}
+}
 .home{
-	height: 100vh;
+	@include min-ipad{
+		height: 100vh;
+	}
+	// @include tablet{
+	// 	height: 100%;
+	// 	// overflow:scroll-y;
+	// }
 
 	#pp-nav li .active span, .pp-slidesNav .active span{
 		background-color: #ffffff;
 	}
 
-	.pp-tool-tip{
-		color:red !important;
+	#pp-nav li a.active {
+		span{
+			&:after{
+				content:'';
+		    position: absolute;
+		    width: 10px;
+		    height: 10px;
+		    // top: 50%;
+		    // left: 50%;
+		    // transform: translate(-50%,-50%);
+		    top: -2px;
+    		left: -2px;
+		    border: 1px solid white;
+		    border-radius: 100%;
+		    animation-name: circle_beat;
+			  animation-duration: 1.5s;
+			  // animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+			  animation-timing-function: ease-in-out;
+			  animation-iteration-count: infinite;
+			  will-change: transform;
+			}
+		}
 	}
 
+	@keyframes circle_beat {
+	  0%{
+		transform: scale(1);
+	  }
+	  50%{
+		transform: scale(1.5);
+	  }
+	  100% { 
+	  transform: scale(1);
+	  }
+	}
+
+	// .pp-tool-tip{
+	// 	color:red !important;
+	// }
+
 	.section {
-    /* the important one*/
     background-attachment: fixed; 
     background-size: 100% 100%;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    // width: 100vw;
-    height: 100vh;
-    padding-top:100px;
 
     display:flex;
     justify-content: center;
     align-items: center;
 
+    @include divi{
+    	&:nth-child(2n){
+	    	.content_wrapper{
+	    		flex-direction: column-reverse;
+	    	}
+	    }
+    }
+
+    @include min-ipad{
+			height: 100vh;
+			padding-top:100px;
+		}
+
+		@include ipad{
+			// padding-top: 84px;
+   //  	padding-bottom: 84px;
+   		// padding-top: $def_spacing*3/2;
+    	padding-bottom: $def_spacing*3/2;
+    	padding-left: $def_spacing;
+    	padding-right: $def_spacing;
+
+    	padding-top: 80px;
+    	// padding-top:143px;
+    	padding-bottom:143px;
+    	margin-top: -80px;
+
+    	&:first-child{
+				padding-top:143px;
+				margin-top: 0;
+			}
+
+		} 
+
+		@include phone{
+			// padding: $def_spacing $def_spacing/2;
+			padding: $def_spacing $def_spacing/2 143px;	
+		}
+
+
     .content_wrapper{
     	display: flex;
 	    justify-content: space-between;
 	    align-items: center;
+
 	    @include divi{
 	    	flex-direction:column;
 	    	text-align:center;
@@ -34,10 +117,10 @@
     }
 
     .title{
-    	margin-bottom: 42px;
+    	margin-bottom: $def_spacing;
     }
     .details{
-    	margin-bottom: 42px;
+    	margin-bottom: $def_spacing;
     }
     h1{
     	white-space: nowrap;
@@ -276,13 +359,39 @@ $mac_case_shadow : #F5F5F5;
 	// 	min-height:500px;
 	// }
 	min-height:500px;
+
+	@include ipad{
+   	min-height: 0;
+  }
+
+ .big-wrapper{
+		@include min-ipad{
+			display:block;
+		}
+		@include ipad{
+			display:none;
+		}
+	}
+
+	.small-wrapper{
+		// margin-top:$def_spacing;
+		margin-top: $def_spacing*3/2;
+		@include min-ipad{
+			display:none;
+		}
+		@include ipad{
+			display:block;
+		}
+	}
+
 	.tredny-top-imac-mockup,
 	.tredny-top-macbook-mockup,
 	.tredny-top-phone-mockup,
 	.tredny-top-tablet-mockup,
 	.tredny-web-design-imac,
 	.tredny-web-development-macbook-code,
-	.tredny-web-design-tablet-mockup{
+	.tredny-web-design-tablet-mockup,
+	.xtra-icon{
 		position:absolute;
 	}
 	.tredny-top-imac-mockup,
@@ -298,11 +407,13 @@ $mac_case_shadow : #F5F5F5;
 	}
 	.tredny-top-imac-mockup{ 
 		top: 0;
-    left: 120px;
+    // left: 120px;
+    left: 80px;
     width: 512px;
     @include macbook{
     	top: 50px;
-	    left: 60px;
+	    // left: 60px;
+	    left: 20px;
 	    width: 512px;
     }
     @include divi{
@@ -313,12 +424,14 @@ $mac_case_shadow : #F5F5F5;
 	.tredny-top-macbook-mockup{
 		// right: 0;
 		// right:-30px;
-		left:300px;
+		// left:300px;
+		left: 260px;
     bottom: 55px;
     width: 480px;
     z-index:2;
     @include macbook{
-    	left: 200px;
+    	// left: 200px;
+    	left: 160px;
 	    bottom: 50px;
 	    width: 480px;
     }
@@ -330,12 +443,14 @@ $mac_case_shadow : #F5F5F5;
 	}
 	.tredny-top-phone-mockup{
 		// left: 162px;
-		left:180px;
+		// left:180px;
+		left: 140px;
     bottom: 46px;
     width: 90px;
     z-index:4;
     @include macbook{
-    	left: 180px;
+    	// left: 180px;
+    	left: 140px;
 	    bottom: 55px;
 	    width: 90px;
     }
@@ -351,12 +466,14 @@ $mac_case_shadow : #F5F5F5;
   //   top: 120px;
   //   width: 220px;
   //   z-index:3;
-  	left: 40px;
+  	// left: 40px;
+  	left: 0;
     top: 180px;
     width: 180px;
     z-index: 3;
     @include macbook{
-    	left: 60px;
+    	// left: 60px;
+    	left: 20px;
 	    top: 155px;
 	    width: 200px;
     }
@@ -369,12 +486,14 @@ $mac_case_shadow : #F5F5F5;
 	}
 	.tredny-web-design-imac{
 		top: 0;
-    left: 120px;
+    // left: 120px;
+    left: 70px;
     width: 512px;
     z-index: 1;
     @include macbook{
     	top: 50px;
-	    left: 30px;
+	    // left: 30px;
+	    left:0;
 	    width: 512px;
     }
     @include divi{
@@ -383,13 +502,13 @@ $mac_case_shadow : #F5F5F5;
     }
 	}
 	.tredny-web-development-macbook-code{
-		right: 0;
+		// right: 0;
 		// right:-30px;
     bottom: 55px;
     width: 420px;
     z-index:2;
     @include macbook{
-    	left: 200px;
+    	left: 150px;
 	    bottom: 55px;
     }
     @include divi{
@@ -401,10 +520,10 @@ $mac_case_shadow : #F5F5F5;
 	.tredny-web-design-tablet-mockup{
 		width: 280px;
     z-index: 3;
-    left: 80px;
+    left: 30px;
     bottom: 80px;
     @include macbook{
-	    left: 50px;
+	    left: 0px;
 	    bottom: 45px;
     }
     @include divi{
@@ -414,6 +533,119 @@ $mac_case_shadow : #F5F5F5;
     }
 	}
 	.tredny-digital-marketing{
-		width: 500px;
+		// width: 500px;
+		width: 450px;
+		// padding-top: 63px;
+		margin-top: 63px;
+		@include divi{
+			// padding-top: 42px;
+			margin-top: 42px;
+		}
+	}
+	.xtra-icon{
+		width: 128px;
+		top:initial;
+		left:initial;
 	}
 }
+
+.active .static-images-wrapper{
+	.tredny-flyers-icon{
+		// top:35%;
+		// left:50%;
+		transform:translate(-50%,50%);
+	}
+	.tredny-camera-icon{
+		// top:50%;
+		// left:35%;
+		transform:translate(-150%,150%);
+	}
+	.tredny-cart-ecommerce-icon{
+		// top:50%;
+		// left:65%;
+		transform:translate(50%,150%);
+	}
+	.tredny-tools-maintenance-icon{
+		// top:65%;
+		// left:50%;
+		transform:translate(-50%,250%);
+	}
+}
+
+// .drop_wrapper{
+  
+//   position:fixed;
+//   text-align:center;
+//   width: 2Px;
+//   height: 10px;
+//   z-index: 10000;
+//   top:50%;
+  
+//   .drop{
+//     position:absolute;
+//     z-index: 2222;
+//     width: 1px;
+//     height: 20px;
+//     left:50%;
+    
+//     animation-name: up-down;
+//     animation-duration: 4s;
+//     animation-iteration-count: infinite;
+
+//     &.one{
+//     	&.white{
+//     		background-color:rgba(255, 255, 255, 1);
+//     	}
+//     	// &.blue{
+//     	// 	background-color:#619BBD;
+//     	// }
+//     }
+    
+//     &.two{
+//       &.white{
+//       	background-color:rgba(255,255,255, 0.8);
+//       }
+//       // &.blue{
+//       // 	background-color:#65A4C9;
+//       // }
+//       animation-delay:0.1s;
+//     }
+    
+//     &.three{
+//       &.white{
+//       	background-color:rgba(255,255,255, 0.6);
+//       }
+//       // &.blue{
+//       // 	background-color:#6CAFD2;
+//       // }
+//       animation-delay:0.2s;
+//     }
+    
+//     &.four{
+//       &.white{
+//       	background-color:rgba(255,255,255, 0.4);
+//       }
+//       // &.blue{
+//       // 	background-color:#7AC3E6;
+//       // }
+//       animation-delay:0.3s;
+//     }
+    
+//     &.five{
+//       &.white{
+//       	background-color:rgba(255,255,255, 0.2);
+//       }
+//       // &.blue{
+//       // 	background-color:#84cdee;
+//       // }
+//       animation-delay:0.4s;
+//     }
+    
+//   }
+// }
+
+// @keyframes up-down {
+//     0%   { top:0px;}
+//     50%  { top:50px;}
+//     100% {top:0px;}
+// }

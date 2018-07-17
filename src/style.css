@@ -2516,7 +2516,7 @@ span.avoidwrap {
   margin-left: 15px; }
 
 @media screen and (max-width: 980px) {
-  .col-4, .col-8 {
+  .col-4, .col-8, .col-6 {
     width: 100%; } }
 
 html {
@@ -2545,6 +2545,10 @@ body {
   body h1, body h1 span {
     font-size: 68px;
     line-height: 84px; }
+    @media screen and (max-width: 480px) {
+      body h1, body h1 span {
+        font-size: 42px;
+        line-height: 42px; } }
   body h2, body h2 span {
     font-size: 42px;
     line-height: 42px; }
@@ -2739,157 +2743,157 @@ skew to change the 'thickness' of the glitch.*/ }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(44px, 9999px, 7px, 0);
-    transform: skew(0.74deg); }
+    clip: rect(13px, 9999px, 95px, 0);
+    transform: skew(0.6deg); }
   5% {
-    clip: rect(52px, 9999px, 34px, 0);
-    transform: skew(0.62deg); }
-  10% {
-    clip: rect(44px, 9999px, 76px, 0);
-    transform: skew(0.31deg); }
-  15% {
-    clip: rect(7px, 9999px, 78px, 0);
-    transform: skew(0.27deg); }
-  20% {
-    clip: rect(34px, 9999px, 48px, 0);
-    transform: skew(0.97deg); }
-  25% {
-    clip: rect(75px, 9999px, 96px, 0);
-    transform: skew(0.58deg); }
-  30% {
-    clip: rect(64px, 9999px, 15px, 0);
-    transform: skew(0.02deg); }
-  35% {
-    clip: rect(90px, 9999px, 44px, 0);
-    transform: skew(0.17deg); }
-  40% {
-    clip: rect(77px, 9999px, 3px, 0);
-    transform: skew(0.85deg); }
-  45% {
-    clip: rect(94px, 9999px, 63px, 0);
-    transform: skew(0.57deg); }
-  50% {
-    clip: rect(62px, 9999px, 11px, 0);
-    transform: skew(0.07deg); }
-  55% {
-    clip: rect(96px, 9999px, 48px, 0);
+    clip: rect(65px, 9999px, 8px, 0);
     transform: skew(0.42deg); }
+  10% {
+    clip: rect(93px, 9999px, 27px, 0);
+    transform: skew(0.57deg); }
+  15% {
+    clip: rect(94px, 9999px, 57px, 0);
+    transform: skew(0.13deg); }
+  20% {
+    clip: rect(8px, 9999px, 43px, 0);
+    transform: skew(0.53deg); }
+  25% {
+    clip: rect(97px, 9999px, 87px, 0);
+    transform: skew(0.29deg); }
+  30% {
+    clip: rect(47px, 9999px, 85px, 0);
+    transform: skew(0.47deg); }
+  35% {
+    clip: rect(81px, 9999px, 9px, 0);
+    transform: skew(0.28deg); }
+  40% {
+    clip: rect(28px, 9999px, 84px, 0);
+    transform: skew(0.29deg); }
+  45% {
+    clip: rect(94px, 9999px, 26px, 0);
+    transform: skew(0.5deg); }
+  50% {
+    clip: rect(56px, 9999px, 79px, 0);
+    transform: skew(0.67deg); }
+  55% {
+    clip: rect(28px, 9999px, 67px, 0);
+    transform: skew(0.89deg); }
   60% {
-    clip: rect(5px, 9999px, 54px, 0);
-    transform: skew(0.11deg); }
+    clip: rect(1px, 9999px, 9px, 0);
+    transform: skew(0.66deg); }
   65% {
-    clip: rect(32px, 9999px, 60px, 0);
-    transform: skew(0.16deg); }
+    clip: rect(12px, 9999px, 59px, 0);
+    transform: skew(0.42deg); }
   70% {
-    clip: rect(92px, 9999px, 2px, 0);
-    transform: skew(0.24deg); }
+    clip: rect(25px, 9999px, 71px, 0);
+    transform: skew(0.27deg); }
   75% {
-    clip: rect(83px, 9999px, 95px, 0);
-    transform: skew(0.12deg); }
+    clip: rect(13px, 9999px, 19px, 0);
+    transform: skew(0.32deg); }
   80% {
-    clip: rect(10px, 9999px, 100px, 0);
-    transform: skew(0.02deg); }
+    clip: rect(15px, 9999px, 78px, 0);
+    transform: skew(0.88deg); }
   85% {
-    clip: rect(66px, 9999px, 12px, 0);
-    transform: skew(0.59deg); }
+    clip: rect(88px, 9999px, 68px, 0);
+    transform: skew(0.38deg); }
   90% {
-    clip: rect(61px, 9999px, 80px, 0);
-    transform: skew(0.2deg); }
+    clip: rect(71px, 9999px, 71px, 0);
+    transform: skew(0.57deg); }
   95% {
-    clip: rect(88px, 9999px, 93px, 0);
-    transform: skew(0.15deg); }
+    clip: rect(44px, 9999px, 52px, 0);
+    transform: skew(0.42deg); }
   100% {
-    clip: rect(29px, 9999px, 100px, 0);
-    transform: skew(0.2deg); } }
+    clip: rect(58px, 9999px, 52px, 0);
+    transform: skew(0.06deg); } }
 
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(93px, 9999px, 62px, 0);
-    transform: skew(0.37deg); }
+    clip: rect(37px, 9999px, 17px, 0);
+    transform: skew(0.01deg); }
   5% {
-    clip: rect(5px, 9999px, 97px, 0);
-    transform: skew(0.93deg); }
+    clip: rect(37px, 9999px, 58px, 0);
+    transform: skew(0.06deg); }
   10% {
-    clip: rect(7px, 9999px, 78px, 0);
-    transform: skew(0.39deg); }
-  15% {
-    clip: rect(18px, 9999px, 50px, 0);
-    transform: skew(0.81deg); }
-  20% {
-    clip: rect(1px, 9999px, 66px, 0);
-    transform: skew(0.28deg); }
-  25% {
-    clip: rect(8px, 9999px, 48px, 0);
-    transform: skew(0.33deg); }
-  30% {
-    clip: rect(11px, 9999px, 80px, 0);
-    transform: skew(0.32deg); }
-  35% {
-    clip: rect(57px, 9999px, 69px, 0);
-    transform: skew(0.12deg); }
-  40% {
-    clip: rect(22px, 9999px, 48px, 0);
-    transform: skew(0.27deg); }
-  45% {
-    clip: rect(70px, 9999px, 77px, 0);
-    transform: skew(0.2deg); }
-  50% {
-    clip: rect(71px, 9999px, 62px, 0);
-    transform: skew(0.45deg); }
-  55% {
-    clip: rect(70px, 9999px, 26px, 0);
-    transform: skew(0.05deg); }
-  60% {
-    clip: rect(84px, 9999px, 84px, 0);
-    transform: skew(0.99deg); }
-  65% {
-    clip: rect(22px, 9999px, 89px, 0);
-    transform: skew(0.58deg); }
-  70% {
-    clip: rect(10px, 9999px, 13px, 0);
-    transform: skew(0.96deg); }
-  75% {
-    clip: rect(68px, 9999px, 35px, 0);
-    transform: skew(0.91deg); }
-  80% {
-    clip: rect(94px, 9999px, 92px, 0);
+    clip: rect(17px, 9999px, 100px, 0);
     transform: skew(0.97deg); }
+  15% {
+    clip: rect(71px, 9999px, 82px, 0);
+    transform: skew(0.95deg); }
+  20% {
+    clip: rect(57px, 9999px, 58px, 0);
+    transform: skew(0.94deg); }
+  25% {
+    clip: rect(23px, 9999px, 19px, 0);
+    transform: skew(0.9deg); }
+  30% {
+    clip: rect(53px, 9999px, 6px, 0);
+    transform: skew(0.2deg); }
+  35% {
+    clip: rect(27px, 9999px, 25px, 0);
+    transform: skew(0.53deg); }
+  40% {
+    clip: rect(45px, 9999px, 88px, 0);
+    transform: skew(0.08deg); }
+  45% {
+    clip: rect(98px, 9999px, 15px, 0);
+    transform: skew(0.02deg); }
+  50% {
+    clip: rect(60px, 9999px, 40px, 0);
+    transform: skew(0.09deg); }
+  55% {
+    clip: rect(47px, 9999px, 98px, 0);
+    transform: skew(0.13deg); }
+  60% {
+    clip: rect(80px, 9999px, 100px, 0);
+    transform: skew(0.3deg); }
+  65% {
+    clip: rect(37px, 9999px, 43px, 0);
+    transform: skew(0.22deg); }
+  70% {
+    clip: rect(77px, 9999px, 37px, 0);
+    transform: skew(0.46deg); }
+  75% {
+    clip: rect(31px, 9999px, 87px, 0);
+    transform: skew(0.21deg); }
+  80% {
+    clip: rect(15px, 9999px, 65px, 0);
+    transform: skew(0.13deg); }
   85% {
-    clip: rect(70px, 9999px, 97px, 0);
-    transform: skew(0.31deg); }
+    clip: rect(26px, 9999px, 88px, 0);
+    transform: skew(0.01deg); }
   90% {
-    clip: rect(47px, 9999px, 75px, 0);
-    transform: skew(0.31deg); }
+    clip: rect(89px, 9999px, 25px, 0);
+    transform: skew(0.89deg); }
   95% {
-    clip: rect(78px, 9999px, 93px, 0);
-    transform: skew(0.19deg); }
+    clip: rect(94px, 9999px, 38px, 0);
+    transform: skew(0.71deg); }
   100% {
-    clip: rect(82px, 9999px, 69px, 0);
-    transform: skew(0.17deg); } }
+    clip: rect(38px, 9999px, 97px, 0);
+    transform: skew(0.42deg); } }
 
 @keyframes glitch-skew {
   0% {
-    transform: skew(0deg); }
+    transform: skew(-2deg); }
   10% {
-    transform: skew(5deg); }
+    transform: skew(2deg); }
   20% {
     transform: skew(2deg); }
   30% {
-    transform: skew(-1deg); }
+    transform: skew(-3deg); }
   40% {
     transform: skew(1deg); }
   50% {
-    transform: skew(0deg); }
+    transform: skew(1deg); }
   60% {
-    transform: skew(-3deg); }
+    transform: skew(3deg); }
   70% {
-    transform: skew(-1deg); }
+    transform: skew(-4deg); }
   80% {
-    transform: skew(-3deg); }
+    transform: skew(1deg); }
   90% {
     transform: skew(-2deg); }
   100% {
-    transform: skew(4deg); } }
+    transform: skew(2deg); } }
 
 /* Contact 7 Forms
 --------------------------------------------- */
@@ -3319,41 +3323,42 @@ form.wpcf7-form, .mauticform_wrapper .mauticform-page-wrapper {
   background-color: transparent;
   border: none; }
 
-.slide-down,
-.slide-left,
-.slide-right,
-.slide-up {
-  transition: all 1s ease-in-out;
-  transition-delay: 0.5s; }
-
-.active .slide-down,
-.active .slide-left,
-.active .slide-right,
-.active .slide-up {
-  transform: translate(0);
-  opacity: 1; }
-  @media screen and (max-width: 980px) {
+/* slide action */
+/* maybe include later with js for <ipad */
+@media screen and (min-width: 768px) {
+  .slide-down,
+  .slide-left,
+  .slide-right,
+  .slide-up {
+    will-change: transform;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s; }
+  .active .slide-down,
+  .active .slide-left,
+  .active .slide-right,
+  .active .slide-up {
+    transform: translate(0);
+    opacity: 1; } }
+  @media screen and (min-width: 768px) and (max-width: 980px) {
     .active .slide-down.s-absolute,
     .active .slide-left.s-absolute,
     .active .slide-right.s-absolute,
     .active .slide-up.s-absolute {
       transform: translateX(-50%); } }
 
-.slide-down {
-  opacity: 0;
-  transform: translateY(-1000%); }
-
-.slide-left {
-  opacity: 0;
-  transform: translateX(1000%); }
-
-.slide-right {
-  opacity: 0;
-  transform: translateX(-1000%); }
-
-.slide-up {
-  opacity: 0;
-  transform: translateY(1000%); }
+@media screen and (min-width: 768px) {
+  .slide-down {
+    opacity: 0;
+    transform: translate(0, -1000%); }
+  .slide-left {
+    opacity: 0;
+    transform: translate(1000%, 0); }
+  .slide-right {
+    opacity: 0;
+    transform: translate(-1000%, 0); }
+  .slide-up {
+    opacity: 0;
+    transform: translate(0, 1000%); } }
 
 /**
  * partials/reset
@@ -3503,7 +3508,6 @@ section, .footer_wrapper {
  */
 .header {
   padding: 0 35px;
-  position: relative;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
@@ -4021,62 +4025,110 @@ section, .footer_wrapper {
   h3 {
     page-break-after: avoid; } }
 
-.home {
-  height: 100vh; }
-  .home #pp-nav li .active span, .home .pp-slidesNav .active span {
-    background-color: #ffffff; }
-  .home .pp-tool-tip {
-    color: red !important; }
-  .home .section {
-    /* the important one*/
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-position: 50% 0%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding-top: 100px;
+@media screen and (max-width: 767px) {
+  html, body {
+    overflow: scroll; } }
+
+@media screen and (min-width: 768px) {
+  .home {
+    height: 100vh; } }
+
+.home #pp-nav li .active span, .home .pp-slidesNav .active span {
+  background-color: #ffffff; }
+
+.home #pp-nav li a.active span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -2px;
+  left: -2px;
+  border: 1px solid white;
+  border-radius: 100%;
+  animation-name: circle_beat;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform; }
+
+@keyframes circle_beat {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
+
+.home .section {
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media screen and (max-width: 980px) {
+    .home .section:nth-child(2n) .content_wrapper {
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; } }
+  @media screen and (min-width: 768px) {
+    .home .section {
+      height: 100vh;
+      padding-top: 100px; } }
+  @media screen and (max-width: 767px) {
+    .home .section {
+      padding-bottom: 63px;
+      padding-left: 42px;
+      padding-right: 42px;
+      padding-top: 80px;
+      padding-bottom: 143px;
+      margin-top: -80px; }
+      .home .section:first-child {
+        padding-top: 143px;
+        margin-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .home .section {
+      padding: 42px 21px 143px; } }
+  .home .section .content_wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
-    .home .section .content_wrapper {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center; }
-      @media screen and (max-width: 980px) {
-        .home .section .content_wrapper {
-          -ms-flex-direction: column;
-              flex-direction: column;
-          text-align: center; } }
-    .home .section .title {
-      margin-bottom: 42px; }
-    .home .section .details {
-      margin-bottom: 42px; }
-    .home .section h1 {
-      white-space: nowrap; }
-  .home .mouse {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: auto;
-    cursor: pointer; }
     @media screen and (max-width: 980px) {
-      .home .mouse {
-        display: none; } }
-    .home .mouse .scroll {
-      animation-name: scroll;
-      animation-duration: 1.5s;
-      animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
-      animation-iteration-count: infinite;
-      transform-origin: 50% 20.5px;
-      will-change: transform; }
+      .home .section .content_wrapper {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        text-align: center; } }
+  .home .section .title {
+    margin-bottom: 42px; }
+  .home .section .details {
+    margin-bottom: 42px; }
+  .home .section h1 {
+    white-space: nowrap; }
+
+.home .mouse {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer; }
+  @media screen and (max-width: 980px) {
+    .home .mouse {
+      display: none; } }
+  .home .mouse .scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform; }
 
 @keyframes scroll {
   0%, 20% {
@@ -4086,24 +4138,31 @@ section, .footer_wrapper {
   100% {
     transform: translateY(36px) scaleY(2);
     opacity: 0.01; } }
-  .home .view_top {
-    background-image: linear-gradient(143deg, #7c28fb, #7f9efd 62%, #82fafe); }
-  .home .view_design {
-    background-image: linear-gradient(45deg, #69FF97 10%, #00E4FF 100%); }
-  .home .view_development {
-    background-image: linear-gradient(315deg, #FFF720 10%, #3CD500 100%); }
-  .home .view_seo {
-    background-image: linear-gradient(221deg, #ffe954, #fc1d48); }
-  .home .view_extras {
-    background-image: linear-gradient(134deg, #ff6a88, #fd9a8d); }
-  .home .view_startup {
-    background-image: linear-gradient(205deg, #faaca8, #ddd6f3); }
-  .home .view_contact {
-    background-image: linear-gradient(134deg, #e9defa, #fbfcdb); }
-    .home .view_contact h1, .home .view_contact h2, .home .view_contact h3, .home .view_contact h4, .home .view_contact h5, .home .view_contact h6, .home .view_contact p, .home .view_contact .button {
-      color: #000000; }
-    .home .view_contact .button {
-      border-color: #000000; }
+
+.home .view_top {
+  background-image: linear-gradient(143deg, #7c28fb, #7f9efd 62%, #82fafe); }
+
+.home .view_design {
+  background-image: linear-gradient(45deg, #69FF97 10%, #00E4FF 100%); }
+
+.home .view_development {
+  background-image: linear-gradient(315deg, #FFF720 10%, #3CD500 100%); }
+
+.home .view_seo {
+  background-image: linear-gradient(221deg, #ffe954, #fc1d48); }
+
+.home .view_extras {
+  background-image: linear-gradient(134deg, #ff6a88, #fd9a8d); }
+
+.home .view_startup {
+  background-image: linear-gradient(205deg, #faaca8, #ddd6f3); }
+
+.home .view_contact {
+  background-image: linear-gradient(134deg, #e9defa, #fbfcdb); }
+  .home .view_contact h1, .home .view_contact h2, .home .view_contact h3, .home .view_contact h4, .home .view_contact h5, .home .view_contact h6, .home .view_contact p, .home .view_contact .button {
+    color: #000000; }
+  .home .view_contact .button {
+    border-color: #000000; }
 
 .md-imac {
   width: 62.5em;
@@ -4196,13 +4255,31 @@ section, .footer_wrapper {
   position: relative;
   text-align: center;
   min-height: 500px; }
+  @media screen and (max-width: 767px) {
+    .static-images-wrapper {
+      min-height: 0; } }
+  @media screen and (min-width: 768px) {
+    .static-images-wrapper .big-wrapper {
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .static-images-wrapper .big-wrapper {
+      display: none; } }
+  .static-images-wrapper .small-wrapper {
+    margin-top: 63px; }
+    @media screen and (min-width: 768px) {
+      .static-images-wrapper .small-wrapper {
+        display: none; } }
+    @media screen and (max-width: 767px) {
+      .static-images-wrapper .small-wrapper {
+        display: block; } }
   .static-images-wrapper .tredny-top-imac-mockup,
   .static-images-wrapper .tredny-top-macbook-mockup,
   .static-images-wrapper .tredny-top-phone-mockup,
   .static-images-wrapper .tredny-top-tablet-mockup,
   .static-images-wrapper .tredny-web-design-imac,
   .static-images-wrapper .tredny-web-development-macbook-code,
-  .static-images-wrapper .tredny-web-design-tablet-mockup {
+  .static-images-wrapper .tredny-web-design-tablet-mockup,
+  .static-images-wrapper .xtra-icon {
     position: absolute; }
   @media screen and (max-width: 1279px) {
     .static-images-wrapper .tredny-top-imac-mockup,
@@ -4215,24 +4292,24 @@ section, .footer_wrapper {
       transform: scale(0.6); } }
   .static-images-wrapper .tredny-top-imac-mockup {
     top: 0;
-    left: 120px;
+    left: 80px;
     width: 512px; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-imac-mockup {
         top: 50px;
-        left: 60px;
+        left: 20px;
         width: 512px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-top-imac-mockup {
         left: 50%; } }
   .static-images-wrapper .tredny-top-macbook-mockup {
-    left: 300px;
+    left: 260px;
     bottom: 55px;
     width: 480px;
     z-index: 2; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-macbook-mockup {
-        left: 200px;
+        left: 160px;
         bottom: 50px;
         width: 480px; } }
     @media screen and (max-width: 980px) {
@@ -4240,13 +4317,13 @@ section, .footer_wrapper {
         left: 75%;
         bottom: 0; } }
   .static-images-wrapper .tredny-top-phone-mockup {
-    left: 180px;
+    left: 140px;
     bottom: 46px;
     width: 90px;
     z-index: 4; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-phone-mockup {
-        left: 180px;
+        left: 140px;
         bottom: 55px;
         width: 90px; } }
     @media screen and (max-width: 980px) {
@@ -4254,13 +4331,13 @@ section, .footer_wrapper {
         left: 33%;
         bottom: 0; } }
   .static-images-wrapper .tredny-top-tablet-mockup {
-    left: 40px;
+    left: 0;
     top: 180px;
     width: 180px;
     z-index: 3; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-tablet-mockup {
-        left: 60px;
+        left: 20px;
         top: 155px;
         width: 200px; } }
     @media screen and (max-width: 980px) {
@@ -4270,25 +4347,24 @@ section, .footer_wrapper {
         bottom: 10px; } }
   .static-images-wrapper .tredny-web-design-imac {
     top: 0;
-    left: 120px;
+    left: 70px;
     width: 512px;
     z-index: 1; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-web-design-imac {
         top: 50px;
-        left: 30px;
+        left: 0;
         width: 512px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-web-design-imac {
         left: 50%; } }
   .static-images-wrapper .tredny-web-development-macbook-code {
-    right: 0;
     bottom: 55px;
     width: 420px;
     z-index: 2; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-web-development-macbook-code {
-        left: 200px;
+        left: 150px;
         bottom: 55px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-web-development-macbook-code {
@@ -4297,18 +4373,38 @@ section, .footer_wrapper {
   .static-images-wrapper .tredny-web-design-tablet-mockup {
     width: 280px;
     z-index: 3;
-    left: 80px;
+    left: 30px;
     bottom: 80px; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-web-design-tablet-mockup {
-        left: 50px;
+        left: 0px;
         bottom: 45px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-web-design-tablet-mockup {
         left: 25%;
         bottom: 20px; } }
   .static-images-wrapper .tredny-digital-marketing {
-    width: 500px; }
+    width: 450px;
+    margin-top: 63px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-digital-marketing {
+        margin-top: 42px; } }
+  .static-images-wrapper .xtra-icon {
+    width: 128px;
+    top: initial;
+    left: initial; }
+
+.active .static-images-wrapper .tredny-flyers-icon {
+  transform: translate(-50%, 50%); }
+
+.active .static-images-wrapper .tredny-camera-icon {
+  transform: translate(-150%, 150%); }
+
+.active .static-images-wrapper .tredny-cart-ecommerce-icon {
+  transform: translate(50%, 150%); }
+
+.active .static-images-wrapper .tredny-tools-maintenance-icon {
+  transform: translate(-50%, 250%); }
 
 .contact_section {
   display: -ms-flexbox;
@@ -4386,7 +4482,7 @@ section, .footer_wrapper {
   bottom: 0;
   width: 100%;
   padding: 20px;
-  z-index: 1;
+  z-index: 10000;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -4422,7 +4518,8 @@ section, .footer_wrapper {
       justify-content: center; }
   .contact_form_wrapper form.contact_form {
     color: #000000;
-    width: 300px; }
+    width: 300px;
+    margin-top: 63px; }
     .contact_form_wrapper form.contact_form .input_group {
       position: relative;
       margin-bottom: 30px; }

@@ -90,7 +90,7 @@
   }
 }
 
-.col-4,.col-8{
+.col-4,.col-8, .col-6{
   @include divi{
     width: 100%;
   }
@@ -139,6 +139,10 @@ body{
     line-height: 84px;
     // margin-top: 21px;
     // margin-bottom: 42px;
+    @include phone{
+      font-size: $h2;
+      line-height: 42px;
+    }
 	}
 	h2, h2 span{
 		font-size: $h2;
@@ -1128,60 +1132,66 @@ form.wpcf7-form, .mauticform_wrapper .mauticform-page-wrapper{
     background-color: transparent;
     border: none;
   }
-}
+} 
 
-.slide-down,
-.slide-left,
-.slide-right,
-.slide-up{
-  transition: all 1s ease-in-out;
-  transition-delay: 0.5s;
-}
+/* slide action */
+/* maybe include later with js for <ipad */
 
-.active{
+@include min-ipad{
   .slide-down,
   .slide-left,
   .slide-right,
   .slide-up{
-    transform:translate(0);
-    opacity:1;
-    &.s-absolute{
-      @include divi{
-        transform:translateX(-50%);
+    will-change: transform;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+  }
+
+  .active{
+    .slide-down,
+    .slide-left,
+    .slide-right,
+    .slide-up{
+      transform:translate(0);
+      opacity:1;
+      &.s-absolute{
+        @include divi{
+          transform:translateX(-50%);
+        }
       }
     }
   }
-}
 
-.slide-down{
-  opacity:0;
-  transform: translateY(-1000%);
-  // &.slid{
-  //  transform:translate(0);
-  //  opacity:1;
-  // }
-}
-.slide-left{
-  opacity:0;
-  transform: translateX(1000%);
-  // &.slid{
-  //  transform:translate(0);
-  //  opacity:1;
-  // }
-}
-.slide-right{
-  opacity:0;
-  transform: translateX(-1000%);
-  // &.slid{
-  //  transform:translate(0);
-  //  opacity:1;
-  // }
-}
-.slide-up{
-  opacity:0;
-  transform: translateY(1000%);
-  // &.slid{
-  //  transform:translate(0);
-  //  opacity:1;
-  // }
+  .slide-down{
+    opacity:0;
+    transform: translate(0,-1000%);
+    // &.slid{
+    //  transform:translate(0);
+    //  opacity:1;
+    // }
+  }
+  .slide-left{
+    opacity:0;
+    transform: translate(1000%,0);
+    // &.slid{
+    //  transform:translate(0);
+    //  opacity:1;
+    // }
+  }
+  .slide-right{
+    opacity:0;
+    transform: translate(-1000%,0);
+    // &.slid{
+    //  transform:translate(0);
+    //  opacity:1;
+    // }
+  }
+  .slide-up{
+    opacity:0;
+    transform: translate(0,1000%);
+    // &.slid{
+    //  transform:translate(0);
+    //  opacity:1;
+    // }
+  }
 }

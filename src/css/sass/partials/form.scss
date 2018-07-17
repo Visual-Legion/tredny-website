@@ -6,6 +6,7 @@ $input_width : 300px;
 	form.contact_form{
 		color: $black;
 		width: $input_width;
+		margin-top: $def_spacing*3/2 ;
 		.input_group{
 			position:relative;
 			margin-bottom:30px;

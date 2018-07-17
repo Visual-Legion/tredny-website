@@ -10,13 +10,17 @@
 
 .header{
 	padding: 0 35px;
-	position: relative;
 	width: 100%;
 	// -webkit-backdrop-filter: blur(3.4px);
 	// backdrop-filter: blur(3.4px);
 	background-color: rgba(255, 255, 255, 0.9); 
 	z-index: 1000;
 	position: fixed;
+
+	// @include ipad{
+	// 	position:relative;
+	// }
+
 	a{
 		color: #000;
 	}
