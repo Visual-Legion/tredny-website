@@ -74,6 +74,7 @@ $input_width : 300px;
 			.contact_form_button_wrapper{
 				transition: background-position 0.4s;
   			transition-timing-function: cubic-bezier(.19,1.72,.71,.47);
+  			height: 55px;
   			// border: 2px solid;
 				// border-radius: 100px;
 				// background-image: linear-gradient(90deg, $black, #545454);
@@ -90,15 +91,84 @@ $input_width : 300px;
 					// padding:10px 25px;
 					pointer-events:none;
     			display: inline-block;
-				}
-				&:hover,&:active{
-					.contact_form_button{
-						// padding:10px 25px;
-						// border: 2px solid $black;
-				    color: $black;
-				    background-position: 100%; 
+    			will-change: transform;
+
+    			transition: font 0.5s 1s,
+										width 0.5s 1s,
+										background-position 0.5s 0s,
+										background-image 0.5s 0s,
+										border 0.5s,
+										border-radius 0.5s;
+
+				  &:after,&:before{
+						font-family: 'FontAwesome';
+						font-size: 0;
+						opacity:0;
+						top: 7px;
+						position: absolute;
+						will-change: transform;
+						transition:0.4s 1s ease-in-out all;
+						color:#4BE98C;
+						left: 40px;
 					}
+					&:before{
+						content: "\f0e0";
+						// left: 15px;
+						transition:	font 0.4s 1s ease-in-out,
+												transform 1s 1.4s ease-in-out;
+						transform: translateX(0%);
+					}
+					&:after{
+						content: "\f00c";
+						// right: 10px;
+						transition:0.4s 1.9s ease-in-out all;
+						// transform: translateY(1000%);
+					}
+
 				}
+
+				&:hover{
+						.contact_form_button{
+					    color: $black;
+					    background-position: 100%; 
+						}
+					}
+
+
+				&.trying{
+					background-position: 100%; 
+			    border-left: 0px solid rgba(255,2555,255,0);
+			    font-size: 0;
+					width: 54px;
+					height: 54px;
+					animation-name: trying;
+					animation-delay: 2s;
+				  animation-duration: 2s;
+				  animation-timing-function: linear;
+				  animation-iteration-count: infinite;
+				  will-change: transform;
+				}
+
+				@keyframes trying {
+				  100% {
+				    transform: rotate(360deg);
+				  }
+				}
+
+				&.sent_ok{
+					border-radius: 0;
+			    border: 2px solid #4BE98C;
+			    width: 108px;
+			    &:after,&:before{
+			    	font-size: $h3;
+			    	// transform: translateY(0);
+			    	opacity: 1;
+			    }
+			    &:before{
+			    	transform: translateX(10000%);
+			    }
+			  }
+
 			}
 			
 			input[type="button"],input[type="submit"],button{
@@ -115,6 +185,8 @@ $input_width : 300px;
 		}
 	}
 }
+
+
 
 // .contact_form_button{
 //   .button{
