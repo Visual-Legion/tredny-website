@@ -102,24 +102,31 @@ $(() => {
         if (!isFormValid()) {
             $('.contact-msg').html(form_error_msg);
             $('.contact-msg').addClass('error')
+
             return false;
         } else {
             if ($('.contact-msg').hasClass('error')) {
                 $('.contact-msg').removeClass('error')
             }
-            $('.contact-msg').html('<img src="http://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
+            // $('.contact-msg').html('<img src="http://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
+            $('.contact_form_button').addClass('trying');
+
+
             $.ajax({
                 type: "GET",
                 url: 'http://apilayer.net/api/check',
                 data: {
                     access_key: 'c673ff585d5fa454aa388487d9b7ef7c',
-                    email: email,
+                    // email: email,
+                    //shoud get current form email var, TODO
+                    email: $('input[type=email]').val(),
                     smtp: 1,
                     format: 0
                 },
                 dataType: "json",
                 crossDomain: true,
                 success: function(data, status_text) {
+                    $('.contact_form_button').removeClass('trying');
                     //maybe add txt for disposable
                     if (data['format_valid'] && !data['disposable']) {
                         if (data['did_you_mean']) {
@@ -138,6 +145,9 @@ $(() => {
                                 dataType: 'json',
                                 success: function(response) {
                                     if (response.status == 'success') {
+                                        //and disable button after sent
+
+                                        $('.contact_form_button').addClass('sent_ok');
                                         $('.contact_form')[0].reset();
                                     }
                                     $('.contact-msg').html(response.errmessage);
@@ -151,6 +161,7 @@ $(() => {
                     }
                 },
                 error: function(request, status_text, error) {
+                    $('.contact_form_button').removeClass('trying');
                     $('.contact-msg').html('Error occurred, unable to validate your email address.');
                     return false;
                 }
