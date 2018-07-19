@@ -5,30 +5,72 @@
 
 
 .footer {
+
+	@include divi{
+		br{
+			display:none;
+		}
+	}
+
 	border: solid 1px #dadce0;
-	background-color: #ffffff;
+	background-image: linear-gradient(90deg, $black, #545454);
+	display:flex;
+	justify-content: center;
+	// align-items: center;
+	flex-direction: column;
 	.footer_wrapper{
 		// padding: 90px 0 85px;
 		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		// flex-direction: column;
+		justify-content: space-between;
+		max-width:$wrapper-width;
+		// align-items: center;
+		align-items: flex-start;
+		align-self:center;
+		width: 100%;
+		
 
 		// img{
 		// 	margin-bottom: 30px;
 		// }
+		.logo_wraper{
+			align-self: center;
+			// margin-top: 42px;
+			// margin-bottom: 42px;
+			@include divi{
+				margin-top: 42px;
+			}
+			@include phone{
+				margin-top: 10px;
+			}
+			img{
+				width: 256px;
+			}
+		}
+		
 
 		.text_wrapper{
 			display:flex;
 			justify-content: center;
 			align-items: center;
-			margin-top: 30px; 
+			margin-top: 42px;
+			margin-bottom: 42px; 
+			flex-direction: column;
 
-			@include tablet{
-				flex-direction: column;
+			@include divi{
+				// flex-direction: column;
+
+				margin-top: 21px;
+				margin-bottom: 21px; 
+
 				.wys{
 					text-align: center;
 				}
+			}
+
+			@include phone{
+				margin-top: 10px;
+				margin-bottom: 10px; 
 			}
 
 			.icons_wrapper{
@@ -46,8 +88,8 @@
 				align-items: center;
 				}
 				i{
-					margin-left:5px;
-					margin-right: 5px;
+					margin-left:10px;
+					margin-right: 10px;
 					color: #ffffff;
 					width: 18px;
 					height: 18px;
@@ -55,22 +97,22 @@
 					position: relative;
 					&:before{
 						@include absolute_center_both();
-						font-size: 10px;
+						font-size: $h3;
 					}
-					&.fa-facebook{
-						background-color:#3B5998;
-						&:before{
-							left: 46%;
-							top: 50%;
-						}
-					}
-					&.fa-twitter{
-						background-color:#55ACEE;
-						&:before{
-							left: 48%;
-							top: 48%;
-						}
-					}
+					// &.fa-facebook{
+					// 	background-color:#3B5998;
+					// 	&:before{
+					// 		left: 46%;
+					// 		top: 50%;
+					// 	}
+					// }
+					// &.fa-twitter{
+					// 	background-color:#55ACEE;
+					// 	&:before{
+					// 		left: 48%;
+					// 		top: 48%;
+					// 	}
+					// }
 				}
 			}
 		}
@@ -136,9 +178,10 @@
 		// }
 	}
 	.copyright{
-		background-image: linear-gradient(to right, #363636, #8c8c8c);
-		font-family: Ubuntu;
-		color: rgba(255, 255, 255, 0.4);
+		// background-image: linear-gradient(143deg, rgba(124,40,251,0.24), #7f9efd 62%, rgba(130,250,254,0.31));#E1D0E7
+		background-image: linear-gradient(143deg, #E1D0E7, #7f9efd 62%, #D8FDFD);
+		color: rgba(255, 255, 255, 1);
+		font-size: $body;
 		padding:13px 45px;
 		display: flex;
 		align-items: center;
@@ -148,20 +191,76 @@
 			background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.31));
 			margin-right: 15px;
 		}
-		a,p{
-			font-size: 13px;
-			color: rgba(255, 255, 255, 0.4);
-		}
-		p{
-			font-weight: 300;
-		}
+		// a,p{
+		// 	font-size: 13px;
+		// 	color: rgba(255, 255, 255, 0.4);
+		// }
+		// p{
+		// 	font-weight: 300;
+		// }
 		a{
-			font-weight: 500;
-			letter-spacing: 1.6px;
+			// font-weight: 500;
+			// letter-spacing: 1.6px;
 			transition: all 0.4s ease-in-out;
 			&:hover{
 				color: #ffffff;
+				cursor:pointer;
 			}
 		}
+	}
+}
+
+.footer_taht_pagepiling{
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	bottom:0;
+	// z-index: 100000;
+	// padding-top:100px;
+	// margin-bottom:-47px;
+
+	
+
+	.footer_wrapper{
+		@include divi{
+			// padding-top: 80px;
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+		}
+		
+	}
+
+	h4{
+		margin-bottom: 42px;
+    margin-top: 42px;
+    @include divi{
+    	margin-bottom: 21px;
+    	margin-top: 21px;
+    }
+	}
+	a,p{
+		// padding: 10px;
+		// margin: 5px;
+		padding-left: 10px;
+	}
+	.icons_wrapper{
+		a{
+			padding:0;
+		}
+	}
+	.wys{
+		p{
+			display:flex;
+			flex-direction:column;
+		}
+	}
+	.copyright{
+		position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    height: 47px;
 	}
 }

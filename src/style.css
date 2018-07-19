@@ -219,6 +219,15 @@ Color placeholder mixin
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-twitter-square:before {
+  content: "\f081"; }
+
+.fa-facebook-square:before {
+  content: "\f082"; }
+
+.fa-instagram:before {
+  content: "\f16d"; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -314,7 +323,7 @@ span.avoidwrap {
 
 @media screen and (min-width: 1280px) {
   .content_wrapper {
-    width: 1200px;
+    width: 1080px;
     text-align: center; } }
 
 @media screen and (max-width: 1279px) {
@@ -322,22 +331,22 @@ span.avoidwrap {
     width: 100%; } }
 
 .columns-1 {
-  width: 1200px; }
+  width: 1080px; }
 
 .columns-2 {
-  width: 585px; }
+  width: 525px; }
 
 .columns-3 {
-  width: 380px; }
+  width: 340px; }
 
 .columns-4 {
-  width: 277.5px; }
+  width: 247.5px; }
 
 .columns-6 {
-  width: 175px; }
+  width: 155px; }
 
 .columns-8 {
-  width: 123.75px; }
+  width: 108.75px; }
 
 .columns-12 {
   width: 72px; }
@@ -607,157 +616,157 @@ skew to change the 'thickness' of the glitch.*/ }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(67px, 9999px, 33px, 0);
-    transform: skew(0.03deg); }
-  5% {
-    clip: rect(100px, 9999px, 53px, 0);
-    transform: skew(0.44deg); }
-  10% {
-    clip: rect(59px, 9999px, 73px, 0);
-    transform: skew(0.8deg); }
-  15% {
-    clip: rect(70px, 9999px, 51px, 0);
-    transform: skew(0.71deg); }
-  20% {
-    clip: rect(5px, 9999px, 31px, 0);
-    transform: skew(0.99deg); }
-  25% {
-    clip: rect(96px, 9999px, 11px, 0);
-    transform: skew(0.37deg); }
-  30% {
-    clip: rect(37px, 9999px, 51px, 0);
-    transform: skew(0.37deg); }
-  35% {
-    clip: rect(47px, 9999px, 19px, 0);
+    clip: rect(98px, 9999px, 67px, 0);
     transform: skew(0.82deg); }
-  40% {
-    clip: rect(41px, 9999px, 77px, 0);
-    transform: skew(0.07deg); }
-  45% {
-    clip: rect(60px, 9999px, 7px, 0);
-    transform: skew(0.8deg); }
-  50% {
-    clip: rect(71px, 9999px, 47px, 0);
-    transform: skew(0.27deg); }
-  55% {
-    clip: rect(9px, 9999px, 17px, 0);
-    transform: skew(0.4deg); }
-  60% {
-    clip: rect(21px, 9999px, 16px, 0);
-    transform: skew(0.18deg); }
-  65% {
-    clip: rect(40px, 9999px, 100px, 0);
-    transform: skew(0.45deg); }
-  70% {
-    clip: rect(20px, 9999px, 27px, 0);
-    transform: skew(0.41deg); }
-  75% {
-    clip: rect(38px, 9999px, 34px, 0);
-    transform: skew(0.45deg); }
-  80% {
-    clip: rect(96px, 9999px, 87px, 0);
-    transform: skew(0.53deg); }
-  85% {
-    clip: rect(30px, 9999px, 78px, 0);
-    transform: skew(0.46deg); }
-  90% {
-    clip: rect(82px, 9999px, 94px, 0);
-    transform: skew(0.93deg); }
-  95% {
-    clip: rect(50px, 9999px, 24px, 0);
+  5% {
+    clip: rect(48px, 9999px, 97px, 0);
+    transform: skew(0.13deg); }
+  10% {
+    clip: rect(88px, 9999px, 47px, 0);
+    transform: skew(0.37deg); }
+  15% {
+    clip: rect(30px, 9999px, 60px, 0);
     transform: skew(0.5deg); }
+  20% {
+    clip: rect(40px, 9999px, 26px, 0);
+    transform: skew(0.6deg); }
+  25% {
+    clip: rect(24px, 9999px, 96px, 0);
+    transform: skew(0.81deg); }
+  30% {
+    clip: rect(86px, 9999px, 80px, 0);
+    transform: skew(0.36deg); }
+  35% {
+    clip: rect(5px, 9999px, 82px, 0);
+    transform: skew(0.02deg); }
+  40% {
+    clip: rect(78px, 9999px, 83px, 0);
+    transform: skew(0.36deg); }
+  45% {
+    clip: rect(4px, 9999px, 21px, 0);
+    transform: skew(0.63deg); }
+  50% {
+    clip: rect(72px, 9999px, 48px, 0);
+    transform: skew(0.4deg); }
+  55% {
+    clip: rect(8px, 9999px, 71px, 0);
+    transform: skew(0.99deg); }
+  60% {
+    clip: rect(29px, 9999px, 19px, 0);
+    transform: skew(0.5deg); }
+  65% {
+    clip: rect(74px, 9999px, 87px, 0);
+    transform: skew(0.91deg); }
+  70% {
+    clip: rect(28px, 9999px, 71px, 0);
+    transform: skew(1deg); }
+  75% {
+    clip: rect(35px, 9999px, 36px, 0);
+    transform: skew(0.9deg); }
+  80% {
+    clip: rect(7px, 9999px, 45px, 0);
+    transform: skew(0.86deg); }
+  85% {
+    clip: rect(4px, 9999px, 7px, 0);
+    transform: skew(0.85deg); }
+  90% {
+    clip: rect(4px, 9999px, 2px, 0);
+    transform: skew(0.05deg); }
+  95% {
+    clip: rect(26px, 9999px, 95px, 0);
+    transform: skew(0.67deg); }
   100% {
-    clip: rect(61px, 9999px, 55px, 0);
-    transform: skew(0.15deg); } }
+    clip: rect(18px, 9999px, 81px, 0);
+    transform: skew(0.23deg); } }
 
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(66px, 9999px, 55px, 0);
-    transform: skew(0.73deg); }
+    clip: rect(99px, 9999px, 40px, 0);
+    transform: skew(0.25deg); }
   5% {
-    clip: rect(99px, 9999px, 33px, 0);
-    transform: skew(0.15deg); }
+    clip: rect(75px, 9999px, 95px, 0);
+    transform: skew(0.08deg); }
   10% {
-    clip: rect(55px, 9999px, 16px, 0);
-    transform: skew(0.03deg); }
-  15% {
-    clip: rect(26px, 9999px, 11px, 0);
-    transform: skew(0.99deg); }
-  20% {
-    clip: rect(22px, 9999px, 60px, 0);
-    transform: skew(0.01deg); }
-  25% {
-    clip: rect(96px, 9999px, 64px, 0);
-    transform: skew(0.49deg); }
-  30% {
-    clip: rect(30px, 9999px, 63px, 0);
-    transform: skew(0.56deg); }
-  35% {
-    clip: rect(24px, 9999px, 39px, 0);
-    transform: skew(0.46deg); }
-  40% {
-    clip: rect(62px, 9999px, 74px, 0);
-    transform: skew(0.56deg); }
-  45% {
-    clip: rect(6px, 9999px, 90px, 0);
-    transform: skew(0.43deg); }
-  50% {
-    clip: rect(19px, 9999px, 43px, 0);
+    clip: rect(78px, 9999px, 92px, 0);
     transform: skew(0.14deg); }
-  55% {
-    clip: rect(68px, 9999px, 92px, 0);
-    transform: skew(0.19deg); }
-  60% {
-    clip: rect(60px, 9999px, 15px, 0);
-    transform: skew(0.11deg); }
-  65% {
-    clip: rect(35px, 9999px, 86px, 0);
-    transform: skew(0.73deg); }
-  70% {
-    clip: rect(12px, 9999px, 91px, 0);
-    transform: skew(0.77deg); }
-  75% {
-    clip: rect(16px, 9999px, 76px, 0);
+  15% {
+    clip: rect(16px, 9999px, 52px, 0);
+    transform: skew(0.36deg); }
+  20% {
+    clip: rect(92px, 9999px, 91px, 0);
+    transform: skew(0.1deg); }
+  25% {
+    clip: rect(2px, 9999px, 56px, 0);
+    transform: skew(0.97deg); }
+  30% {
+    clip: rect(96px, 9999px, 58px, 0);
     transform: skew(0.23deg); }
+  35% {
+    clip: rect(52px, 9999px, 6px, 0);
+    transform: skew(0.92deg); }
+  40% {
+    clip: rect(77px, 9999px, 14px, 0);
+    transform: skew(0.67deg); }
+  45% {
+    clip: rect(80px, 9999px, 69px, 0);
+    transform: skew(0.11deg); }
+  50% {
+    clip: rect(84px, 9999px, 36px, 0);
+    transform: skew(0.16deg); }
+  55% {
+    clip: rect(77px, 9999px, 34px, 0);
+    transform: skew(0.04deg); }
+  60% {
+    clip: rect(93px, 9999px, 89px, 0);
+    transform: skew(0.45deg); }
+  65% {
+    clip: rect(62px, 9999px, 36px, 0);
+    transform: skew(0.19deg); }
+  70% {
+    clip: rect(83px, 9999px, 6px, 0);
+    transform: skew(0.21deg); }
+  75% {
+    clip: rect(14px, 9999px, 95px, 0);
+    transform: skew(0.14deg); }
   80% {
-    clip: rect(63px, 9999px, 72px, 0);
-    transform: skew(0.17deg); }
+    clip: rect(85px, 9999px, 40px, 0);
+    transform: skew(0.97deg); }
   85% {
-    clip: rect(79px, 9999px, 22px, 0);
-    transform: skew(0.94deg); }
+    clip: rect(60px, 9999px, 42px, 0);
+    transform: skew(0.34deg); }
   90% {
-    clip: rect(18px, 9999px, 72px, 0);
-    transform: skew(0.98deg); }
+    clip: rect(70px, 9999px, 47px, 0);
+    transform: skew(0.17deg); }
   95% {
-    clip: rect(88px, 9999px, 88px, 0);
-    transform: skew(0.83deg); }
+    clip: rect(3px, 9999px, 23px, 0);
+    transform: skew(0.23deg); }
   100% {
-    clip: rect(99px, 9999px, 20px, 0);
+    clip: rect(25px, 9999px, 15px, 0);
     transform: skew(0.75deg); } }
 
 @keyframes glitch-skew {
   0% {
-    transform: skew(-1deg); }
+    transform: skew(-4deg); }
   10% {
-    transform: skew(1deg); }
+    transform: skew(5deg); }
   20% {
-    transform: skew(1deg); }
+    transform: skew(-3deg); }
   30% {
-    transform: skew(2deg); }
-  40% {
     transform: skew(4deg); }
+  40% {
+    transform: skew(5deg); }
   50% {
-    transform: skew(2deg); }
+    transform: skew(-3deg); }
   60% {
-    transform: skew(-2deg); }
+    transform: skew(-1deg); }
   70% {
-    transform: skew(-2deg); }
+    transform: skew(-4deg); }
   80% {
-    transform: skew(1deg); }
+    transform: skew(0deg); }
   90% {
-    transform: skew(3deg); }
+    transform: skew(-4deg); }
   100% {
-    transform: skew(1deg); } }
+    transform: skew(-2deg); } }
 
 /* Contact 7 Forms
 --------------------------------------------- */
@@ -1374,7 +1383,7 @@ section, .footer_wrapper {
   padding: 0 35px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1000;
+  z-index: 1000000;
   position: fixed; }
   .header a {
     color: #000; }
@@ -1387,7 +1396,7 @@ section, .footer_wrapper {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  max-width: 1200px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (max-width: 980px) {
@@ -1744,16 +1753,39 @@ section, .footer_wrapper {
  */
 .footer {
   border: solid 1px #dadce0;
-  background-color: #ffffff; }
+  background-image: linear-gradient(90deg, #000000, #545454);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media screen and (max-width: 980px) {
+    .footer br {
+      display: none; } }
   .footer .footer_wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    max-width: 1080px;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 100%; }
+    .footer .footer_wrapper .logo_wraper {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+      @media screen and (max-width: 980px) {
+        .footer .footer_wrapper .logo_wraper {
+          margin-top: 42px; } }
+      @media screen and (max-width: 480px) {
+        .footer .footer_wrapper .logo_wraper {
+          margin-top: 10px; } }
+      .footer .footer_wrapper .logo_wraper img {
+        width: 256px; }
     .footer .footer_wrapper .text_wrapper {
       display: -ms-flexbox;
       display: flex;
@@ -1761,13 +1793,20 @@ section, .footer_wrapper {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      margin-top: 30px; }
-      @media screen and (max-width: 800px) {
+      margin-top: 42px;
+      margin-bottom: 42px;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      @media screen and (max-width: 980px) {
         .footer .footer_wrapper .text_wrapper {
-          -ms-flex-direction: column;
-              flex-direction: column; }
+          margin-top: 21px;
+          margin-bottom: 21px; }
           .footer .footer_wrapper .text_wrapper .wys {
             text-align: center; } }
+      @media screen and (max-width: 480px) {
+        .footer .footer_wrapper .text_wrapper {
+          margin-top: 10px;
+          margin-bottom: 10px; } }
       .footer .footer_wrapper .text_wrapper .icons_wrapper {
         display: -ms-flexbox;
         display: flex;
@@ -1790,8 +1829,8 @@ section, .footer_wrapper {
           -ms-flex-align: center;
               align-items: center; }
         .footer .footer_wrapper .text_wrapper .icons_wrapper i {
-          margin-left: 5px;
-          margin-right: 5px;
+          margin-left: 10px;
+          margin-right: 10px;
           color: #ffffff;
           width: 18px;
           height: 18px;
@@ -1802,21 +1841,11 @@ section, .footer_wrapper {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 10px; }
-          .footer .footer_wrapper .text_wrapper .icons_wrapper i.fa-facebook {
-            background-color: #3B5998; }
-            .footer .footer_wrapper .text_wrapper .icons_wrapper i.fa-facebook:before {
-              left: 46%;
-              top: 50%; }
-          .footer .footer_wrapper .text_wrapper .icons_wrapper i.fa-twitter {
-            background-color: #55ACEE; }
-            .footer .footer_wrapper .text_wrapper .icons_wrapper i.fa-twitter:before {
-              left: 48%;
-              top: 48%; }
+            font-size: 26px; }
   .footer .copyright {
-    background-image: linear-gradient(to right, #363636, #8c8c8c);
-    font-family: Ubuntu;
-    color: rgba(255, 255, 255, 0.4);
+    background-image: linear-gradient(143deg, #E1D0E7, #7f9efd 62%, #D8FDFD);
+    color: white;
+    font-size: 16px;
     padding: 13px 45px;
     display: -ms-flexbox;
     display: flex;
@@ -1827,17 +1856,48 @@ section, .footer_wrapper {
       height: 2px;
       background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.31));
       margin-right: 15px; }
-    .footer .copyright a, .footer .copyright p {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.4); }
-    .footer .copyright p {
-      font-weight: 300; }
     .footer .copyright a {
-      font-weight: 500;
-      letter-spacing: 1.6px;
       transition: all 0.4s ease-in-out; }
       .footer .copyright a:hover {
-        color: #ffffff; }
+        color: #ffffff;
+        cursor: pointer; }
+
+.footer_taht_pagepiling {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0; }
+  @media screen and (max-width: 980px) {
+    .footer_taht_pagepiling .footer_wrapper {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; } }
+  .footer_taht_pagepiling h4 {
+    margin-bottom: 42px;
+    margin-top: 42px; }
+    @media screen and (max-width: 980px) {
+      .footer_taht_pagepiling h4 {
+        margin-bottom: 21px;
+        margin-top: 21px; } }
+  .footer_taht_pagepiling a, .footer_taht_pagepiling p {
+    padding-left: 10px; }
+  .footer_taht_pagepiling .icons_wrapper a {
+    padding: 0; }
+  .footer_taht_pagepiling .wys p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .footer_taht_pagepiling .copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    height: 47px; }
 
 /**
  * partials/print
@@ -1897,6 +1957,12 @@ section, .footer_wrapper {
   .home {
     height: 100vh; } }
 
+.home .col-6 {
+  text-align: left; }
+  @media screen and (max-width: 980px) {
+    .home .col-6 {
+      text-align: center; } }
+
 .home #pp-nav li .active span, .home .pp-slidesNav .active span {
   background-color: #ffffff; }
 
@@ -1923,7 +1989,7 @@ section, .footer_wrapper {
   100% {
     transform: scale(1); } }
 
-.home .section {
+.home section {
   background-attachment: fixed;
   background-size: 100% 100%;
   background-position: 50% 0%;
@@ -1935,28 +2001,28 @@ section, .footer_wrapper {
   -ms-flex-align: center;
       align-items: center; }
   @media screen and (max-width: 980px) {
-    .home .section:nth-child(2n) .content_wrapper {
+    .home section:nth-child(2n) .content_wrapper {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse; } }
   @media screen and (min-width: 768px) {
-    .home .section {
+    .home section {
       height: 100vh;
       padding-top: 100px; } }
   @media screen and (max-width: 767px) {
-    .home .section {
+    .home section {
       padding-bottom: 63px;
       padding-left: 42px;
       padding-right: 42px;
       padding-top: 80px;
       padding-bottom: 143px;
       margin-top: -80px; }
-      .home .section:first-child {
+      .home section:first-child {
         padding-top: 143px;
         margin-top: 0; } }
   @media screen and (max-width: 480px) {
-    .home .section {
+    .home section {
       padding: 42px 21px 143px; } }
-  .home .section .content_wrapper {
+  .home section .content_wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1964,15 +2030,15 @@ section, .footer_wrapper {
     -ms-flex-align: center;
         align-items: center; }
     @media screen and (max-width: 980px) {
-      .home .section .content_wrapper {
+      .home section .content_wrapper {
         -ms-flex-direction: column;
             flex-direction: column;
         text-align: center; } }
-  .home .section .title {
+  .home section .title {
     margin-bottom: 42px; }
-  .home .section .details {
+  .home section .details {
     margin-bottom: 42px; }
-  .home .section h1 {
+  .home section h1 {
     white-space: nowrap; }
 
 .home .mouse {
@@ -2143,7 +2209,12 @@ section, .footer_wrapper {
   .static-images-wrapper .tredny-web-design-imac,
   .static-images-wrapper .tredny-web-development-macbook-code,
   .static-images-wrapper .tredny-web-design-tablet-mockup,
-  .static-images-wrapper .xtra-icon {
+  .static-images-wrapper .xtra-icon,
+  .static-images-wrapper .tredny-startup-boost-responsive-website,
+  .static-images-wrapper .tredny-startup-boost-seo-digital-analytics,
+  .static-images-wrapper .tredny-startup-boost-logo,
+  .static-images-wrapper .tredny-startup-boost-business-cards,
+  .static-images-wrapper .tredny-startup-boost-email-signatures {
     position: absolute; }
   @media screen and (max-width: 1279px) {
     .static-images-wrapper .tredny-top-imac-mockup,
@@ -2161,8 +2232,7 @@ section, .footer_wrapper {
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-imac-mockup {
         top: 50px;
-        left: 20px;
-        width: 512px; } }
+        left: 20px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-top-imac-mockup {
         left: 50%; } }
@@ -2174,8 +2244,7 @@ section, .footer_wrapper {
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-macbook-mockup {
         left: 160px;
-        bottom: 50px;
-        width: 480px; } }
+        bottom: 50px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-top-macbook-mockup {
         left: 75%;
@@ -2188,8 +2257,7 @@ section, .footer_wrapper {
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-phone-mockup {
         left: 140px;
-        bottom: 55px;
-        width: 90px; } }
+        bottom: 55px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-top-phone-mockup {
         left: 33%;
@@ -2201,9 +2269,8 @@ section, .footer_wrapper {
     z-index: 3; }
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-top-tablet-mockup {
-        left: 20px;
-        top: 155px;
-        width: 200px; } }
+        left: 40px;
+        top: 175px; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-top-tablet-mockup {
         left: 20%;
@@ -2217,8 +2284,7 @@ section, .footer_wrapper {
     @media screen and (max-width: 1279px) {
       .static-images-wrapper .tredny-web-design-imac {
         top: 50px;
-        left: 0;
-        width: 512px; } }
+        left: 0; } }
     @media screen and (max-width: 980px) {
       .static-images-wrapper .tredny-web-design-imac {
         left: 50%; } }
@@ -2257,6 +2323,88 @@ section, .footer_wrapper {
     width: 128px;
     top: initial;
     left: initial; }
+  .static-images-wrapper.about {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2%; }
+    .static-images-wrapper.about h3 {
+      text-align: center;
+      background: white;
+      color: #333;
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      font-size: 21px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper.about {
+        padding-top: 63px; } }
+    .static-images-wrapper.about a {
+      width: 45%;
+      margin: 2.5%;
+      box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.4);
+      will-change: transform;
+      transition: all 0.4s ease-in-out; }
+      .static-images-wrapper.about a:hover {
+        transform: translateY(-5%);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); }
+  .static-images-wrapper .tredny-startup-boost-responsive-website {
+    left: 30px;
+    bottom: 128px;
+    width: 380px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-startup-boost-responsive-website {
+        left: 45%; } }
+  .static-images-wrapper .tredny-startup-boost-seo-digital-analytics {
+    left: 380px;
+    width: 160px;
+    bottom: 230px;
+    opacity: 1; }
+    @media screen and (max-width: 1279px) {
+      .static-images-wrapper .tredny-startup-boost-seo-digital-analytics {
+        opacity: 0; } }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-startup-boost-seo-digital-analytics {
+        opacity: 1;
+        left: 80%; } }
+    .static-images-wrapper .tredny-startup-boost-seo-digital-analytics.ipad-macbook {
+      opacity: 0;
+      left: 290px; }
+      @media screen and (max-width: 1279px) {
+        .static-images-wrapper .tredny-startup-boost-seo-digital-analytics.ipad-macbook {
+          opacity: 1; } }
+      @media screen and (max-width: 980px) {
+        .static-images-wrapper .tredny-startup-boost-seo-digital-analytics.ipad-macbook {
+          opacity: 0; } }
+  .static-images-wrapper .tredny-startup-boost-logo {
+    left: 30px;
+    bottom: 195px;
+    width: 240px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-startup-boost-logo {
+        left: 35%; } }
+  .static-images-wrapper .tredny-startup-boost-business-cards {
+    left: 30px;
+    bottom: 172px;
+    width: 256px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-startup-boost-business-cards {
+        left: 36%; } }
+  .static-images-wrapper .tredny-startup-boost-email-signatures {
+    left: 25px;
+    width: 225px;
+    bottom: 72px; }
+    @media screen and (max-width: 980px) {
+      .static-images-wrapper .tredny-startup-boost-email-signatures {
+        left: 35%; } }
 
 .active .static-images-wrapper .tredny-flyers-icon {
   transform: translate(-50%, 50%); }
@@ -2269,6 +2417,9 @@ section, .footer_wrapper {
 
 .active .static-images-wrapper .tredny-tools-maintenance-icon {
   transform: translate(-50%, 250%); }
+
+.view_footer {
+  pointer-events: none; }
 
 .contact_section {
   display: -ms-flexbox;

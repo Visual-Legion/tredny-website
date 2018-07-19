@@ -12,6 +12,13 @@
 	// 	// overflow:scroll-y;
 	// }
 
+	.col-6{
+		text-align:left;
+		@include divi{
+			text-align: center;
+		}
+	}
+
 	#pp-nav li .active span, .pp-slidesNav .active span{
 		background-color: #ffffff;
 	}
@@ -56,7 +63,7 @@
 	// 	color:red !important;
 	// }
 
-	.section {
+	section {
     background-attachment: fixed; 
     background-size: 100% 100%;
     background-position: 50% 0%;
@@ -391,7 +398,13 @@ $mac_case_shadow : #F5F5F5;
 	.tredny-web-design-imac,
 	.tredny-web-development-macbook-code,
 	.tredny-web-design-tablet-mockup,
-	.xtra-icon{
+	.xtra-icon,
+	.tredny-startup-boost-responsive-website,
+	.tredny-startup-boost-seo-digital-analytics,
+	.tredny-startup-boost-logo,
+	.tredny-startup-boost-business-cards,
+	.tredny-startup-boost-email-signatures
+	{
 		position:absolute;
 	}
 	.tredny-top-imac-mockup,
@@ -414,7 +427,6 @@ $mac_case_shadow : #F5F5F5;
     	top: 50px;
 	    // left: 60px;
 	    left: 20px;
-	    width: 512px;
     }
     @include divi{
     	// left: 140px;
@@ -433,7 +445,6 @@ $mac_case_shadow : #F5F5F5;
     	// left: 200px;
     	left: 160px;
 	    bottom: 50px;
-	    width: 480px;
     }
     @include divi{
     	// left: 260px;
@@ -452,7 +463,6 @@ $mac_case_shadow : #F5F5F5;
     	// left: 180px;
     	left: 140px;
 	    bottom: 55px;
-	    width: 90px;
     }
     @include divi{
     	// left: 240px;
@@ -473,9 +483,8 @@ $mac_case_shadow : #F5F5F5;
     z-index: 3;
     @include macbook{
     	// left: 60px;
-    	left: 20px;
-	    top: 155px;
-	    width: 200px;
+    	left: 40px;
+	    top: 175px;
     }
     @include divi{
     	// left: 120px;
@@ -494,7 +503,6 @@ $mac_case_shadow : #F5F5F5;
     	top: 50px;
 	    // left: 30px;
 	    left:0;
-	    width: 512px;
     }
     @include divi{
     	// left: 145px;
@@ -547,6 +555,96 @@ $mac_case_shadow : #F5F5F5;
 		top:initial;
 		left:initial;
 	}
+	&.about{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap:wrap;
+		padding: 2%;
+
+		h3{
+			text-align:center;
+			background: white;
+	    color: #333;
+	    position: absolute;
+	    bottom: 5px;
+	    width: 100%;
+	    font-size: 21px;
+		}
+
+		@include divi{
+			padding-top: 63px;
+		}
+
+		a{
+			width: 45%;
+			margin: 2.5%;
+			box-shadow: 0px 25px 50px rgba(0,0,0,0.4);
+			will-change: transform;
+			transition: all 0.4s ease-in-out;
+			&:hover{
+				transform: translateY(-5%);
+				box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+			}
+		}
+	}
+	.tredny-startup-boost-responsive-website{
+    left: 30px;
+    bottom: 128px;
+    width: 380px;
+    @include divi{
+    	left: 45%;
+    }
+	}
+	.tredny-startup-boost-seo-digital-analytics{
+		left: 380px;
+    width: 160px;
+    bottom: 230px;
+    opacity: 1;
+    @include macbook{
+    	opacity: 0;
+    }
+    @include divi{
+    	opacity: 1;
+    	left: 80%;
+    }
+    &.ipad-macbook{
+    	opacity: 0;
+    	left: 290px;
+  		@include macbook{
+  			opacity:1;
+    	}
+    	@include divi{
+	    	opacity:0;
+	    }
+  	}
+	}
+	.tredny-startup-boost-logo{
+		left: 30px;
+    bottom: 195px;
+    width: 240px;
+    @include divi{
+    	left: 35%;
+    }
+	}
+	.tredny-startup-boost-business-cards{
+		left: 30px;
+    bottom: 172px;
+    width: 256px;
+    @include divi{
+    	left: 36%;
+    }
+	}
+	.tredny-startup-boost-email-signatures{
+		left: 25px;
+    width: 225px;
+    bottom: 72px;
+    @include divi{
+    	left: 35%;
+    }
+	}
 }
 
 .active .static-images-wrapper{
@@ -571,6 +669,12 @@ $mac_case_shadow : #F5F5F5;
 		transform:translate(-50%,250%);
 	}
 }
+
+// .view_contact{
+// 	top: 100%;
+//   position: absolute;
+//   left: 0;
+// }
 
 // .drop_wrapper{
   
@@ -649,3 +753,7 @@ $mac_case_shadow : #F5F5F5;
 //     50%  { top:50px;}
 //     100% {top:0px;}
 // }
+
+.view_footer{
+	pointer-events: none;
+}

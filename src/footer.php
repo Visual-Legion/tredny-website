@@ -5,19 +5,25 @@
 
 			<footer class="footer" role="contentinfo">
 				<div class="footer_wrapper">
-					<!-- <img src="<?php //echo $footer['image']; ?>"> -->
-					<!-- <div class="text_wrapper">
-						<div class="wys"><?php //echo $footer['wysiwyg']; ?></div>
+					<div class="text_wrapper">
+						<div class="wys "><?php echo $footer['wysiwyg_left']; ?></div>
+					</div>
+					<div class="logo_wraper">
+						<a href="/"><img src="<?php echo $footer['image']; ?>"></a>
+					</div>
+					<div class="text_wrapper">
+						<div class="wys"><?php echo $footer['wysiwyg_right']; ?></div>
 						<div class="icons_wrapper">
-							<a href="<?php //echo $footer['facebook_url']; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="<?php //echo $footer['twitter_url']; ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com/Tredny-1079782122159629/?ref=br_rs"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/trednyofficial"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/trednyofficial/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 						</div>
-					</div> -->
+					</div>
 				</div>
 				<!-- copyright -->
 				<div class="copyright">
-					<div class="line"></div>
-					<p>Designed and developed by <a href="https://tredny.com">Tredny</a></p>
+					<!-- <div class="line"></div> -->
+					<p>Designed by <a href="https://tredny.com">©Tredny, 2018</a></p>
 				</div>
 				<!-- /copyright -->
 			</footer>

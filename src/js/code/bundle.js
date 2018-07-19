@@ -285,6 +285,8 @@ $(() => {
 
 		});
 
+		$('footer').addClass('footer_taht_pagepiling');
+
 		$('.scroll_down').click(() => {
 			$.fn.pagepiling.moveSectionDown();
 		});
@@ -328,10 +330,15 @@ $(() => {
 
 	}
 
+
+	/****************************/
+	/* Mockup scroll animations */
+	/****************************/
+
 	// var top_imac_svg = $('.md-imac .md-screen svg');
-	var top_imac_svg_size = $('.md-imac .md-screen svg').height();
-	var top_imac_size = $('.md-imac .md-screen').height();
-	var top_imac_toScroll = top_imac_svg_size - top_imac_size;
+	// var top_imac_svg_size = $('.md-imac .md-screen svg').height();
+	// var top_imac_size = $('.md-imac .md-screen').height();
+	// var top_imac_toScroll = top_imac_svg_size - top_imac_size;
 
 	// (function topImacScrollUpDownloop() {
 

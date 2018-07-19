@@ -60,7 +60,24 @@
 			<section id="view_design"  class="section view_design section-2">
 				<div class="content_wrapper">
 					<div class="left_content col-6" > <!-- col-8-->
-						
+						<div class="static-images-wrapper about">
+							<a class="slide-down" href="/#view_development">
+								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-design-icon-1.svg">
+								<h3>Design</h3>
+							</a>
+							<a class="slide-down" href="/#view_development">
+								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-coding.svg">
+								<h3>Coding</h3>
+							</a>
+							<a class="slide-right" href="/#view_seo">
+								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-digital-marketing.svg">
+								<h3>Digital Marketing</h3>
+							</a>
+							<a class="slide-left" href="/#view_extras">
+								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-extras.svg">
+								<h3>Extras</h3>
+							</a>
+						</div>
 					</div>
 					<div class="right_content col-6"> <!-- col-4 -->
 						<div class="title">
@@ -192,7 +209,22 @@
 		?>
 			<section id="view_startup"  class="section view_startup section-6"> 
 				<div class="content_wrapper">
-					<div class="left_content col-6" > <!-- col-8--></div>
+					<div class="left_content col-6" > <!-- col-8-->
+						<div class="static-images-wrapper">
+							<!-- <img src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg"> -->
+							<div class="big-wrapper">
+								<img class="tredny-startup-boost-responsive-website slide-down s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-responsive-website.svg">
+								<img class="tredny-startup-boost-seo-digital-analytics  slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics.svg">
+								<img class="tredny-startup-boost-seo-digital-analytics ipad-macbook slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics-2.svg">
+								<img class="tredny-startup-boost-logo slide-left s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-logo-2.svg">
+								<img class="tredny-startup-boost-business-cards slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-business-cards-2.svg">
+								<img class="tredny-startup-boost-email-signatures slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-email-signatures.svg">
+							</div>
+							<div class="small-wrapper">
+								<img class="slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg">
+							</div>
+						</div>
+					</div>
 					<div class="right_content col-6"> <!-- col-4 -->
 						<div class="title">
 							<h1><?php echo $view['title'] ?></h1>
@@ -236,6 +268,9 @@
 						<?php require_once "modules/form.php"; ?>
 					</div>
 				</div>
+			</section>
+			<section id="footer_view"  class="section view_footer section-7">
+				
 			</section>
 		<?php endif; ?>
 
