@@ -15,8 +15,10 @@ var gulp = require("gulp"),
 		"src/bower_components/jquery/dist/jquery.js",
 
 		/*POPIP JS*/
-		"src/bower_components/magnific-popup/dist/jquery.magnific-popup.js",
+		// "src/bower_components/magnific-popup/dist/jquery.magnific-popup.js",
 
+		/** pagepiling **/
+		"src/js/lib/jquery.pagepiling.min.js",
 
 		/** Page scripts */
 		// "src/js/scripts.js"
@@ -38,8 +40,11 @@ var gulp = require("gulp"),
 			"src/bower_components/normalize.css/normalize.css",
 
 			/*POPIP CSS*/
-			'src/bower_components/magnific-popup/dist/magnific-popup.css',
+			// 'src/bower_components/magnific-popup/dist/magnific-popup.css',
 			/** Theme style */
+
+			"src/css/lib/jquery.pagepiling.css",
+
 			"src/css/style.css"
 		]
 	},

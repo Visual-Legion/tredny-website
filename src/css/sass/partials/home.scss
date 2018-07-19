@@ -755,5 +755,64 @@ $mac_case_shadow : #F5F5F5;
 // }
 
 .view_footer{
-	pointer-events: none;
+	
+	.footer_wrapper{
+
+		
+
+		@include divi{
+			// padding-top: 80px;
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo_wraper{
+			align-self: center;
+			// margin-top: 42px;
+			// margin-bottom: 42px;
+			@include divi{
+				margin-top: 42px;
+			}
+			@include phone{
+				margin-top: 10px;
+			}
+			img{
+				width: 256px;
+			}
+		}
+		
+	}
+
+	h4{
+		margin-bottom: 42px;
+    margin-top: 42px;
+    @include divi{
+    	margin-bottom: 21px;
+    	margin-top: 21px;
+    }
+	}
+	a,p{
+		// padding: 10px;
+		// margin: 5px;
+		padding-left: 10px;
+	}
+	.icons_wrapper{
+		a{
+			padding:0;
+		}
+	}
+	.wys{
+		p{
+			display:flex;
+			flex-direction:column;
+		}
+	}
+	.copyright{
+		position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    height: 47px;
+	}
 }

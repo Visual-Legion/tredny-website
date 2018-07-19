@@ -4,7 +4,7 @@
  */
 
 
-.footer {
+.footer, .view_footer{
 
 	@include divi{
 		br{
@@ -52,7 +52,7 @@
 		.text_wrapper{
 			display:flex;
 			justify-content: center;
-			align-items: center;
+			align-items: flex-start;
 			margin-top: 42px;
 			margin-bottom: 42px; 
 			flex-direction: column;
@@ -62,6 +62,7 @@
 
 				margin-top: 21px;
 				margin-bottom: 21px; 
+				align-items: center;
 
 				.wys{
 					text-align: center;
@@ -78,7 +79,7 @@
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
-				@include min-tablet{
+				@include min-divi{
 					margin-left: 10px;
 				}
 				a{
@@ -210,57 +211,57 @@
 	}
 }
 
-.footer_taht_pagepiling{
-	position:fixed;
-	height:100%;
-	width:100%;
-	top:0;
-	bottom:0;
-	// z-index: 100000;
-	// padding-top:100px;
-	// margin-bottom:-47px;
+// .footer_taht_pagepiling{
+// 	position:fixed;
+// 	height:100%;
+// 	width:100%;
+// 	top:0;
+// 	bottom:0;
+// 	// z-index: 100000;
+// 	// padding-top:100px;
+// 	// margin-bottom:-47px;
 
 	
 
-	.footer_wrapper{
-		@include divi{
-			// padding-top: 80px;
-			flex-direction:column;
-			justify-content: center;
-			align-items: center;
-		}
+// 	.footer_wrapper{
+// 		@include divi{
+// 			// padding-top: 80px;
+// 			flex-direction:column;
+// 			justify-content: center;
+// 			align-items: center;
+// 		}
 		
-	}
+// 	}
 
-	h4{
-		margin-bottom: 42px;
-    margin-top: 42px;
-    @include divi{
-    	margin-bottom: 21px;
-    	margin-top: 21px;
-    }
-	}
-	a,p{
-		// padding: 10px;
-		// margin: 5px;
-		padding-left: 10px;
-	}
-	.icons_wrapper{
-		a{
-			padding:0;
-		}
-	}
-	.wys{
-		p{
-			display:flex;
-			flex-direction:column;
-		}
-	}
-	.copyright{
-		position: absolute;
-    width: 100%;
-    bottom: 0px;
-    z-index: 2;
-    height: 47px;
-	}
-}
+// 	h4{
+// 		margin-bottom: 42px;
+//     margin-top: 42px;
+//     @include divi{
+//     	margin-bottom: 21px;
+//     	margin-top: 21px;
+//     }
+// 	}
+// 	a,p{
+// 		// padding: 10px;
+// 		// margin: 5px;
+// 		padding-left: 10px;
+// 	}
+// 	.icons_wrapper{
+// 		a{
+// 			padding:0;
+// 		}
+// 	}
+// 	.wys{
+// 		p{
+// 			display:flex;
+// 			flex-direction:column;
+// 		}
+// 	}
+// 	.copyright{
+// 		position: absolute;
+//     width: 100%;
+//     bottom: 0px;
+//     z-index: 2;
+//     height: 47px;
+// 	}
+// }

@@ -616,157 +616,157 @@ skew to change the 'thickness' of the glitch.*/ }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(98px, 9999px, 67px, 0);
-    transform: skew(0.82deg); }
+    clip: rect(61px, 9999px, 45px, 0);
+    transform: skew(0.98deg); }
   5% {
-    clip: rect(48px, 9999px, 97px, 0);
-    transform: skew(0.13deg); }
+    clip: rect(42px, 9999px, 86px, 0);
+    transform: skew(0.93deg); }
   10% {
-    clip: rect(88px, 9999px, 47px, 0);
-    transform: skew(0.37deg); }
+    clip: rect(95px, 9999px, 18px, 0);
+    transform: skew(0.24deg); }
   15% {
-    clip: rect(30px, 9999px, 60px, 0);
-    transform: skew(0.5deg); }
+    clip: rect(55px, 9999px, 14px, 0);
+    transform: skew(0.06deg); }
   20% {
-    clip: rect(40px, 9999px, 26px, 0);
-    transform: skew(0.6deg); }
+    clip: rect(33px, 9999px, 5px, 0);
+    transform: skew(0.92deg); }
   25% {
-    clip: rect(24px, 9999px, 96px, 0);
-    transform: skew(0.81deg); }
+    clip: rect(21px, 9999px, 92px, 0);
+    transform: skew(0.66deg); }
   30% {
-    clip: rect(86px, 9999px, 80px, 0);
-    transform: skew(0.36deg); }
+    clip: rect(99px, 9999px, 32px, 0);
+    transform: skew(0.92deg); }
   35% {
-    clip: rect(5px, 9999px, 82px, 0);
-    transform: skew(0.02deg); }
+    clip: rect(27px, 9999px, 40px, 0);
+    transform: skew(0.49deg); }
   40% {
-    clip: rect(78px, 9999px, 83px, 0);
-    transform: skew(0.36deg); }
+    clip: rect(61px, 9999px, 28px, 0);
+    transform: skew(0.37deg); }
   45% {
-    clip: rect(4px, 9999px, 21px, 0);
-    transform: skew(0.63deg); }
+    clip: rect(60px, 9999px, 25px, 0);
+    transform: skew(0.15deg); }
   50% {
-    clip: rect(72px, 9999px, 48px, 0);
-    transform: skew(0.4deg); }
+    clip: rect(89px, 9999px, 82px, 0);
+    transform: skew(0.63deg); }
   55% {
-    clip: rect(8px, 9999px, 71px, 0);
-    transform: skew(0.99deg); }
+    clip: rect(47px, 9999px, 100px, 0);
+    transform: skew(0.95deg); }
   60% {
-    clip: rect(29px, 9999px, 19px, 0);
-    transform: skew(0.5deg); }
+    clip: rect(90px, 9999px, 29px, 0);
+    transform: skew(0.53deg); }
   65% {
-    clip: rect(74px, 9999px, 87px, 0);
-    transform: skew(0.91deg); }
+    clip: rect(9px, 9999px, 84px, 0);
+    transform: skew(0.65deg); }
   70% {
-    clip: rect(28px, 9999px, 71px, 0);
-    transform: skew(1deg); }
+    clip: rect(31px, 9999px, 46px, 0);
+    transform: skew(0.07deg); }
   75% {
-    clip: rect(35px, 9999px, 36px, 0);
-    transform: skew(0.9deg); }
+    clip: rect(61px, 9999px, 53px, 0);
+    transform: skew(0.24deg); }
   80% {
-    clip: rect(7px, 9999px, 45px, 0);
-    transform: skew(0.86deg); }
+    clip: rect(83px, 9999px, 87px, 0);
+    transform: skew(0.08deg); }
   85% {
-    clip: rect(4px, 9999px, 7px, 0);
-    transform: skew(0.85deg); }
+    clip: rect(36px, 9999px, 6px, 0);
+    transform: skew(0.12deg); }
   90% {
-    clip: rect(4px, 9999px, 2px, 0);
-    transform: skew(0.05deg); }
+    clip: rect(29px, 9999px, 82px, 0);
+    transform: skew(0.58deg); }
   95% {
-    clip: rect(26px, 9999px, 95px, 0);
-    transform: skew(0.67deg); }
+    clip: rect(25px, 9999px, 34px, 0);
+    transform: skew(0.64deg); }
   100% {
-    clip: rect(18px, 9999px, 81px, 0);
-    transform: skew(0.23deg); } }
+    clip: rect(46px, 9999px, 63px, 0);
+    transform: skew(0.88deg); } }
 
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(99px, 9999px, 40px, 0);
-    transform: skew(0.25deg); }
+    clip: rect(91px, 9999px, 60px, 0);
+    transform: skew(0.64deg); }
   5% {
-    clip: rect(75px, 9999px, 95px, 0);
-    transform: skew(0.08deg); }
+    clip: rect(83px, 9999px, 64px, 0);
+    transform: skew(0.72deg); }
   10% {
-    clip: rect(78px, 9999px, 92px, 0);
-    transform: skew(0.14deg); }
+    clip: rect(26px, 9999px, 15px, 0);
+    transform: skew(0.8deg); }
   15% {
-    clip: rect(16px, 9999px, 52px, 0);
-    transform: skew(0.36deg); }
+    clip: rect(1px, 9999px, 61px, 0);
+    transform: skew(0.05deg); }
   20% {
-    clip: rect(92px, 9999px, 91px, 0);
-    transform: skew(0.1deg); }
+    clip: rect(71px, 9999px, 69px, 0);
+    transform: skew(0.81deg); }
   25% {
-    clip: rect(2px, 9999px, 56px, 0);
-    transform: skew(0.97deg); }
-  30% {
-    clip: rect(96px, 9999px, 58px, 0);
-    transform: skew(0.23deg); }
-  35% {
-    clip: rect(52px, 9999px, 6px, 0);
-    transform: skew(0.92deg); }
-  40% {
-    clip: rect(77px, 9999px, 14px, 0);
-    transform: skew(0.67deg); }
-  45% {
-    clip: rect(80px, 9999px, 69px, 0);
-    transform: skew(0.11deg); }
-  50% {
-    clip: rect(84px, 9999px, 36px, 0);
-    transform: skew(0.16deg); }
-  55% {
-    clip: rect(77px, 9999px, 34px, 0);
-    transform: skew(0.04deg); }
-  60% {
-    clip: rect(93px, 9999px, 89px, 0);
+    clip: rect(26px, 9999px, 56px, 0);
     transform: skew(0.45deg); }
-  65% {
-    clip: rect(62px, 9999px, 36px, 0);
-    transform: skew(0.19deg); }
-  70% {
-    clip: rect(83px, 9999px, 6px, 0);
-    transform: skew(0.21deg); }
-  75% {
-    clip: rect(14px, 9999px, 95px, 0);
-    transform: skew(0.14deg); }
-  80% {
-    clip: rect(85px, 9999px, 40px, 0);
+  30% {
+    clip: rect(29px, 9999px, 7px, 0);
+    transform: skew(0.82deg); }
+  35% {
+    clip: rect(82px, 9999px, 42px, 0);
+    transform: skew(0.27deg); }
+  40% {
+    clip: rect(43px, 9999px, 32px, 0);
+    transform: skew(0.27deg); }
+  45% {
+    clip: rect(82px, 9999px, 65px, 0);
     transform: skew(0.97deg); }
-  85% {
-    clip: rect(60px, 9999px, 42px, 0);
-    transform: skew(0.34deg); }
-  90% {
-    clip: rect(70px, 9999px, 47px, 0);
-    transform: skew(0.17deg); }
-  95% {
-    clip: rect(3px, 9999px, 23px, 0);
+  50% {
+    clip: rect(65px, 9999px, 54px, 0);
+    transform: skew(0.2deg); }
+  55% {
+    clip: rect(4px, 9999px, 76px, 0);
+    transform: skew(0.51deg); }
+  60% {
+    clip: rect(100px, 9999px, 80px, 0);
     transform: skew(0.23deg); }
+  65% {
+    clip: rect(42px, 9999px, 17px, 0);
+    transform: skew(0.93deg); }
+  70% {
+    clip: rect(49px, 9999px, 9px, 0);
+    transform: skew(0.08deg); }
+  75% {
+    clip: rect(78px, 9999px, 36px, 0);
+    transform: skew(0.74deg); }
+  80% {
+    clip: rect(74px, 9999px, 36px, 0);
+    transform: skew(0.03deg); }
+  85% {
+    clip: rect(79px, 9999px, 87px, 0);
+    transform: skew(0.93deg); }
+  90% {
+    clip: rect(2px, 9999px, 89px, 0);
+    transform: skew(0.85deg); }
+  95% {
+    clip: rect(9px, 9999px, 62px, 0);
+    transform: skew(0.49deg); }
   100% {
-    clip: rect(25px, 9999px, 15px, 0);
-    transform: skew(0.75deg); } }
+    clip: rect(95px, 9999px, 51px, 0);
+    transform: skew(0.53deg); } }
 
 @keyframes glitch-skew {
   0% {
-    transform: skew(-4deg); }
-  10% {
-    transform: skew(5deg); }
-  20% {
-    transform: skew(-3deg); }
-  30% {
     transform: skew(4deg); }
-  40% {
+  10% {
+    transform: skew(3deg); }
+  20% {
+    transform: skew(-4deg); }
+  30% {
     transform: skew(5deg); }
+  40% {
+    transform: skew(-2deg); }
   50% {
-    transform: skew(-3deg); }
+    transform: skew(1deg); }
   60% {
-    transform: skew(-1deg); }
-  70% {
-    transform: skew(-4deg); }
-  80% {
     transform: skew(0deg); }
+  70% {
+    transform: skew(-2deg); }
+  80% {
+    transform: skew(4deg); }
   90% {
-    transform: skew(-4deg); }
+    transform: skew(-1deg); }
   100% {
-    transform: skew(-2deg); } }
+    transform: skew(2deg); } }
 
 /* Contact 7 Forms
 --------------------------------------------- */
@@ -1751,7 +1751,7 @@ section, .footer_wrapper {
  * partials/footer
  * ---
  */
-.footer {
+.footer, .view_footer {
   border: solid 1px #dadce0;
   background-image: linear-gradient(90deg, #000000, #545454);
   display: -ms-flexbox;
@@ -1761,9 +1761,9 @@ section, .footer_wrapper {
   -ms-flex-direction: column;
       flex-direction: column; }
   @media screen and (max-width: 980px) {
-    .footer br {
+    .footer br, .view_footer br {
       display: none; } }
-  .footer .footer_wrapper {
+  .footer .footer_wrapper, .view_footer .footer_wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1774,40 +1774,42 @@ section, .footer_wrapper {
     -ms-flex-item-align: center;
         align-self: center;
     width: 100%; }
-    .footer .footer_wrapper .logo_wraper {
+    .footer .footer_wrapper .logo_wraper, .view_footer .footer_wrapper .logo_wraper {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
       @media screen and (max-width: 980px) {
-        .footer .footer_wrapper .logo_wraper {
+        .footer .footer_wrapper .logo_wraper, .view_footer .footer_wrapper .logo_wraper {
           margin-top: 42px; } }
       @media screen and (max-width: 480px) {
-        .footer .footer_wrapper .logo_wraper {
+        .footer .footer_wrapper .logo_wraper, .view_footer .footer_wrapper .logo_wraper {
           margin-top: 10px; } }
-      .footer .footer_wrapper .logo_wraper img {
+      .footer .footer_wrapper .logo_wraper img, .view_footer .footer_wrapper .logo_wraper img {
         width: 256px; }
-    .footer .footer_wrapper .text_wrapper {
+    .footer .footer_wrapper .text_wrapper, .view_footer .footer_wrapper .text_wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-align: start;
+          align-items: flex-start;
       margin-top: 42px;
       margin-bottom: 42px;
       -ms-flex-direction: column;
           flex-direction: column; }
       @media screen and (max-width: 980px) {
-        .footer .footer_wrapper .text_wrapper {
+        .footer .footer_wrapper .text_wrapper, .view_footer .footer_wrapper .text_wrapper {
           margin-top: 21px;
-          margin-bottom: 21px; }
-          .footer .footer_wrapper .text_wrapper .wys {
+          margin-bottom: 21px;
+          -ms-flex-align: center;
+              align-items: center; }
+          .footer .footer_wrapper .text_wrapper .wys, .view_footer .footer_wrapper .text_wrapper .wys {
             text-align: center; } }
       @media screen and (max-width: 480px) {
-        .footer .footer_wrapper .text_wrapper {
+        .footer .footer_wrapper .text_wrapper, .view_footer .footer_wrapper .text_wrapper {
           margin-top: 10px;
           margin-bottom: 10px; } }
-      .footer .footer_wrapper .text_wrapper .icons_wrapper {
+      .footer .footer_wrapper .text_wrapper .icons_wrapper, .view_footer .footer_wrapper .text_wrapper .icons_wrapper {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: row;
@@ -1816,10 +1818,10 @@ section, .footer_wrapper {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center; }
-        @media screen and (min-width: 801px) {
-          .footer .footer_wrapper .text_wrapper .icons_wrapper {
+        @media screen and (min-width: 981px) {
+          .footer .footer_wrapper .text_wrapper .icons_wrapper, .view_footer .footer_wrapper .text_wrapper .icons_wrapper {
             margin-left: 10px; } }
-        .footer .footer_wrapper .text_wrapper .icons_wrapper a {
+        .footer .footer_wrapper .text_wrapper .icons_wrapper a, .view_footer .footer_wrapper .text_wrapper .icons_wrapper a {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-direction: row;
@@ -1828,7 +1830,7 @@ section, .footer_wrapper {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center; }
-        .footer .footer_wrapper .text_wrapper .icons_wrapper i {
+        .footer .footer_wrapper .text_wrapper .icons_wrapper i, .view_footer .footer_wrapper .text_wrapper .icons_wrapper i {
           margin-left: 10px;
           margin-right: 10px;
           color: #ffffff;
@@ -1836,13 +1838,13 @@ section, .footer_wrapper {
           height: 18px;
           border-radius: 100%;
           position: relative; }
-          .footer .footer_wrapper .text_wrapper .icons_wrapper i:before {
+          .footer .footer_wrapper .text_wrapper .icons_wrapper i:before, .view_footer .footer_wrapper .text_wrapper .icons_wrapper i:before {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 26px; }
-  .footer .copyright {
+  .footer .copyright, .view_footer .copyright {
     background-image: linear-gradient(143deg, #E1D0E7, #7f9efd 62%, #D8FDFD);
     color: white;
     font-size: 16px;
@@ -1851,53 +1853,16 @@ section, .footer_wrapper {
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
-    .footer .copyright .line {
+    .footer .copyright .line, .view_footer .copyright .line {
       width: 25px;
       height: 2px;
       background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.31));
       margin-right: 15px; }
-    .footer .copyright a {
+    .footer .copyright a, .view_footer .copyright a {
       transition: all 0.4s ease-in-out; }
-      .footer .copyright a:hover {
+      .footer .copyright a:hover, .view_footer .copyright a:hover {
         color: #ffffff;
         cursor: pointer; }
-
-.footer_taht_pagepiling {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0; }
-  @media screen and (max-width: 980px) {
-    .footer_taht_pagepiling .footer_wrapper {
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; } }
-  .footer_taht_pagepiling h4 {
-    margin-bottom: 42px;
-    margin-top: 42px; }
-    @media screen and (max-width: 980px) {
-      .footer_taht_pagepiling h4 {
-        margin-bottom: 21px;
-        margin-top: 21px; } }
-  .footer_taht_pagepiling a, .footer_taht_pagepiling p {
-    padding-left: 10px; }
-  .footer_taht_pagepiling .icons_wrapper a {
-    padding: 0; }
-  .footer_taht_pagepiling .wys p {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .footer_taht_pagepiling .copyright {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    z-index: 2;
-    height: 47px; }
 
 /**
  * partials/print
@@ -2418,8 +2383,54 @@ section, .footer_wrapper {
 .active .static-images-wrapper .tredny-tools-maintenance-icon {
   transform: translate(-50%, 250%); }
 
-.view_footer {
-  pointer-events: none; }
+@media screen and (max-width: 980px) {
+  .view_footer .footer_wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; } }
+
+.view_footer .footer_wrapper .logo_wraper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+  @media screen and (max-width: 980px) {
+    .view_footer .footer_wrapper .logo_wraper {
+      margin-top: 42px; } }
+  @media screen and (max-width: 480px) {
+    .view_footer .footer_wrapper .logo_wraper {
+      margin-top: 10px; } }
+  .view_footer .footer_wrapper .logo_wraper img {
+    width: 256px; }
+
+.view_footer h4 {
+  margin-bottom: 42px;
+  margin-top: 42px; }
+  @media screen and (max-width: 980px) {
+    .view_footer h4 {
+      margin-bottom: 21px;
+      margin-top: 21px; } }
+
+.view_footer a, .view_footer p {
+  padding-left: 10px; }
+
+.view_footer .icons_wrapper a {
+  padding: 0; }
+
+.view_footer .wys p {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.view_footer .copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+  height: 47px; }
 
 .contact_section {
   display: -ms-flexbox;

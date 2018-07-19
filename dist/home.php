@@ -269,7 +269,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="view_footer"  class="section view_footer section-8">
+			<section id="footer_view"  class="section view_footer section-7">
 				
 			</section>
 		<?php endif; ?>
