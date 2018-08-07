@@ -23,7 +23,7 @@
 				<!-- copyright -->
 				<div class="copyright">
 					<!-- <div class="line"></div> -->
-					<p>Designed by <a href="https://tredny.com">©Tredny, 2018</a></p>
+					<p><?php echo $footer['bottom_text']; ?></p>
 				</div>
 				<!-- /copyright -->
 			</footer>

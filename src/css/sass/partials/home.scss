@@ -108,7 +108,8 @@
 
 		@include phone{
 			// padding: $def_spacing $def_spacing/2;
-			padding: $def_spacing $def_spacing/2 143px;	
+			// padding: $def_spacing $def_spacing/2 143px;	
+			padding: $def_spacing 10px 143px;	
 		}
 
 
@@ -129,9 +130,9 @@
     .details{
     	margin-bottom: $def_spacing;
     }
-    h1{
-    	white-space: nowrap;
-    }
+    // h1{
+    // 	white-space: nowrap;
+    // }
 	}	
 
 	.mouse {
@@ -528,7 +529,8 @@ $mac_case_shadow : #F5F5F5;
 	.tredny-web-design-tablet-mockup{
 		width: 280px;
     z-index: 3;
-    left: 30px;
+    // left: 30px;
+    left: 0px;
     bottom: 80px;
     @include macbook{
 	    left: 0px;
@@ -563,6 +565,7 @@ $mac_case_shadow : #F5F5F5;
 		align-content: center;
 		flex-wrap:wrap;
 		padding: 2%;
+		padding-right: 5%;
 
 		h3{
 			text-align:center;
@@ -584,6 +587,12 @@ $mac_case_shadow : #F5F5F5;
 			box-shadow: 0px 25px 50px rgba(0,0,0,0.4);
 			will-change: transform;
 			transition: all 0.4s ease-in-out;
+
+			@include ipad{
+				width: 90%;
+				margin: 5%;
+			}
+
 			&:hover{
 				transform: translateY(-5%);
 				box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
@@ -591,7 +600,7 @@ $mac_case_shadow : #F5F5F5;
 		}
 	}
 	.tredny-startup-boost-responsive-website{
-    left: 30px;
+    left: 10px;
     bottom: 128px;
     width: 380px;
     @include divi{
@@ -599,9 +608,9 @@ $mac_case_shadow : #F5F5F5;
     }
 	}
 	.tredny-startup-boost-seo-digital-analytics{
-		left: 380px;
+		left: 360px;
     width: 160px;
-    bottom: 230px;
+    bottom: 225px;
     opacity: 1;
     @include macbook{
     	opacity: 0;
@@ -622,7 +631,7 @@ $mac_case_shadow : #F5F5F5;
   	}
 	}
 	.tredny-startup-boost-logo{
-		left: 30px;
+		left: 10px;
     bottom: 195px;
     width: 240px;
     @include divi{
@@ -630,7 +639,7 @@ $mac_case_shadow : #F5F5F5;
     }
 	}
 	.tredny-startup-boost-business-cards{
-		left: 30px;
+		left: 10px;
     bottom: 172px;
     width: 256px;
     @include divi{
@@ -638,7 +647,7 @@ $mac_case_shadow : #F5F5F5;
     }
 	}
 	.tredny-startup-boost-email-signatures{
-		left: 25px;
+		left: 5px;
     width: 225px;
     bottom: 72px;
     @include divi{
@@ -754,65 +763,9 @@ $mac_case_shadow : #F5F5F5;
 //     100% {top:0px;}
 // }
 
-.view_footer{
-	
-	.footer_wrapper{
+#view_footer.view_footer{
 
-		
-
-		@include divi{
-			// padding-top: 80px;
-			flex-direction:column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.logo_wraper{
-			align-self: center;
-			// margin-top: 42px;
-			// margin-bottom: 42px;
-			@include divi{
-				margin-top: 42px;
-			}
-			@include phone{
-				margin-top: 10px;
-			}
-			img{
-				width: 256px;
-			}
-		}
-		
-	}
-
-	h4{
-		margin-bottom: 42px;
-    margin-top: 42px;
-    @include divi{
-    	margin-bottom: 21px;
-    	margin-top: 21px;
-    }
-	}
-	a,p{
-		// padding: 10px;
-		// margin: 5px;
-		padding-left: 10px;
-	}
-	.icons_wrapper{
-		a{
-			padding:0;
-		}
-	}
-	.wys{
-		p{
-			display:flex;
-			flex-direction:column;
-		}
-	}
-	.copyright{
-		position: absolute;
-    width: 100%;
-    bottom: 0px;
-    z-index: 2;
-    height: 47px;
+	@include ipad{
+		display:none;
 	}
 }

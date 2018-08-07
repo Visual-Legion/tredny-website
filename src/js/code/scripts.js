@@ -11,12 +11,90 @@ const {contact} = require('./contact');
 $(() => {
 	// DOM ready, take it away 
 
-	console.log("JS/JQ Ready v.333 ");
+	console.log("JS/JQ Ready v.6 ");
 
 	/* Loader */
 	$(window).load(function() {
 		$(".loader").fadeOut("slow");
 	});
+
+	//to correct gradient text bug
+	$('header nav li:not(:last-child) a').css('-webkit-background-clip', 'text');
+	$('header nav li:not(:last-child) a').css('background-size', '250%')
+
+	$('.wpml-ls-item a').css('-webkit-background-clip', 'text');
+	// $('.wpml-ls-item a').css('background-size', '200%');
+	// $('.wpml-ls-item a').css('background-position', '100%');
+
+	function getDegNumber(string) {
+
+		var deg = '';
+		var index = string.indexOf('deg') - 1;
+		var isnumber = true;
+
+		// while charAt is a number
+		while (isnumber) {
+			// console.log('in while loop');
+			if (!isNaN(string.charAt(index))) {
+				deg = string.charAt(index) + deg;
+				--index;
+			} else {
+				// console.log(string.charAt(index) + 'is nan');
+				isnumber = false;
+			}
+
+		}
+
+		return deg;
+	}
+
+
+	//could be seperated in swith element to active then active lang to active view
+	function switchLangBackgroundToActiveBackgroundGradient() {
+		var css = $('li.active a').css('background-image');
+		// css = css.replace('#000, #000 50%,', '');
+		// css = css.replace('rgb(0, 0, 0), rgb(0, 0, 0) 50%,', '');
+		$('.wpml-ls-current-language a').css('background-image', css);
+		// $('.wpml-ls-item a').css('background-position', '0%');
+
+		$('.wpml-ls-item a').css('transition', 'none');
+
+		// $('.wpml-ls-item a').css('background-position', '0%').promise().done(function() {
+		// 		$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
+		// 		$('.wpml-ls-item a').css('background-position', '-70%');
+		// 	});
+		// } else {
+		// 	$('.wpml-ls-item a').css('background-position', '100%').promise().done(function() {
+		// 		$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
+		// 		$('.wpml-ls-item a').css('background-position', '0%');
+		// 	}); 
+
+		/* Actually, we could add it at the end and infinite gradient? */
+
+		if (getDegNumber(css) < 180) {
+			$('.wpml-ls-item a').css('background-position', '0%');
+			setTimeout(function() {
+				$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
+				$('.wpml-ls-item a').css('background-position', '-70%');
+			}, 100);
+		} else {
+			$('.wpml-ls-item a').css('background-position', '100%');
+			setTimeout(function() {
+				$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
+				$('.wpml-ls-item a').css('background-position', '0%');
+			}, 100);
+		}
+
+		$('.wpml-ls-item a').css('-webkit-background-clip', 'text');
+		console.log('css done');
+	}
+
+	//add current colour to active language
+	//settimoet bad, check why it needs timeout !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	setTimeout(function() {
+		switchLangBackgroundToActiveBackgroundGradient();
+	}, 500);
+
 
 	/* Hamburger menu */
 	var hamburger = $("#hamburger-icon");
@@ -47,7 +125,12 @@ $(() => {
 
 				//fading in the text of the destination (in case it was fadedOut)
 				$('.section').eq(nextIndex - 1).find('h1, p, .button, input, textarea, label, span').fadeIn(700, 'easeInQuart');
-			// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
+				// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
+				setTimeout(function() {
+					// $('.wpml-ls-current-language a').css('background-image', $('li.active a').css('background-image'));
+					switchLangBackgroundToActiveBackgroundGradient();
+				}, 100);
+			// switchLangBackgroundToActiveBackgroundGradient();
 			},
 
 			// afterLoad: function(index, nextIndex, direction) {
@@ -58,6 +141,7 @@ $(() => {
 
 		// $('footer').addClass('footer_taht_pagepiling');
 		$(".footer_wrapper").clone().appendTo(".view_footer");
+		$(".copyright").clone().appendTo(".view_footer");
 
 		$('.scroll_down').click(() => {
 			$.fn.pagepiling.moveSectionDown();

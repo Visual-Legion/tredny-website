@@ -9,11 +9,13 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 
+		<meta name="google-site-verification" content="9S2eGcJQ3Y5xMydVhFZkSGeboqbwmwfb1rrua6aghqI" />
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
 		<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
 		<?php wp_head(); ?>
@@ -46,7 +48,7 @@
 					<div class="navs_wrapper">
 						<nav class="nav" role="navigation">
 							<?php html5blank_nav(); ?>
-							<?php //echo do_shortcode('[wpml_language_switcher type="custom" flags=0 native=1 translated=0]'); ?>
+							<?php echo do_shortcode('[wpml_language_switcher type="custom" flags=0 native=1 translated=0]'); ?>
 						</nav>
 						<a id="hamburger-icon" href="#" title="Menu">
 						  <span class="line line-1"></span>

@@ -108,13 +108,13 @@ $(() => {
             if ($('.contact-msg').hasClass('error')) {
                 $('.contact-msg').removeClass('error')
             }
-            // $('.contact-msg').html('<img src="http://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
+            // $('.contact-msg').html('<img src="https://mailgun.github.io/validator-demo/loading.gif" alt="Loading...">');
             $('.contact_form_button').addClass('trying');
 
 
             $.ajax({
                 type: "GET",
-                url: 'http://apilayer.net/api/check',
+                url: 'https://apilayer.net/api/check',
                 data: {
                     access_key: 'c673ff585d5fa454aa388487d9b7ef7c',
                     // email: email,
