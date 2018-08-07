@@ -23,8 +23,14 @@ $(() => {
 	$('header nav li:not(:last-child) a').css('background-size', '250%')
 
 	$('.wpml-ls-item a').css('-webkit-background-clip', 'text');
+	$('.wpml-ls-item a').css('background-size', '250%')
 	// $('.wpml-ls-item a').css('background-size', '200%');
 	// $('.wpml-ls-item a').css('background-position', '100%');
+
+	//menuItemTopHighlightedIfNoneAre()
+	if ($('li.active a').length == 0) {
+		$('nav ul li:first-child').addClass('active');
+	}
 
 	function getDegNumber(string) {
 
@@ -70,6 +76,8 @@ $(() => {
 		// 	}); 
 
 		/* Actually, we could add it at the end and infinite gradient? */
+
+		// if ( css != undefined || css != '') {}
 
 		if (getDegNumber(css) < 180) {
 			$('.wpml-ls-item a').css('background-position', '0%');

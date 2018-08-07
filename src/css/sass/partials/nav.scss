@@ -268,7 +268,7 @@
 			// background: linear-gradient(143deg, #e9defa, #fbfcdb);
 			border-radius: 100px;
 			a{
-				@include button_pill($border-color:'none', $text-color:$white, $text-color-hover:$white, $background-image:linear-gradient(90deg, $black, #545454 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)), $hover-effect:'load');
+				@include button_pill($border-color:'none', $text-color:$white, $text-color-hover:$white, $background-image:linear-gradient(-270deg, $black, #545454 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0)), $hover-effect:'load');
 				padding:12px 25px; //+2 to compensate border
 				border: 2px solid #545454;
 			}

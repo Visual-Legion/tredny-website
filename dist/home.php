@@ -63,19 +63,19 @@
 						<div class="static-images-wrapper about">
 							<a class="slide-down" href="/#view_development">
 								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-design-icon-1.svg">
-								<h3>Design</h3>
+								<h3><?php echo $view['icons_subtext']['design'] ?></h3>
 							</a>
 							<a class="slide-down" href="/#view_development">
 								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-coding.svg">
-								<h3>Coding</h3>
+								<h3><?php echo $view['icons_subtext']['coding'] ?></h3>
 							</a>
 							<a class="slide-right" href="/#view_seo">
 								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-digital-marketing.svg">
-								<h3>Digital Marketing</h3>
+								<h3><?php echo $view['icons_subtext']['digital_marketing'] ?></h3>
 							</a>
 							<a class="slide-left" href="/#view_extras">
 								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-extras.svg">
-								<h3>Extras</h3>
+								<h3><?php echo $view['icons_subtext']['extras'] ?></h3>
 							</a>
 						</div>
 					</div>
