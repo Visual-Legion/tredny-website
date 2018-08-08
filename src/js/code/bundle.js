@@ -240,7 +240,7 @@ const {contact} = require('./contact');
 $(() => {
 	// DOM ready, take it away 
 
-	console.log("JS/JQ Ready v.6 ");
+	console.log("JS/JQ Ready v.7 ");
 
 	/* Loader */
 	$(window).load(function() {
