@@ -236,8 +236,8 @@ gulp.task("watch", ["template", "styles", "js", "libs"], function() {
 
 /** Build */
 gulp.task("build", [
-	"envProduction",
 	"clean",
+	"envProduction",
 	"template",
 	"styles",
 	// "jshint",
@@ -248,6 +248,20 @@ gulp.task("build", [
 ], function() {
 	console.log("Build is finished");
 });
+
+// gulp.task("build", gulp.series(
+// 	"clean",
+// 	"envProduction",
+// 	"template",
+// 	"styles",
+// 	// "jshint",
+// 	"js",
+// 	"libs",
+// 	"copy",
+// 	"uglify"
+// ), function() {
+// 	console.log("Build is finished");
+// });
 
 /** Gulp default task */
 gulp.task("default", ["watch"]);

@@ -32,13 +32,13 @@
 					<div class="right_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
 							<div class="big-wrapper">
-								<img class="tredny-top-imac-mockup slide-down s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-imac-mockup.svg">
-								<img class="tredny-top-macbook-mockup slide-left s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-macbook-mockup.svg">
-								<img class="tredny-top-phone-mockup slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-phone-mockup.svg">
-								<img class="tredny-top-tablet-mockup slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-tablet-mockup.svg">
+								<img class="tredny-top-imac-mockup slide-down s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-top-imac-mockup.svg">
+								<img class="tredny-top-macbook-mockup slide-left s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-top-macbook-mockup.svg">
+								<img class="tredny-top-phone-mockup slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-top-phone-mockup.svg">
+								<img class="tredny-top-tablet-mockup slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-top-tablet-mockup.svg">
 							</div>
 							<div class="small-wrapper">
-								<img class="slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-top-group-mockup.svg">
+								<img class="slide-right" src="https://tredny.local/wp-content/uploads/2018/07/tredny-top-group-mockup.svg">
 							</div>
 						</div>
 					</div>
@@ -62,19 +62,19 @@
 					<div class="left_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper about">
 							<a class="slide-down" href="/#view_development">
-								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-design-icon-1.svg">
+								<img src="https://tredny.local/wp-content/uploads/2018/07/tredny-about-design-icon-1.svg">
 								<h3><?php echo $view['icons_subtext']['design'] ?></h3>
 							</a>
 							<a class="slide-down" href="/#view_development">
-								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-coding.svg">
+								<img src="https://tredny.local/wp-content/uploads/2018/07/tredny-about-coding.svg">
 								<h3><?php echo $view['icons_subtext']['coding'] ?></h3>
 							</a>
 							<a class="slide-right" href="/#view_seo">
-								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-digital-marketing.svg">
+								<img src="https://tredny.local/wp-content/uploads/2018/07/tredny-about-digital-marketing.svg">
 								<h3><?php echo $view['icons_subtext']['digital_marketing'] ?></h3>
 							</a>
 							<a class="slide-left" href="/#view_extras">
-								<img src="http://tredny.local/wp-content/uploads/2018/07/tredny-about-extras.svg">
+								<img src="https://tredny.local/wp-content/uploads/2018/07/tredny-about-extras.svg">
 								<h3><?php echo $view['icons_subtext']['extras'] ?></h3>
 							</a>
 						</div>
@@ -121,12 +121,12 @@
 					<div class="right_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
 							<div class="big-wrapper">
-								<img class="tredny-web-design-imac slide-down s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-design-imac.svg">
-								<img class="tredny-web-development-macbook-code slide-left s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-development-macbook-code.svg">
-								<img class="tredny-web-design-tablet-mockup slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-design-tablet-mockup.svg">
+								<img class="tredny-web-design-imac slide-down s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-web-design-imac.svg">
+								<img class="tredny-web-development-macbook-code slide-left s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-web-development-macbook-code.svg">
+								<img class="tredny-web-design-tablet-mockup slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-web-design-tablet-mockup.svg">
 							</div>
 							<div class="small-wrapper">
-								<img class="slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-web-design-development-group-mockup.svg">
+								<img class="slide-right" src="https://tredny.local/wp-content/uploads/2018/07/tredny-web-design-development-group-mockup.svg">
 							</div>
 						</div>
 					</div>
@@ -143,7 +143,7 @@
 				<div class="content_wrapper">
 					<div class="left_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
-							<img class="tredny-digital-marketing slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-digital-marketing-white.svg">
+							<img class="tredny-digital-marketing slide-right" src="https://tredny.local/wp-content/uploads/2018/07/tredny-digital-marketing-white.svg">
 						</div>
 					</div>
 					<div class="right_content col-6"> <!-- col-4 -->
@@ -188,13 +188,13 @@
 					<div class="right_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
 							<div class="big-wrapper">
-								<img class="tredny-flyers-icon xtra-icon slide-down s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-flyers-icon.svg">
-								<img class="tredny-camera-icon xtra-icon slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-camera-icon.svg">
-								<img class="tredny-cart-ecommerce-icon xtra-icon slide-left s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-cart-ecommerce-icon.svg">
-								<img class="tredny-tools-maintenance-icon xtra-icon slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-tools-maintenance-icon.svg">
+								<img class="tredny-flyers-icon xtra-icon slide-down s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-flyers-icon.svg">
+								<img class="tredny-camera-icon xtra-icon slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-camera-icon.svg">
+								<img class="tredny-cart-ecommerce-icon xtra-icon slide-left s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-cart-ecommerce-icon.svg">
+								<img class="tredny-tools-maintenance-icon xtra-icon slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-tools-maintenance-icon.svg">
 							</div>
 							<div class="small-wrapper">
-								<img class="slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-extra-icons-group.svg">
+								<img class="slide-right" src="https://tredny.local/wp-content/uploads/2018/07/tredny-extra-icons-group.svg">
 							</div>
 						</div>
 					</div>
@@ -211,17 +211,17 @@
 				<div class="content_wrapper">
 					<div class="left_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
-							<!-- <img src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg"> -->
+							<!-- <img src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg"> -->
 							<div class="big-wrapper">
-								<img class="tredny-startup-boost-responsive-website slide-down s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-responsive-website.svg">
-								<img class="tredny-startup-boost-seo-digital-analytics  slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics.svg">
-								<img class="tredny-startup-boost-seo-digital-analytics ipad-macbook slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics-2.svg">
-								<img class="tredny-startup-boost-logo slide-left s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-logo-2.svg">
-								<img class="tredny-startup-boost-business-cards slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-business-cards-2.svg">
-								<img class="tredny-startup-boost-email-signatures slide-right s-absolute" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-email-signatures.svg">
+								<img class="tredny-startup-boost-responsive-website slide-down s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-responsive-website.svg">
+								<img class="tredny-startup-boost-seo-digital-analytics  slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics.svg">
+								<img class="tredny-startup-boost-seo-digital-analytics ipad-macbook slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-seo-digital-analytics-2.svg">
+								<img class="tredny-startup-boost-logo slide-left s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-logo-2.svg">
+								<img class="tredny-startup-boost-business-cards slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-business-cards-2.svg">
+								<img class="tredny-startup-boost-email-signatures slide-right s-absolute" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-email-signatures.svg">
 							</div>
 							<div class="small-wrapper">
-								<img class="slide-right" src="http://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg">
+								<img class="slide-right" src="https://tredny.local/wp-content/uploads/2018/07/tredny-startup-boost-group.svg">
 							</div>
 						</div>
 					</div>
@@ -256,12 +256,12 @@
 						</div>
 						<div class="details">
 							<p><?php echo $view['content'] ?></p>
-						</div>
+						</div> 
 						<?php  
 							$button = $view['button'];
-							if ($button) :
+							if ($button && $button['link'] != '' && $button['text'] != '' ) :
 						?>
-						<a class="button_black" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+						<!-- <a class="button_black" href="<?php //echo $button['link'] ?>"><?php //echo $button['text'] ?></a> -->
 					<?php endif; ?>
 					</div>
 					<div class="right_content col-6" > <!-- col-8-->

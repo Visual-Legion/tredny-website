@@ -105,23 +105,26 @@
 				font-family:$heading_font;
 				position:relative;
 				-webkit-text-fill-color: transparent;
-				a:after{
-					content:'';
-					width: 5px;
-					height: 2px;
-					background-color: #000000;
-					display: inline-block;
-					vertical-align: middle;
-					margin-left: 4px;
-					// position:absolute;
-					// top: 15px;
-					// right:-3px;
-				}
 
-				// :not bugs 
-				&:last-child{
+				@media screen and (min-width:1200px){
 					a:after{
-						background-color:transparent;
+						content:'';
+						width: 5px; 
+						height: 2px;
+						background-color: #000000;
+						display: inline-block;
+						vertical-align: middle;
+						margin-left: 4px;
+						// position:absolute;
+						// top: 15px;
+						// right:-3px;
+					}
+
+					// :not bugs 
+					&:last-child{
+						a:after{
+							background-color:transparent;
+						}
 					}
 				}
 
