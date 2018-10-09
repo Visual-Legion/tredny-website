@@ -2,7 +2,7 @@
 // 	const {gmaps} = require('./maps');
 // }
 
-const {cookie} = require('./cookie');
+// const {cookie} = require('./cookie');
 const {contact} = require('./contact');
 
 (function(root, $, undefined) {
@@ -11,11 +11,27 @@ const {contact} = require('./contact');
 $(() => {
 	// DOM ready, take it away 
 
-	console.log("JS/JQ Ready v.11 ");
+	console.log("JS/JQ Ready v.19 ");
 
 	/* Loader */
 	$(window).load(function() {
-		$(".loader").fadeOut("slow");
+
+		//wtf it should be loaded
+		setTimeout(function() {
+			$(".loader").fadeOut("slow");
+			menuItemActiveOnLoad();
+			switchLogoColor();
+		}, 500);
+
+		// Event.observe(window, 'load', function() {
+		// 	$(".loader").fadeOut("slow");
+		// 	menuItemActiveOnLoad();
+		// 	switchLogoColor();
+		// });
+
+		/* ADD WHEN ADDING LANGS (DONT FORGER HEADER PHP AND IN JS BOLOW) */
+		// switchLangBackgroundToActiveBackgroundGradient()
+
 	});
 
 	//to correct gradient text bug
@@ -28,9 +44,9 @@ $(() => {
 	// $('.wpml-ls-item a').css('background-position', '100%');
 
 	//menuItemTopHighlightedIfNoneAre()
-	if ($('li.active a').length == 0) {
-		$('nav ul li:first-child').addClass('active');
-	}
+	// if ($('li.active a').length == 0) {
+	// 	$('nav ul li:first-child').addClass('active');
+	// }
 
 	function removeHashtagFromElementHash(string) {
 		return string.replace('#', '');
@@ -60,12 +76,9 @@ $(() => {
 
 	//could be seperated in swith element to active then active lang to active view
 	function switchLangBackgroundToActiveBackgroundGradient() {
-		var css = $('li.active a').css('background-image');
-		// css = css.replace('#000, #000 50%,', '');
-		// css = css.replace('rgb(0, 0, 0), rgb(0, 0, 0) 50%,', '');
-		$('.wpml-ls-current-language a').css('background-image', css);
-		// $('.wpml-ls-item a').css('background-position', '0%');
 
+		var css = $('li.active a').css('background-image');
+		$('.wpml-ls-current-language a').css('background-image', css);
 		$('.wpml-ls-item a').css('transition', 'none');
 
 		if (getDegNumber(css) < 180) {
@@ -73,24 +86,115 @@ $(() => {
 			setTimeout(function() {
 				$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
 				$('.wpml-ls-item a').css('background-position', '-70%');
-			}, 100);
+			}, 500);
 		} else {
 			$('.wpml-ls-item a').css('background-position', '100%');
 			setTimeout(function() {
 				$('.wpml-ls-item a').css('transition', 'all 0.4s ease-in-out');
 				$('.wpml-ls-item a').css('background-position', '0%');
-			}, 100);
+			}, 500);
 		}
 
 		$('.wpml-ls-item a').css('-webkit-background-clip', 'text');
-		console.log('css done');
+	// console.log('css done');
 	}
 
-	//add current colour to active language
-	//settimoet bad, check why it needs timeout !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	setTimeout(function() {
-		switchLangBackgroundToActiveBackgroundGradient();
-	}, 500);
+	function switchLogoColor(active_val) {
+		var active = 'top';
+		if (active_val) {
+			//todo regex better
+			active = active_val.replace('#view_', '');;
+			active = active_val.replace('view_', '');;
+		} else {
+			if (window.location.hash) {
+				var active = window.location.hash.replace('#view_', '');
+			}
+		}
+
+		// active += '_gradient';
+		console.log('active', active);
+
+		// $('.logo_ll').css('fill', 'url(#' + active + ') #000'); 
+
+		switch (active) {
+		case 'top':
+			$('#vl_gradient stop:first-child').css('stop-color', '#7c28fb');
+			$('#vl_gradient stop:last-child').css('stop-color', '#7f9efd');
+			break;
+		case 'design':
+			$('#vl_gradient stop:first-child').css('stop-color', '#69FF97');
+			$('#vl_gradient stop:last-child').css('stop-color', '#00E4FF');
+			console.log('design is active');
+			break;
+		case 'development':
+			$('#vl_gradient stop:first-child').css('stop-color', '#3CD500');
+			$('#vl_gradient stop:last-child').css('stop-color', '#FFF720');
+			break;
+		case 'seo':
+			$('#vl_gradient stop:first-child').css('stop-color', '#fc1d48');
+			$('#vl_gradient stop:last-child').css('stop-color', '#ffe954');
+			break;
+		case 'extras':
+			$('#vl_gradient stop:first-child').css('stop-color', '#ff6a88');
+			$('#vl_gradient stop:last-child').css('stop-color', '#fd9a8d');
+			break;
+		case 'startup':
+			$('#vl_gradient stop:first-child').css('stop-color', '#ddd6f3');
+			$('#vl_gradient stop:last-child').css('stop-color', '#faaca8');
+			break;
+		case 'contact':
+			$('#vl_gradient stop:first-child').css('stop-color', '#e9defa');
+			$('#vl_gradient stop:last-child').css('stop-color', '#fbfcdb');
+			break;
+		default:
+			$('#vl_gradient stop:first-child').css('stop-color', '#7c28fb');
+			$('#vl_gradient stop:last-child').css('stop-color', '#7f9efd');
+			// $('#vl_gradient stop:first-child').css('stop-color', '#000');
+			// $('#vl_gradient stop:last-child').css('stop-color', '#000');
+			break;
+		}
+	}
+
+	//not DRY but too tired right now, TODO 
+	function menuItemActiveOnLoad(callback) {
+		if (window.location.hash) {
+			var active = window.location.hash.replace('#view_', '');
+		} else {
+			active = 'top';
+		}
+		var href = '';
+		// active += '_gradient';
+		// $('.logo_ll').css('fill', 'url(#' + active + ') #000'); 
+
+		switch (active) {
+		case '':
+		case 'top':
+			href = '/#view_top';
+			break;
+		case 'design':
+			href = '/#view_design';
+			break;
+		case 'development':
+			href = '/#view_development';
+			break;
+		case 'seo':
+			href = '/#view_seo';
+			break;
+		case 'extras':
+			href = '/#view_extras';
+			break;
+		case 'startup':
+			href = '/#view_startup';
+			break;
+		}
+
+		$('a[href="' + href + '"]').parent().addClass('active');
+
+		if (typeof callback == "function") {
+			callback();
+		}
+	}
+
 
 	function handleMobileNavClick(hamburger) {
 		$(".tablet_menu_active a").click((e) => {
@@ -102,13 +206,24 @@ $(() => {
 			$(".navs_wrapper nav").toggleClass("tablet_menu_active");
 			hamburger.toggleClass("active");
 
-			//scroll to hash
-			$('html,body').animate({
-				scrollTop: $(e.currentTarget.hash).offset().top - 80
-			}, 'slow');
+			window.location.href = e.currentTarget.hash;
+			switchLogoColor();
 
-			//change active
-			updateMobileActiveNavItem(e);
+			//scroll to hash
+
+			if (matchMedia('only screen and (max-width: 768px)').matches) {
+				$('html,body').animate({
+					scrollTop: $(e.currentTarget.hash).offset().top - 80
+				}, 'slow');
+
+				//change active
+				updateMobileActiveNavItem(e);
+			} else {
+				console.log('default behaviour');
+				return true;
+			}
+
+
 
 		})
 	}
@@ -133,6 +248,7 @@ $(() => {
 
 		hamburger.toggleClass("active");
 		$(".navs_wrapper nav").toggleClass("tablet_menu_active");
+
 		handleMobileNavClick(hamburger);
 
 	});
@@ -146,7 +262,7 @@ $(() => {
 			verticalCentered: false,
 			css3: false,
 			menu: 'nav ul',
-			anchors: ['view_top', 'view_design', 'view_development', 'view_seo', 'view_extras', 'view_startup', 'view_contact', 'view_footer'],
+			anchors: ['view_top', 'view_design', 'view_development', 'view_seo', 'view_extras', 'view_startup', /*'view_team',*/ 'view_contact', 'view_footer'],
 			navigation: {
 				'textColor': '#fff',
 				'bulletsColor': '#fff',
@@ -155,17 +271,18 @@ $(() => {
 			},
 			onLeave: function(index, nextIndex, direction) {
 				//fading out the text of the leaving section
-				$('.section').eq(index - 1).find('h1, p, .button, input, textarea, label, span').fadeOut(700, 'easeInQuart');
+				$('.section').eq(index - 1).find('h1, h2, h3, h4, h5, h6, i, p, .button, input, textarea, label, span, .logo_wraper').fadeOut(700, 'easeInQuart');
 				// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').removeClass('slid');
 
 				//fading in the text of the destination (in case it was fadedOut)
-				$('.section').eq(nextIndex - 1).find('h1, p, .button, input, textarea, label, span').fadeIn(700, 'easeInQuart');
+				$('.section').eq(nextIndex - 1).find('h1, h2, h3, h4, h5, h6, i, p, .button, input, textarea, label, span, .logo_wraper').fadeIn(700, 'easeInQuart');
 				// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
+
 				setTimeout(function() {
 					// $('.wpml-ls-current-language a').css('background-image', $('li.active a').css('background-image'));
-					switchLangBackgroundToActiveBackgroundGradient();
-				}, 100);
-			// switchLangBackgroundToActiveBackgroundGradient();
+					// switchLangBackgroundToActiveBackgroundGradient();
+					switchLogoColor();
+				}, 500);
 			},
 
 			// afterLoad: function(index, nextIndex, direction) {
@@ -302,7 +419,7 @@ $(() => {
 	// });
 
 
-	// if (matchMedia('only screen and (max-width: 768px)').matches) {
+	// 	if (matchMedia('only screen and (max-width: 768px)').matches) {
 	// 	// Menu highlight when scroll/click
 	// 	//https://codepen.io/joxmar/pen/NqqMEg
 
@@ -374,17 +491,37 @@ $(() => {
 	// 				// console.log('$(window).scrollTop()', $(window).scrollTop());
 	// 				// console.log('$(this).offset().top', $(this).offset().top);
 	// 				// console.log(id, 'id');
-	// 				$('.nav li:not(.wpml-ls-item)').removeClass('active'); 
+	// 				$('.nav li:not(.wpml-ls-item)').removeClass('active');
 	// 				$(".nav a[href='/#" + id + "']").parent().addClass('active');
 	// 			}
 	// 		});
-	// 	});
+	// 	}); 
 	// }
 
+	$(window).on('scroll', function() {
+		let id = 'view_footer';
+		// let old_id = 'view_top';
+		$('.section').each(function() {
+			if ($(window).scrollTop() >= $(this).offset().top + 20) {
+				if ($(this).attr('id') != 'view_footer') {
+					id = $(this).attr('id');
+					// console.log('$(window).scrollTop()', $(window).scrollTop());
+					// console.log('$(this).offset().top', $(this).offset().top);
+					console.log(id, 'id');
+					$('.nav li:not(.wpml-ls-item)').removeClass('active');
+					$(".nav a[href='/#" + id + "']").parent().addClass('active');
+				// window.location.hash = id;
+				// switchLogoColor(id);
+				}
+			}
+		});
+		// window.location.hash = id;
+		switchLogoColor(id);
+	});
 
 	/* Smooth anchor scroll from css-tricks */
 	// Select all links with hashes
-	// only tablet because of pagepiling
+	// only tablet because of pagepiling 
 	if (matchMedia('only screen and (max-width: 768px)').matches) {
 		$('a[href*="#"]')
 			// Remove links that don't actually link to anything

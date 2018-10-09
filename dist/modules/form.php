@@ -3,21 +3,21 @@
 <div class="contact_form_wrapper">
   <form class="contact_form" action="<?php the_permalink(); ?>" method="post">
 	   <div class="input_group">
-			<input type="text" name="name" size="30" tabindex="1" required="required"/>
+			<input type="text" name="name" id="name" size="30" tabindex="1" required="required"/>
 			<span class="highlight"></span>
     	<span class="bar"></span>
 			<label for="name">Name</label>
 			<span class="error"></span>
 		</div>
 		<div class="input_group">
-			<input type="email" name="email" size="30" tabindex="2"  required="required"/>
+			<input type="email" name="email" id="email" size="30" tabindex="2"  required="required"/>
 			<span class="highlight"></span>
     	<span class="bar"></span>
 			<label for="email">Email address</label>
 			<span class="error"></span>
 		</div>
 		<div class="input_group">
-			<textarea  name="message" tabindex="3" required="required"></textarea>
+			<textarea  name="message" id="message" tabindex="3" required="required"></textarea>
 			<span class="highlight"></span>
     	<span class="bar textarea_bar"></span>
 			<label for="message">Message</label>

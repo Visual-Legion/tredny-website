@@ -7,6 +7,45 @@
 	@include min-ipad{
 		height: 100vh;
 	}
+
+	h1,h2{
+		display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  white-space: nowrap;
+	  text-shadow: 0px 0px 1px #e0e0e0;
+	  @include divi{
+	  	align-items: center;
+	  	white-space: normal;
+	  }
+	  @include min-macbook{
+	  	z-index: 100;
+	  }
+	  span{
+	  	font-weight:inherit;
+	  	white-space: normal;
+		  	@include min-macbook{
+		  	z-index: 100;
+		  }
+	  	// margin-top: 20px;
+	  }
+
+	}
+
+	/* This is for SEO, either I have only H1s or Only H2s, with this tric I'm going to convert the first into H1 and all have the same style */
+	h2, h2 span{
+		font-size: $h1;
+		// font-weight: $heading_weight;
+    line-height: 84px;
+    // margin-top: 21px;
+    // margin-bottom: 42px;
+    @include phone{
+      font-size: $h2;
+      line-height: 42px;
+    }
+	}
+
+
 	// @include tablet{
 	// 	height: 100%;
 	// 	// overflow:scroll-y;
@@ -135,27 +174,43 @@
     // }
 	}	
 
-	.mouse {
+	// .mouse {
+	// 	position: absolute;
+	//   bottom: 40px;
+	//   left: 50%;
+	//   transform: translateX(-50%);
+	//   width: 30px;
+	//   height: auto;
+	//   cursor:pointer;
+
+	//   @include divi{
+	//   	display: none;
+	//   }
+
+	//   .scroll {
+	// 	  animation-name: scroll;
+	// 	  animation-duration: 1.5s;
+	// 	  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	// 	  animation-iteration-count: infinite;
+	// 	  transform-origin: 50% 20.5px;
+	// 	  will-change: transform;
+	// 	}
+	// }
+
+	.arrow-container{
 		position: absolute;
-	  bottom: 40px;
-	  left: 50%;
-	  transform: translateX(-50%);
-	  width: 30px;
-	  height: auto;
-	  cursor:pointer;
-
-	  @include divi{
-	  	display: none;
-	  }
-
-	  .scroll {
-		  animation-name: scroll;
-		  animation-duration: 1.5s;
-		  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
-		  animation-iteration-count: infinite;
-		  transform-origin: 50% 20.5px;
-		  will-change: transform;
-		}
+    width: 36px;
+    bottom: 50px;
+	}
+ 
+	.scroll_down {
+	  animation-name: scroll;
+	  animation-duration: 1.5s;
+	  animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+	  animation-iteration-count: infinite;
+	  transform-origin: 50% 20.5px;
+	  will-change: transform;
+	  cursor: pointer;
 	}
 
 	@keyframes scroll {
@@ -166,7 +221,7 @@
 	  opacity: 1;
 	  }
 	  100% {
-	  transform: translateY(36px) scaleY(2);
+	  transform: translateY(36px) scaleY(1);
 	  opacity: 0.01;
 	  }
 	}
@@ -193,6 +248,9 @@
 	.view_startup{
 		// background-image: linear-gradient(134deg, #faaca8, #ddd6f3);
 		background-image:$view_startup_background;
+	}
+	.view_team{
+		background-image:$view_team_background;
 	}
 	.view_contact{
 		background-image:$view_contact_background;
@@ -392,41 +450,44 @@ $mac_case_shadow : #F5F5F5;
 		}
 	}
 
-	.tredny-top-imac-mockup,
-	.tredny-top-macbook-mockup,
-	.tredny-top-phone-mockup,
-	.tredny-top-tablet-mockup,
-	.tredny-web-design-imac,
-	.tredny-web-development-macbook-code,
-	.tredny-web-design-tablet-mockup,
+	.visual-legion-top-imac-mockup,
+	.visual-legion-top-macbook-mockup,
+	.visual-legion-top-phone-mockup,
+	.visual-legion-top-tablet-mockup,
+	.visual-legion-web-design-imac,
+	.visual-legion-web-development-macbook-code,
+	.visual-legion-web-design-tablet-mockup,
 	.xtra-icon,
-	.tredny-startup-boost-responsive-website,
-	.tredny-startup-boost-seo-digital-analytics,
-	.tredny-startup-boost-logo,
-	.tredny-startup-boost-business-cards,
-	.tredny-startup-boost-email-signatures
+	.visual-legion-startup-boost-responsive-website,
+	.visual-legion-startup-boost-seo-digital-analytics,
+	.visual-legion-startup-boost-logo,
+	.visual-legion-startup-boost-business-cards,
+	.visual-legion-startup-boost-email-signatures
 	{
 		position:absolute;
 	}
-	.tredny-top-imac-mockup,
-	.tredny-top-macbook-mockup,
-	.tredny-top-phone-mockup,
-	.tredny-top-tablet-mockup,
-	.tredny-web-design-imac,
-	.tredny-web-development-macbook-code,
-	.tredny-web-design-tablet-mockup{
-		@include macbook{
-			transform: scale(0.6);
-		}
+	.visual-legion-top-imac-mockup,
+	.visual-legion-top-macbook-mockup,
+	.visual-legion-top-phone-mockup,
+	.visual-legion-top-tablet-mockup,
+	.visual-legion-web-design-imac,
+	.visual-legion-web-development-macbook-code,
+	.visual-legion-web-design-tablet-mockup{
+		// @include macbook{
+		// 	transform: scale(0.8);
+		// }
 	}
-	.tredny-top-imac-mockup{ 
+	.visual-legion-top-imac-mockup{ 
 		top: 0;
     // left: 120px;
     left: 80px;
     width: 512px;
+
+    z-index: -1;
     @include macbook{
-    	top: 50px;
+    	// top: 50px;
 	    // left: 60px;
+	        top: 20px;
 	    left: 20px;
     }
     @include divi{
@@ -434,18 +495,23 @@ $mac_case_shadow : #F5F5F5;
     	left: 50%;
     }
 	}
-	.tredny-top-macbook-mockup{
+	.visual-legion-top-macbook-mockup{
 		// right: 0;
 		// right:-30px;
 		// left:300px;
+
 		left: 260px;
     bottom: 55px;
     width: 480px;
     z-index:2;
     @include macbook{
     	// left: 200px;
-    	left: 160px;
-	    bottom: 50px;
+
+    	// left: 160px;
+	    // bottom: 50px;
+	        bottom: 100px;
+	    left: 130px;
+	    top: 200px;
     }
     @include divi{
     	// left: 260px;
@@ -453,7 +519,7 @@ $mac_case_shadow : #F5F5F5;
     	bottom: 0;
     }
 	}
-	.tredny-top-phone-mockup{
+	.visual-legion-top-phone-mockup{
 		// left: 162px;
 		// left:180px;
 		left: 140px;
@@ -471,7 +537,7 @@ $mac_case_shadow : #F5F5F5;
     	bottom: 0;
     }
 	}
-	.tredny-top-tablet-mockup{
+	.visual-legion-top-tablet-mockup{
 		// left: 0;
 		// left:40px;
   //   top: 120px;
@@ -484,7 +550,7 @@ $mac_case_shadow : #F5F5F5;
     z-index: 3;
     @include macbook{
     	// left: 60px;
-    	left: 40px;
+    	left: 0px;
 	    top: 175px;
     }
     @include divi{
@@ -494,23 +560,26 @@ $mac_case_shadow : #F5F5F5;
 	    bottom: 10px;
     }
 	}
-	.tredny-web-design-imac{
+	.visual-legion-web-design-imac{
 		top: 0;
     // left: 120px;
     left: 70px;
     width: 512px;
     z-index: 1;
     @include macbook{
-    	top: 50px;
-	    // left: 30px;
-	    left:0;
+    	// top: 50px;
+	    // // left: 30px;
+	    // left:0;
+	        top: 60px;
+    left: 0;
+    z-index: -1;
     }
     @include divi{
     	// left: 145px;
     	left: 50%;
     }
 	}
-	.tredny-web-development-macbook-code{
+	.visual-legion-web-development-macbook-code{
 		// right: 0;
 		// right:-30px;
     bottom: 55px;
@@ -518,7 +587,8 @@ $mac_case_shadow : #F5F5F5;
     z-index:2;
     @include macbook{
     	left: 150px;
-	    bottom: 55px;
+	    // bottom: 55px;
+	    bottom:0;
     }
     @include divi{
     	// left: 300px;
@@ -526,15 +596,16 @@ $mac_case_shadow : #F5F5F5;
     	bottom: 0;
     }
 	}
-	.tredny-web-design-tablet-mockup{
+	.visual-legion-web-design-tablet-mockup{
 		width: 280px;
     z-index: 3;
     // left: 30px;
     left: 0px;
     bottom: 80px;
     @include macbook{
-	    left: 0px;
-	    bottom: 45px;
+	    left: -20px;
+	    // bottom: 45px;
+	    bottom: 0;
     }
     @include divi{
     	// left: 150px;
@@ -542,7 +613,7 @@ $mac_case_shadow : #F5F5F5;
     	bottom: 20px;
     }
 	}
-	.tredny-digital-marketing{
+	.visual-legion-digital-marketing{
 		// width: 500px;
 		width: 450px;
 		// padding-top: 63px;
@@ -588,9 +659,14 @@ $mac_case_shadow : #F5F5F5;
 			will-change: transform;
 			transition: all 0.4s ease-in-out;
 
+			@include divi{
+				width: 29%;
+			}
+
 			@include ipad{
-				width: 90%;
-				margin: 5%;
+				// width: 90%;
+				// margin: 5%;
+				width: 45%;
 			}
 
 			&:hover{
@@ -599,7 +675,7 @@ $mac_case_shadow : #F5F5F5;
 			}
 		}
 	}
-	.tredny-startup-boost-responsive-website{
+	.visual-legion-startup-boost-responsive-website{
     left: 10px;
     bottom: 128px;
     width: 380px;
@@ -607,7 +683,7 @@ $mac_case_shadow : #F5F5F5;
     	left: 45%;
     }
 	}
-	.tredny-startup-boost-seo-digital-analytics{
+	.visual-legion-startup-boost-seo-digital-analytics{
 		left: 360px;
     width: 160px;
     bottom: 225px;
@@ -630,7 +706,7 @@ $mac_case_shadow : #F5F5F5;
 	    }
   	}
 	}
-	.tredny-startup-boost-logo{
+	.visual-legion-startup-boost-logo{
 		left: 10px;
     bottom: 195px;
     width: 240px;
@@ -638,7 +714,7 @@ $mac_case_shadow : #F5F5F5;
     	left: 35%;
     }
 	}
-	.tredny-startup-boost-business-cards{
+	.visual-legion-startup-boost-business-cards{
 		left: 10px;
     bottom: 172px;
     width: 256px;
@@ -646,7 +722,7 @@ $mac_case_shadow : #F5F5F5;
     	left: 36%;
     }
 	}
-	.tredny-startup-boost-email-signatures{
+	.visual-legion-startup-boost-email-signatures{
 		left: 5px;
     width: 225px;
     bottom: 72px;
@@ -657,22 +733,22 @@ $mac_case_shadow : #F5F5F5;
 }
 
 .active .static-images-wrapper{
-	.tredny-flyers-icon{
+	.visual-legion-flyers-icon{
 		// top:35%;
 		// left:50%;
 		transform:translate(-50%,50%);
 	}
-	.tredny-camera-icon{
+	.visual-legion-camera-icon{
 		// top:50%;
 		// left:35%;
 		transform:translate(-150%,150%);
 	}
-	.tredny-cart-ecommerce-icon{
+	.visual-legion-cart-ecommerce-icon{
 		// top:50%;
 		// left:65%;
 		transform:translate(50%,150%);
 	}
-	.tredny-tools-maintenance-icon{
+	.visual-legion-tools-maintenance-icon{
 		// top:65%;
 		// left:50%;
 		transform:translate(-50%,250%);
@@ -764,6 +840,10 @@ $mac_case_shadow : #F5F5F5;
 // }
 
 #view_footer.view_footer{
+
+	@include divi{
+		padding-bottom: 100px;
+	}
 
 	@include ipad{
 		display:none;

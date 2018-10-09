@@ -57,7 +57,9 @@
 }
 
 .col-6{
-  width: $column-width * 6 + 5 * $gutter-width;
+  // width: $column-width * 6 + 5 * $gutter-width;
+  // bug? check when not tired :D
+  width: 50%;
 }
 
 .col-8{
@@ -525,7 +527,7 @@ skew to change the 'thickness' of the glitch.*/
       opacity:1;
       &.s-absolute{
         @include divi{
-          transform:translateX(-50%);
+          transform:translateX(-50%) scale(0.8);
         }
       }
     }

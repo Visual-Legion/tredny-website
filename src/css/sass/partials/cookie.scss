@@ -1,40 +1,78 @@
-.cookie_wrapper{
+// .cookie_wrapper{
 
-	background:rgba(0,0,0,0.8);
-	position:fixed;
-	bottom:0;
-	width: 100%;
-	padding:20px;
-	z-index: 10000;
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	@include transition;
-	opacity:1;
+// 	background:rgba(0,0,0,0.8);
+// 	position:fixed;
+// 	bottom:0;
+// 	width: 100%;
+// 	padding:20px;
+// 	z-index: 10000;
+// 	display:flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	@include transition;
+// 	opacity:1;
 
-	&.hidden{
-		bottom:-100px;
-		opacity: 0;
-	}
+// 	&.hidden{
+// 		bottom:-100px;
+// 		opacity: 0;
+// 	}
 
-	.cookie_description, a{
-		@include middle;
-	}
+// 	.cookie_description, a{
+// 		@include middle;
+// 	}
 
-	.cookie_description{
-		font-size: 12px;
-		color: #ffffff;
+// 	.cookie_description{
+// 		font-size: 12px;
+// 		color: #ffffff;
+// 	}
+// 	a{
+// 		font-size: 12px;
+// 		padding: 5px 10px;
+// 		color: #ffffff;
+// 		border: 1px solid #ffffff;
+// 		text-transform: uppercase;
+// 		background-color:transparent;
+// 		@include transition;
+// 		&:hover{
+// 			background:rgba(255,255,255,0.2);
+// 		}
+// 	}
+// }
+
+
+/**
+* Plugin Cookie
+*/
+body{
+	.pea_cook_wrapper.pea_cook_bottomcenter {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+  	font-size: 16px;
+  	font-weight: normal;
+  }
+  button.pea_cook_btn {
+	  background: #fff;
+	  border: none;
+	  border-radius: 100px;
+	  box-shadow: none;
+	  color: #333;
+	  font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+	  line-height: 1.7;
+	  text-transform: uppercase;
+	  padding: 5px 0;
+	  text-align: center;
+	  text-shadow: none;
+	  width: 100px;
+	  margin-left: 20px;
 	}
-	a{
-		font-size: 12px;
-		padding: 5px 10px;
-		color: #ffffff;
-		border: 1px solid #ffffff;
-		text-transform: uppercase;
-		background-color:transparent;
-		@include transition;
-		&:hover{
-			background:rgba(255,255,255,0.2);
-		}
-	}
+}
 }

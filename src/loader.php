@@ -4,6 +4,6 @@
 		<!-- <div class="loader-05"></div> -->
 	<!-- </div> -->
 	<div class="utopia_wrapper">
-		<div class="glitch" data-text="Loading">Loading</div> 
+		<div class="glitch" data-text="Visual Legion">Visual Legion</div> 
 	</div>
 </div>

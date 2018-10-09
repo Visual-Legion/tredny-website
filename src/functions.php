@@ -145,24 +145,25 @@ function html5blank_header_scripts()
             
 
             // pagepiling
-            wp_register_script('pagepiling', get_template_directory_uri() . '/js/lib/jquery.pagepiling.min.js', array());
+            wp_register_script('pagepiling', get_template_directory_uri() . '/js/lib/jquery.pagepiling.js', array());
 
             // Custom scripts
             wp_register_script(
                 'tredny_scripts',
                 get_template_directory_uri() . '/js/code/bundle.js',
                 array(
+                    'jquery',
                     'conditionizr',
                     // 'polyfill',
                     'system',
                     'modernizr',
-                    'jquery',
                     'pagepiling',
                     // 'magnific-popup'
                 ),
                 '1.0.6');
 
             // Enqueue Scripts
+            wp_localize_script( 'tredny_scripts', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
             wp_enqueue_script('tredny_scripts');
 
@@ -173,6 +174,8 @@ function html5blank_header_scripts()
             // wp_register_script('magnific-popup', get_template_directory_uri() . '/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js', array(), '1.0.0');
             // Scripts minify
             wp_register_script('html5blankscripts-min', get_template_directory_uri() . '/js/scripts.min.js', array(), '1.0.3');
+
+            wp_localize_script( 'html5blankscripts-min', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
             // Enqueue Scripts
             wp_enqueue_script('html5blankscripts-min');
         }
@@ -617,12 +620,13 @@ remove_action('welcome_panel', 'wp_welcome_panel');
 
 /* Ajax contact form */
 
-function contact_form_add_script() {
-// // wp_enqueue_script( 'contact_form-script', get_template_directory_uri() . '/js/code/bundle.js', array('jquery') );    
-// wp_localize_script( 'contact_form-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-wp_localize_script( 'tredny_scripts', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-}
-add_action('wp_enqueue_scripts', 'contact_form_add_script');
+//ADDED TO HTM5_BLANCK SCRIPT LOADER
+// function contact_form_add_script() {
+// // // wp_enqueue_script( 'contact_form-script', get_template_directory_uri() . '/js/code/bundle.js', array('jquery') );    
+// // wp_localize_script( 'contact_form-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+// wp_localize_script( 'tredny_scripts', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+// }
+// add_action('wp_enqueue_scripts', 'contact_form_add_script');
 
 function ajax_contact_form_action_callback() {
     $error = '';

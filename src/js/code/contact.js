@@ -14,6 +14,7 @@ $(() => {
     var tdny_required_msg = "This field is required!";
     var tdny_valid_email_msg = "This email is invalid!";
 
+    // console.log('ajax_object', ajax_object);
 
     //  ADD MAILCHIMP ? MAYBE NOT A FIRST AS WE DONT WANT TO ADD CHECKBOX SAYING WE'RE COLLECTING INFO
 
@@ -138,21 +139,26 @@ $(() => {
                             $('.contact-msg').html('The entered mail address is invalid.');
                             return false;
                         } else {
-                            $.ajax({
-                                type: 'POST',
-                                url: ajax_object.ajax_url,
-                                data: $('.contact_form').serialize(),
-                                dataType: 'json',
-                                success: function(response) {
-                                    if (response.status == 'success') {
-                                        //and disable button after sent
+                            if (ajax_object) {
+                                $.ajax({
+                                    type: 'POST',
+                                    url: ajax_object.ajax_url,
+                                    data: $('.contact_form').serialize(),
+                                    dataType: 'json',
+                                    success: function(response) {
+                                        if (response.status == 'success') {
+                                            //and disable button after sent
 
-                                        $('.contact_form_button').addClass('sent_ok');
-                                        $('.contact_form')[0].reset();
+                                            $('.contact_form_button').addClass('sent_ok');
+                                            $('.contact_form')[0].reset();
+                                        }
+                                        $('.contact-msg').html(response.errmessage);
                                     }
-                                    $('.contact-msg').html(response.errmessage);
-                                }
-                            });
+                                });
+                            } else {
+                                $('.contact-msg').addClass('error');
+                                $('.contact-msg').html('Sorry something went wrong. Please try again later or contact us manually here : contact "at" visual-legion.com');
+                            }
                         }
 
                     } else {
