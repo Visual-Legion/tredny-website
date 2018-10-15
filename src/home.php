@@ -217,66 +217,6 @@
 		<?php endif; ?>
 
 		<?php
-			$view = get_field('view_startup');
-			// var_dump($view);	
-			if( $view ): 
-		?>
-			<section id="view_startup"  class="section view_startup section-6"> 
-				<div class="content_wrapper">
-					<div class="left_content col-6" > <!-- col-8-->
-						<div class="static-images-wrapper">
-							<!-- <img src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-group.svg">  alt="visual legion startup boost-group.svg"-->
-							<div class="big-wrapper">
-								<img class="visual-legion-startup-boost-responsive-website slide-down s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-responsive-website.svg" alt="visual legion startup boost responsive website">
-								<img class="visual-legion-startup-boost-seo-digital-analytics  slide-right s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-seo-digital-analytics.svg" alt="visual legion startup boost seo digital analytics">
-								<img class="visual-legion-startup-boost-seo-digital-analytics ipad-macbook slide-right s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-seo-digital-analytics-2.svg" alt="visual legion startup boost seo digital analytics 2">
-								<img class="visual-legion-startup-boost-logo slide-left s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-logo-2.svg" alt="visual legion startup boost logo 2">
-								<img class="visual-legion-startup-boost-business-cards slide-right s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-business-cards-2.svg" alt="visual legion startup boost business cards 2">
-								<img class="visual-legion-startup-boost-email-signatures slide-right s-absolute" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-email-signatures.svg" alt="visual legion startup boost email signatures">
-							</div>
-							<div class="small-wrapper">
-								<img class="slide-right" src="https://visual-legion.com/wp-content/uploads/2018/10/visual-legion-startup-boost-group.svg" alt="visual legion startup boost group">
-							</div>
-						</div>
-					</div>
-					<div class="right_content col-6"> <!-- col-4 -->
-						<div class="title">
-							<h2>
-								<?php echo $view['title'] ?>
-								<span><?php if ($view['title_copy']) echo $view['title_copy'] ?></span>
-							</h2>
-						</div>
-						<div class="details">
-							<p><?php echo $view['content'] ?></p>
-						</div>
-						<?php  
-							$button = $view['button'];
-							if ($button) :
-						?>
-						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
-					<?php endif; ?>
-					</div>
-				</div>
-			</section>
-		<?php endif; ?>
-
-		<!-- <?php
-			//$view = get_field('view_team');
-			// var_dump($view);	
-			//if( $view ): 
-		?>
-			<section id="view_team"  class="section view_team section-7">
-				<div class="content_wrapper">
-					<div class="title">
-						<h1><?php //echo $view['title'] ?></h1>
-					</div>
-					<div class="people">
-					</div>
-				</div>
-			</section>
-		<?php // endif; ?> -->
-
-		<?php
 			$view = get_field('view_contact');
 			// var_dump($view);	
 			if( $view ): 

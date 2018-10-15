@@ -196,7 +196,7 @@ const {contact} = require('./contact');
 $(() => {
 	// DOM ready, take it away 
 
-	console.log("JS/JQ Ready v.19 ");
+	console.log("JS/JQ Ready v.21 ");
 
 	/* Loader */
 	$(window).load(function() {
@@ -447,7 +447,7 @@ $(() => {
 			verticalCentered: false,
 			css3: false,
 			menu: 'nav ul',
-			anchors: ['view_top', 'view_design', 'view_development', 'view_seo', 'view_extras', 'view_startup', /*'view_team',*/ 'view_contact', 'view_footer'],
+			anchors: ['view_top', 'view_design', 'view_development', 'view_seo', 'view_extras', /*'view_startup',*/ /*'view_team',*/ 'view_contact', 'view_footer'],
 			navigation: {
 				'textColor': '#fff',
 				'bulletsColor': '#fff',

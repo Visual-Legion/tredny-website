@@ -8,8 +8,12 @@
 @mixin button_pill($border-color:$white, $text-color:$black, $text-color-hover:$white, $background-image:$white, $background-image-hover:$black, $hover-effect:'load'){
 // background-color:transparent;$background-image
 background-image:$background-image;
-background-size: 200%;
-background-position: 200%;
+// background-size: 200%;
+// background-position: 200%;
+    /*quickfix -> to improve*/
+    background-size: 201%;
+    background-position: 199%;
+
 border-radius: 100px;
 padding: 10px 35px;
 color: $text-color;
