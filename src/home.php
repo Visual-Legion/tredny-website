@@ -233,12 +233,6 @@
 						<div class="details">
 							<p><?php echo $view['content'] ?></p>
 						</div>
-						<?php  
-							$button = $view['button'];
-							if ($button) :
-						?>
-						<!-- <a class="button_black" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a> -->
-					<?php endif; ?>
 					</div>
 					<div class="right_content col-6" > <!-- col-8-->
 						<?php require_once "modules/form.php"; ?>

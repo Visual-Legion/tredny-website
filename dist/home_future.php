@@ -31,6 +31,12 @@
 						?>
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
+					<?php  
+							$button = $view['button_copy'];
+							if ($button) :
+						?>
+						<a class="button_alt" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+					<?php endif; ?>
 					</div>
 					<div class="right_content col-6" > <!-- col-8-->
 						<div class="static-images-wrapper">
@@ -97,6 +103,12 @@
 						?>
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
+					<?php  
+							$button = $view['button_copy'];
+							if ($button) :
+						?>
+						<a class="button_alt" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+					<?php endif; ?>
 					</div>
 				</div>
 			</section>
@@ -124,6 +136,12 @@
 							if ($button) :
 						?>
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+					<?php endif; ?>
+					<?php  
+							$button = $view['button_copy'];
+							if ($button) :
+						?>
+						<a class="button_alt" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
 					<div class="right_content col-6" > <!-- col-8-->
@@ -170,6 +188,12 @@
 						?>
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
+					<?php  
+							$button = $view['button_copy'];
+							if ($button) :
+						?>
+						<a class="button_alt" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+					<?php endif; ?>
 					</div>
 				</div>
 			</section>
@@ -197,6 +221,12 @@
 							if ($button) :
 						?>
 						<a class="button" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
+					<?php endif; ?>
+					<?php  
+							$button = $view['button_copy'];
+							if ($button) :
+						?>
+						<a class="button_alt" href="<?php echo $button['link'] ?>"><?php echo $button['text'] ?></a>
 					<?php endif; ?>
 					</div>
 					<div class="right_content col-6" > <!-- col-8-->

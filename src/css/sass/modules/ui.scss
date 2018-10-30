@@ -305,6 +305,7 @@ body{
   z-index: 9999;
   background: white;
   background-size: 100px;
+  font-family: $heading_font;
   &.parent:before{
     display: none;
   }

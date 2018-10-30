@@ -460,11 +460,11 @@
 						},
 						onLeave: function onLeave(index, nextIndex, direction) {
 							//fading out the text of the leaving section
-							$('.section').eq(index - 1).find('h1, h2, h3, h4, h5, h6, i, p, .button, input, textarea, label, span, .logo_wraper').fadeOut(700, 'easeInQuart');
+							$('.section').eq(index - 1).find('h1, h2, h3, h4, h5, h6, i, p, ul, .button, input, .contact_form_button, textarea, label, span, .logo_wraper').fadeOut(700, 'easeInQuart');
 							// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').removeClass('slid');
 
 							//fading in the text of the destination (in case it was fadedOut)
-							$('.section').eq(nextIndex - 1).find('h1, h2, h3, h4, h5, h6, i, p, .button, input, textarea, label, span, .logo_wraper').fadeIn(700, 'easeInQuart');
+							$('.section').eq(nextIndex - 1).find('h1, h2, h3, h4, h5, h6, i, p, ul, .button, input, .contact_form_button, textarea, label, span, .logo_wraper').fadeIn(700, 'easeInQuart');
 							// $('.section').eq(nextIndex - 1).find('.slide-up, .slide-down, .slide-left, .slide-right').addClass('slid');
 
 							setTimeout(function () {
